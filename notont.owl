@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY schema "http://schema.org/" >
+    <!ENTITY dcam "http://purl.org/dc/dcam/" >
+    <!ENTITY rev "http://purl.org/stuff/rev#" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY scovo "http://purl.org/NET/scovo#" >
+    <!ENTITY vann "http://purl.org/vocab/vann/" >
+    <!ENTITY time "http://www.w3.org/2006/time#" >
+    <!ENTITY dcmitype "http://purl.org/dc/dcmitype/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY wi "http://purl.org/ontology/wi/core#" >
+    <!ENTITY event "http://purl.org/NET/c4dm/event.owl#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY contact "http://www.w3.org/2000/10/swap/pim/contact#" >
+    <!ENTITY notonto "http://elite.polito.it/ontologies/notont.owl#" >
+    <!ENTITY ns "http://www.w3.org/2003/06/sw-vocab-status/ns#" >
+    <!ENTITY dogont "http://elite.polito.it/ontologies/dogont.owl#" >
+    <!ENTITY locont "http://webmind.dico.unimi.it/CARE/locont.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://elite.polito.it/ontologies/notont.owl#"
+     xml:base="http://elite.polito.it/ontologies/notont.owl"
+     xmlns:locont="http://webmind.dico.unimi.it/CARE/locont.owl#"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:rev="http://purl.org/stuff/rev#"
+     xmlns:wi="http://purl.org/ontology/wi/core#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dcmitype="http://purl.org/dc/dcmitype/"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:dcam="http://purl.org/dc/dcam/"
+     xmlns:contact="http://www.w3.org/2000/10/swap/pim/contact#"
+     xmlns:notonto="http://elite.polito.it/ontologies/notont.owl#"
+     xmlns:dogont="http://elite.polito.it/ontologies/dogont.owl#"
+     xmlns:schema="http://schema.org/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:event="http://purl.org/NET/c4dm/event.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:scovo="http://purl.org/NET/scovo#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://elite.polito.it/ontologies/notont.owl">
+        <owl:imports rdf:resource="http://elite.polito.it/ontologies/dogont.owl"/>
+        <owl:imports rdf:resource="http://purl.org/ontology/wi/core#"/>
+        <owl:imports rdf:resource="http://webmind.dico.unimi.it/CARE/locont.owl"/>
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#Bedroom -->
+
+    <rdf:Description rdf:about="&dogont;Bedroom">
+        <owl:equivalentClass rdf:resource="&locont;BedRoom"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#Building -->
+
+    <rdf:Description rdf:about="&dogont;Building">
+        <owl:equivalentClass rdf:resource="&locont;Building"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#Computer -->
+
+    <rdf:Description rdf:about="&dogont;Computer">
+        <owl:equivalentClass rdf:resource="&locont;Computer"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#Controllable -->
+
+    <rdf:Description rdf:about="&dogont;Controllable">
+        <owl:equivalentClass rdf:resource="&locont;Device"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#Furniture -->
+
+    <rdf:Description rdf:about="&dogont;Furniture">
+        <owl:equivalentClass rdf:resource="&locont;Furniture"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#Room -->
+
+    <rdf:Description rdf:about="&dogont;Room">
+        <owl:equivalentClass rdf:resource="&locont;Room"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#SanitaryFixtures -->
+
+    <rdf:Description rdf:about="&dogont;SanitaryFixtures">
+        <owl:equivalentClass rdf:resource="&locont;BathroomFixture"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#Sensor -->
+
+    <rdf:Description rdf:about="&dogont;Sensor">
+        <owl:equivalentClass rdf:resource="&locont;Sensor"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#Table -->
+
+    <rdf:Description rdf:about="&dogont;Table">
+        <owl:equivalentClass rdf:resource="&locont;Table"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#BathroomFixture -->
+
+    <rdf:Description rdf:about="&locont;BathroomFixture"/>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#BedRoom -->
+
+    <rdf:Description rdf:about="&locont;BedRoom"/>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Building -->
+
+    <rdf:Description rdf:about="&locont;Building"/>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Computer -->
+
+    <rdf:Description rdf:about="&locont;Computer"/>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Device -->
+
+    <rdf:Description rdf:about="&locont;Device"/>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Furniture -->
+
+    <rdf:Description rdf:about="&locont;Furniture"/>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Person -->
+
+    <rdf:Description rdf:about="&locont;Person">
+        <owl:equivalentClass rdf:resource="&foaf;Person"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Room -->
+
+    <rdf:Description rdf:about="&locont;Room"/>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Sensor -->
+
+    <rdf:Description rdf:about="&locont;Sensor"/>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Table -->
+
+    <rdf:Description rdf:about="&locont;Table"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <rdf:Description rdf:about="&foaf;Person"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+
