@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1403775653181" name="http://elite.polito.it/ontologies/dogont.owl" uri="ghatered_ontologies/dogont.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1403775653181" name="http://elite.polito.it/ontologies/notont.owl" uri="notont.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1403775653181" name="http://elite.polito.it/ontologies/notont/scenario1" uri="scenario1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1403775653181" name="http://purl.org/NET/c4dm/event.owl" uri="ghatered_ontologies/event.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1403775653181" name="http://purl.org/ontology/wi/core" uri="ghatered_ontologies/weightedinterests.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1403775653181" name="http://purl.org/ontology/wi/core#" uri="imported_ontology/weightedinterests.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1403775653181" name="http://webmind.dico.unimi.it/CARE/locont.owl" uri="ghatered_ontologies/locont-2.0.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1403775653181" name="http://www.cenitmio.es/ontologies/Device.owl" uri="ghatered_ontologies/Device_mIO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1403775653181" name="http://www.ontologydesignpatterns.org/cp/owl/componency.owl" uri="ghatered_ontologies/componency.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1403775653181" name="http://www.ontologydesignpatterns.org/cp/owl/partof.owl" uri="ghatered_ontologies/partof.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1403775653181" name="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl" uri="ghatered_ontologies/cpannotationschema.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1403775653181" name="http://www.w3.org/2003/06/sw-vocab-status/ns#" uri="imported_ontology/ns.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1403775653181" name="http://www.w3.org/2004/02/skos/core" uri="imported_ontology/skos.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1403775653181" name="http://www.w3.org/2006/time" uri="ghatered_ontologies/time.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1403775653181" name="shadowed:http://elite.polito.it/ontologies/dogont.owl" uri="imported_ontology/dogont.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1403775653181" name="shadowed:http://elite.polito.it/ontologies/notont.owl" uri="ghatered_ontologies/notont.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1403775653181" name="shadowed:http://webmind.dico.unimi.it/CARE/locont.owl" uri="imported_ontology/locont-2.0.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1403775653181" name="shadowed:http://www.cenitmio.es/ontologies/Device.owl" uri="imported_ontology/Device_mIO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1403775653181" name="shadowed:http://www.w3.org/2006/time" uri="imported_ontology/time.rdf"/>
+    </group>
+</catalog>

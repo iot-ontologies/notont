@@ -1,0 +1,319 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY ns "http://www.w3.org/2003/06/sw-vocab-status/ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://geovocab.org/spatial#"
+     xml:base="http://geovocab.org/spatial"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://geovocab.org/spatial">
+        <rdfs:label>NeoGeo Spatial Ontology</rdfs:label>
+        <rdfs:comment>A vocabulary for describing topological relations between features. $Id: spatial# 81 2012-02-05 11:06:49Z non88sense@gmail.com $</rdfs:comment>
+        <owl:imports rdf:resource="http://geovocab.org/mappings/spatial"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+    <owl:AnnotationProperty rdf:about="&ns;term_status"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://geovocab.org/spatial#C -->
+
+    <owl:ObjectProperty rdf:about="http://geovocab.org/spatial#C">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label>connects with</rdfs:label>
+        <rdfs:comment>Relation C(x,y), read as &apos;x is connected with y&apos;. This relation holds when two regions share a common point. It is the primitive relation
+				in the RCC theory.</rdfs:comment>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:domain rdf:resource="http://geovocab.org/spatial#Feature"/>
+        <rdfs:range rdf:resource="http://geovocab.org/spatial#Feature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://geovocab.org/spatial#DC -->
+
+    <owl:ObjectProperty rdf:about="http://geovocab.org/spatial#DC">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label>disconnected from</rdfs:label>
+        <rdfs:comment>Relation DC(x,y), read as &apos;x is disconnected from y&apos;. In order to prevent an exponential growth of triples when handling large
+				  amounts of data, a closed world assumption may also be possible. More precisely, by considering not explicitely connected regions as discrete
+				  regions. Moreover, discrete regions, which are not explicitely labeled as externally connected, would be considered disconnected from
+				  eachother.</rdfs:comment>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:subPropertyOf rdf:resource="http://geovocab.org/spatial#DR"/>
+        <rdfs:domain rdf:resource="http://geovocab.org/spatial#Feature"/>
+        <rdfs:range rdf:resource="http://geovocab.org/spatial#Feature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://geovocab.org/spatial#DR -->
+
+    <owl:ObjectProperty rdf:about="http://geovocab.org/spatial#DR">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label>discrete from</rdfs:label>
+        <rdfs:comment>Relation DR(x,y), read as &apos;x is discrete from y&apos;. In order to prevent an exponential growth of triples when handling large
+				  amounts of data, a closed world assumption may also be possible. More precisely, by considering not explicitely connected regions as discrete
+				  regions. Moreover, discrete regions, which are not explicitely labeled as externally connected, would be considered disconnected from
+				  eachother.</rdfs:comment>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:range rdf:resource="http://geovocab.org/spatial#Feature"/>
+        <rdfs:domain rdf:resource="http://geovocab.org/spatial#Feature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://geovocab.org/spatial#EC -->
+
+    <owl:ObjectProperty rdf:about="http://geovocab.org/spatial#EC">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label>externally connected with</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:comment>Relation EC(x,y), read as &apos;x is externally connected with y&apos;. This relation holds, when the two regions share at least
+						 one common point of their borders, but share no points of their interiors, i.e. they do not overlap.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://geovocab.org/spatial#C"/>
+        <rdfs:subPropertyOf rdf:resource="http://geovocab.org/spatial#DR"/>
+        <rdfs:range rdf:resource="http://geovocab.org/spatial#Feature"/>
+        <rdfs:domain rdf:resource="http://geovocab.org/spatial#Feature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://geovocab.org/spatial#EQ -->
+
+    <owl:ObjectProperty rdf:about="http://geovocab.org/spatial#EQ">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label>equals</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:comment>Relation x=y, read as &apos;x is identical with y&apos;. This relation holds when two regions are spatially co-located.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://geovocab.org/spatial#Feature"/>
+        <rdfs:range rdf:resource="http://geovocab.org/spatial#Feature"/>
+        <rdfs:subPropertyOf rdf:resource="http://geovocab.org/spatial#P"/>
+        <rdfs:subPropertyOf rdf:resource="http://geovocab.org/spatial#Pi"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://geovocab.org/spatial#NTPP -->
+
+    <owl:ObjectProperty rdf:about="http://geovocab.org/spatial#NTPP">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label>is non-tangential proper part of</rdfs:label>
+        <rdfs:comment>Relation NTPP(x,y), read as &apos;x is a non-tangential proper part of y&apos;. This relation holds, whenever a region x is 
+							 labeled as a proper part of a region y, and they do not share common point in their borders.</rdfs:comment>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:range rdf:resource="http://geovocab.org/spatial#Feature"/>
+        <rdfs:domain rdf:resource="http://geovocab.org/spatial#Feature"/>
+        <rdfs:subPropertyOf rdf:resource="http://geovocab.org/spatial#PP"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://geovocab.org/spatial#NTPPi -->
+
+    <owl:ObjectProperty rdf:about="http://geovocab.org/spatial#NTPPi">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label>non tangentially properly contains</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:comment>Relation NTPPi(x,y), read as &apos;x non-tangentially properly contains y&apos;. Inverse of the NTPP(x,y) relation.</rdfs:comment>
+        <rdfs:range rdf:resource="http://geovocab.org/spatial#Feature"/>
+        <rdfs:domain rdf:resource="http://geovocab.org/spatial#Feature"/>
+        <owl:inverseOf rdf:resource="http://geovocab.org/spatial#NTPP"/>
+        <rdfs:subPropertyOf rdf:resource="http://geovocab.org/spatial#PPi"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://geovocab.org/spatial#O -->
+
+    <owl:ObjectProperty rdf:about="http://geovocab.org/spatial#O">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label>overlaps</rdfs:label>
+        <rdfs:comment>Relation O(x,y), read as &apos;x overlaps y&apos;. A region x overlaps a region y, if they share at least one common point of their interiors.</rdfs:comment>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:subPropertyOf rdf:resource="http://geovocab.org/spatial#C"/>
+        <rdfs:range rdf:resource="http://geovocab.org/spatial#Feature"/>
+        <rdfs:domain rdf:resource="http://geovocab.org/spatial#Feature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://geovocab.org/spatial#P -->
+
+    <owl:ObjectProperty rdf:about="http://geovocab.org/spatial#P">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label>is part of</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:comment>Relation P(x,y), read as &apos;x is a part of y&apos;, holds whenever the region x is contained within the borders of the region y.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://geovocab.org/spatial#Feature"/>
+        <rdfs:range rdf:resource="http://geovocab.org/spatial#Feature"/>
+        <rdfs:subPropertyOf rdf:resource="http://geovocab.org/spatial#O"/>
+        <owl:inverseOf rdf:resource="http://geovocab.org/spatial#Pi"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://geovocab.org/spatial#PO -->
+
+    <owl:ObjectProperty rdf:about="http://geovocab.org/spatial#PO">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label>partially overlaps</rdfs:label>
+        <rdfs:comment>Relation PO(x,y), read as &apos;x partially overlaps y&apos;. A region x overlaps a region y, if they share at least one common point of their 
+				   interiors, and one does not contain the other within its borders.</rdfs:comment>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:domain rdf:resource="http://geovocab.org/spatial#Feature"/>
+        <rdfs:range rdf:resource="http://geovocab.org/spatial#Feature"/>
+        <rdfs:subPropertyOf rdf:resource="http://geovocab.org/spatial#O"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://geovocab.org/spatial#PP -->
+
+    <owl:ObjectProperty rdf:about="http://geovocab.org/spatial#PP">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label>is proper part of</rdfs:label>
+        <rdfs:comment>Relation PP(x,y), read as &apos;x is a proper part of y&apos;, means that the region x is contained within the borders of the 
+				region y, and region y is not contained within the borders of the region y, which means they are not equals.</rdfs:comment>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:domain rdf:resource="http://geovocab.org/spatial#Feature"/>
+        <rdfs:range rdf:resource="http://geovocab.org/spatial#Feature"/>
+        <rdfs:subPropertyOf rdf:resource="http://geovocab.org/spatial#P"/>
+        <owl:inverseOf rdf:resource="http://geovocab.org/spatial#PPi"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://geovocab.org/spatial#PPi -->
+
+    <owl:ObjectProperty rdf:about="http://geovocab.org/spatial#PPi">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label>properly contains</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:comment>Relation PPi(x,y), read as &apos;x properly contains y&apos;. Inverse of the PP(x,y) relation.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://geovocab.org/spatial#Feature"/>
+        <rdfs:range rdf:resource="http://geovocab.org/spatial#Feature"/>
+        <rdfs:subPropertyOf rdf:resource="http://geovocab.org/spatial#Pi"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://geovocab.org/spatial#Pi -->
+
+    <owl:ObjectProperty rdf:about="http://geovocab.org/spatial#Pi">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label>contains</rdfs:label>
+        <rdfs:comment>Relation Pi(x,y), read as &apos;x contains y&apos;. Inverse of the P(x,y) relation.</rdfs:comment>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:range rdf:resource="http://geovocab.org/spatial#Feature"/>
+        <rdfs:domain rdf:resource="http://geovocab.org/spatial#Feature"/>
+        <rdfs:subPropertyOf rdf:resource="http://geovocab.org/spatial#O"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://geovocab.org/spatial#TPP -->
+
+    <owl:ObjectProperty rdf:about="http://geovocab.org/spatial#TPP">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label>is tangential proper part of</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:comment>Relation TPP(x,y), read as &apos;x is a tangential proper part of y&apos;. This relation holds, whenever a region x is 
+						  labeled as a proper part of a region y, and they share at least one common point in their borders, which means that they are
+						  externally connected.</rdfs:comment>
+        <rdfs:range rdf:resource="http://geovocab.org/spatial#Feature"/>
+        <rdfs:domain rdf:resource="http://geovocab.org/spatial#Feature"/>
+        <rdfs:subPropertyOf rdf:resource="http://geovocab.org/spatial#PP"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://geovocab.org/spatial#TPPi -->
+
+    <owl:ObjectProperty rdf:about="http://geovocab.org/spatial#TPPi">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label>tangentially properly contains</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:comment>Relation TPPi(x,y), read as &apos;x tangentially properly contains y&apos;. Inverse of the TPP(x,y) relation.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://geovocab.org/spatial#Feature"/>
+        <rdfs:range rdf:resource="http://geovocab.org/spatial#Feature"/>
+        <rdfs:subPropertyOf rdf:resource="http://geovocab.org/spatial#PPi"/>
+        <owl:inverseOf rdf:resource="http://geovocab.org/spatial#TPP"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://geovocab.org/spatial#inconsistentWith -->
+
+    <owl:ObjectProperty rdf:about="http://geovocab.org/spatial#inconsistentWith">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label>inconsistent with</rdfs:label>
+        <ns:term_status>unstable</ns:term_status>
+        <rdfs:comment>Although this relation is not a part of the RCC theory, it has been introduced in order to detect relations between regions
+								which are inconsistent with the RCC axioms.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://geovocab.org/spatial#Feature -->
+
+    <owl:Class rdf:about="http://geovocab.org/spatial#Feature">
+        <rdfs:label>Feature</rdfs:label>
+        <rdfs:comment>A geographical feature, capable of holding spatial relations.</rdfs:comment>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
