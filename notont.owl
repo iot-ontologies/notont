@@ -6,7 +6,7 @@
     <!ENTITY dcam "http://purl.org/dc/dcam/" >
     <!ENTITY rev "http://purl.org/stuff/rev#" >
     <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
-    <!ENTITY scovo "http://purl.org/NET/scovo#" >
+    <!ENTITY scovo "http://vocab.deri.ie/scovo#" >
     <!ENTITY vann "http://purl.org/vocab/vann/" >
     <!ENTITY dcmitype "http://purl.org/dc/dcmitype/" >
     <!ENTITY spatial "http://geovocab.org/spatial#" >
@@ -15,24 +15,30 @@
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY wi "http://purl.org/ontology/wi/core#" >
+    <!ENTITY core "http://purl.org/ontology/wi/core#" >
     <!ENTITY event "http://purl.org/NET/c4dm/event.owl#" >
     <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY doc "http://www.w3.org/2000/10/swap/pim/doc#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY contact "http://www.w3.org/2000/10/swap/pim/contact#" >
-    <!ENTITY notonto "http://elite.polito.it/ontologies/notont.owl#" >
+    <!ENTITY notont "http://elite.polito.it/ontologies/notont.owl#" >
+    <!ENTITY device "http://www.cenitmio.es/ontologies/Device.owl#" >
     <!ENTITY dogont "http://elite.polito.it/ontologies/dogont.owl#" >
     <!ENTITY ns "http://www.w3.org/2003/06/sw-vocab-status/ns#" >
     <!ENTITY locont "http://webmind.dico.unimi.it/CARE/locont.owl#" >
+    <!ENTITY partof "http://www.ontologydesignpatterns.org/cp/owl/partof.owl#" >
+    <!ENTITY componency "http://www.ontologydesignpatterns.org/cp/owl/componency.owl#" >
+    <!ENTITY cpannotationschema "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#" >
 ]>
 
 
 <rdf:RDF xmlns="http://elite.polito.it/ontologies/notont.owl#"
      xml:base="http://elite.polito.it/ontologies/notont.owl"
-     xmlns:rev="http://purl.org/stuff/rev#"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:rev="http://purl.org/stuff/rev#"
+     xmlns:partof="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#"
+     xmlns:componency="http://www.ontologydesignpatterns.org/cp/owl/componency.owl#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:dcam="http://purl.org/dc/dcam/"
      xmlns:contact="http://www.w3.org/2000/10/swap/pim/contact#"
@@ -41,19 +47,21 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:time="http://www.w3.org/2006/time#"
      xmlns:event="http://purl.org/NET/c4dm/event.owl#"
+     xmlns:scovo="http://vocab.deri.ie/scovo#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:scovo="http://purl.org/NET/scovo#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:locont="http://webmind.dico.unimi.it/CARE/locont.owl#"
-     xmlns:wi="http://purl.org/ontology/wi/core#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:spatial="http://geovocab.org/spatial#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dcmitype="http://purl.org/dc/dcmitype/"
-     xmlns:notonto="http://elite.polito.it/ontologies/notont.owl#"
      xmlns:geometry="http://geovocab.org/geometry#"
-     xmlns:doc="http://www.w3.org/2000/10/swap/pim/doc#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:notont="http://elite.polito.it/ontologies/notont.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:device="http://www.cenitmio.es/ontologies/Device.owl#"
+     xmlns:doc="http://www.w3.org/2000/10/swap/pim/doc#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="http://purl.org/ontology/wi/core#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#">
     <owl:Ontology rdf:about="http://elite.polito.it/ontologies/notont.owl">
         <owl:imports rdf:resource="http://elite.polito.it/ontologies/dogont.owl"/>
@@ -93,7 +101,6 @@
 
     <owl:AnnotationProperty rdf:about="&contact;address">
         <rdfs:label xml:lang="en">address</rdfs:label>
-        <rdfs:domain rdf:resource="&contact;ContactLocation"/>
     </owl:AnnotationProperty>
     
 
@@ -110,9 +117,7 @@
 
     <!-- http://www.w3.org/2000/10/swap/pim/contact#birthday -->
 
-    <owl:AnnotationProperty rdf:about="&contact;birthday">
-        <rdfs:domain rdf:resource="&contact;SocialEntity"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&contact;birthday"/>
     
 
 
@@ -144,7 +149,6 @@
 
     <owl:AnnotationProperty rdf:about="&contact;emergency">
         <rdfs:label>emergency only</rdfs:label>
-        <rdfs:domain rdf:resource="&contact;Person"/>
     </owl:AnnotationProperty>
     
 
@@ -159,9 +163,7 @@
 
     <!-- http://www.w3.org/2000/10/swap/pim/contact#fax -->
 
-    <owl:AnnotationProperty rdf:about="&contact;fax">
-        <rdfs:domain rdf:resource="&contact;ContactLocation"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&contact;fax"/>
     
 
 
@@ -185,7 +187,6 @@
 
     <owl:AnnotationProperty rdf:about="&contact;home">
         <rdfs:label>home</rdfs:label>
-        <rdfs:domain rdf:resource="&contact;Person"/>
     </owl:AnnotationProperty>
     
 
@@ -218,16 +219,13 @@
 
     <owl:AnnotationProperty rdf:about="&contact;mobile">
         <rdfs:label>mobile</rdfs:label>
-        <rdfs:domain rdf:resource="&contact;Person"/>
     </owl:AnnotationProperty>
     
 
 
     <!-- http://www.w3.org/2000/10/swap/pim/contact#motherTongue -->
 
-    <owl:AnnotationProperty rdf:about="&contact;motherTongue">
-        <rdfs:domain rdf:resource="&contact;Person"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&contact;motherTongue"/>
     
 
 
@@ -235,7 +233,6 @@
 
     <owl:AnnotationProperty rdf:about="&contact;office">
         <rdfs:label>work</rdfs:label>
-        <rdfs:domain rdf:resource="&contact;Person"/>
     </owl:AnnotationProperty>
     
 
@@ -250,9 +247,7 @@
 
     <!-- http://www.w3.org/2000/10/swap/pim/contact#partner -->
 
-    <owl:AnnotationProperty rdf:about="&contact;partner">
-        <rdfs:domain rdf:resource="&contact;Person"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&contact;partner"/>
     
 
 
@@ -274,9 +269,7 @@
 
     <!-- http://www.w3.org/2000/10/swap/pim/contact#phone -->
 
-    <owl:AnnotationProperty rdf:about="&contact;phone">
-        <rdfs:domain rdf:resource="&contact;ContactLocation"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&contact;phone"/>
     
 
 
@@ -332,7 +325,6 @@
 
     <owl:AnnotationProperty rdf:about="&contact;vacationHome">
         <rdfs:label>vacation</rdfs:label>
-        <rdfs:domain rdf:resource="&contact;Person"/>
     </owl:AnnotationProperty>
     
 
@@ -376,11 +368,30 @@
     
 
 
+    <!-- http://elite.polito.it/ontologies/dogont.owl#isIn -->
+
+    <rdf:Description rdf:about="&dogont;isIn">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="&locont;hasArtifact"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+    </rdf:Description>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#hasArtifact -->
+
+    <rdf:Description rdf:about="&locont;hasArtifact"/>
+    
+
+
     <!-- http://www.w3.org/2000/10/swap/pim/contact#address -->
 
     <owl:ObjectProperty rdf:about="&contact;address">
         <rdfs:label xml:lang="en">address</rdfs:label>
         <rdfs:range rdf:resource="&contact;Address"/>
+        <rdfs:domain rdf:resource="&contact;ContactLocation"/>
     </owl:ObjectProperty>
     
 
@@ -389,6 +400,7 @@
 
     <owl:ObjectProperty rdf:about="&contact;birthday">
         <rdfs:range rdf:resource="&contact;Date"/>
+        <rdfs:domain rdf:resource="&contact;SocialEntity"/>
     </owl:ObjectProperty>
     
 
@@ -415,6 +427,7 @@
     <owl:ObjectProperty rdf:about="&contact;emergency">
         <rdfs:label>emergency only</rdfs:label>
         <rdfs:range rdf:resource="&contact;ContactLocation"/>
+        <rdfs:domain rdf:resource="&contact;Person"/>
     </owl:ObjectProperty>
     
 
@@ -422,6 +435,7 @@
     <!-- http://www.w3.org/2000/10/swap/pim/contact#fax -->
 
     <owl:ObjectProperty rdf:about="&contact;fax">
+        <rdfs:domain rdf:resource="&contact;ContactLocation"/>
         <rdfs:range rdf:resource="&contact;Fax"/>
     </owl:ObjectProperty>
     
@@ -432,6 +446,7 @@
     <owl:ObjectProperty rdf:about="&contact;home">
         <rdfs:label>home</rdfs:label>
         <rdfs:range rdf:resource="&contact;ContactLocation"/>
+        <rdfs:domain rdf:resource="&contact;Person"/>
     </owl:ObjectProperty>
     
 
@@ -492,6 +507,7 @@
     <owl:ObjectProperty rdf:about="&contact;mobile">
         <rdfs:label>mobile</rdfs:label>
         <rdfs:range rdf:resource="&contact;ContactLocation"/>
+        <rdfs:domain rdf:resource="&contact;Person"/>
     </owl:ObjectProperty>
     
 
@@ -500,6 +516,7 @@
 
     <owl:ObjectProperty rdf:about="&contact;motherTongue">
         <rdfs:range rdf:resource="&contact;LanguageCode"/>
+        <rdfs:domain rdf:resource="&contact;Person"/>
     </owl:ObjectProperty>
     
 
@@ -509,6 +526,7 @@
     <owl:ObjectProperty rdf:about="&contact;office">
         <rdfs:label>work</rdfs:label>
         <rdfs:range rdf:resource="&contact;ContactLocation"/>
+        <rdfs:domain rdf:resource="&contact;Person"/>
     </owl:ObjectProperty>
     
 
@@ -517,6 +535,7 @@
 
     <owl:ObjectProperty rdf:about="&contact;partner">
         <rdfs:range rdf:resource="&contact;Person"/>
+        <rdfs:domain rdf:resource="&contact;Person"/>
     </owl:ObjectProperty>
     
 
@@ -524,6 +543,7 @@
     <!-- http://www.w3.org/2000/10/swap/pim/contact#phone -->
 
     <owl:ObjectProperty rdf:about="&contact;phone">
+        <rdfs:domain rdf:resource="&contact;ContactLocation"/>
         <rdfs:range rdf:resource="&contact;Phone"/>
     </owl:ObjectProperty>
     
@@ -542,6 +562,7 @@
     <owl:ObjectProperty rdf:about="&contact;vacationHome">
         <rdfs:label>vacation</rdfs:label>
         <rdfs:range rdf:resource="&contact;ContactLocation"/>
+        <rdfs:domain rdf:resource="&contact;Person"/>
     </owl:ObjectProperty>
     
 
@@ -598,6 +619,14 @@
     
 
 
+    <!-- http://elite.polito.it/ontologies/dogont.owl#Co2Sensor -->
+
+    <rdf:Description rdf:about="&dogont;Co2Sensor">
+        <owl:equivalentClass rdf:resource="&device;CO2LevelSensor"/>
+    </rdf:Description>
+    
+
+
     <!-- http://elite.polito.it/ontologies/dogont.owl#Computer -->
 
     <rdf:Description rdf:about="&dogont;Computer">
@@ -614,10 +643,59 @@
     
 
 
+    <!-- http://elite.polito.it/ontologies/dogont.owl#DiningRoom -->
+
+    <rdf:Description rdf:about="&dogont;DiningRoom">
+        <owl:equivalentClass rdf:resource="&locont;DiningRoom"/>
+    </rdf:Description>
+    
+
+
     <!-- http://elite.polito.it/ontologies/dogont.owl#Furniture -->
 
     <rdf:Description rdf:about="&dogont;Furniture">
         <owl:equivalentClass rdf:resource="&locont;Furniture"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#HumiditySensor -->
+
+    <rdf:Description rdf:about="&dogont;HumiditySensor">
+        <owl:equivalentClass rdf:resource="&locont;HumiditySensor"/>
+        <owl:equivalentClass rdf:resource="&device;EnvironmentalHumiditySensor"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#Kitchen -->
+
+    <rdf:Description rdf:about="&dogont;Kitchen">
+        <owl:equivalentClass rdf:resource="&locont;Kitchen"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#LightSensor -->
+
+    <rdf:Description rdf:about="&dogont;LightSensor">
+        <owl:equivalentClass rdf:resource="&locont;LightSensor"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#LivingRoom -->
+
+    <rdf:Description rdf:about="&dogont;LivingRoom">
+        <owl:equivalentClass rdf:resource="&locont;LivingRoom"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#PressureSensor -->
+
+    <rdf:Description rdf:about="&dogont;PressureSensor">
+        <owl:equivalentClass rdf:resource="&device;EnvironmentalPressureSensor"/>
     </rdf:Description>
     
 
@@ -670,6 +748,15 @@
     
 
 
+    <!-- http://elite.polito.it/ontologies/dogont.owl#TemperatureSensor -->
+
+    <rdf:Description rdf:about="&dogont;TemperatureSensor">
+        <owl:equivalentClass rdf:resource="&locont;TemperatureSensor"/>
+        <owl:equivalentClass rdf:resource="&device;EnvironmentalTemperatureSensor"/>
+    </rdf:Description>
+    
+
+
     <!-- http://webmind.dico.unimi.it/CARE/locont.owl#BathroomFixture -->
 
     <rdf:Description rdf:about="&locont;BathroomFixture"/>
@@ -716,13 +803,45 @@
 
     <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Device -->
 
-    <rdf:Description rdf:about="&locont;Device"/>
+    <rdf:Description rdf:about="&locont;Device">
+        <owl:equivalentClass rdf:resource="&device;Device"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#DiningRoom -->
+
+    <rdf:Description rdf:about="&locont;DiningRoom"/>
     
 
 
     <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Furniture -->
 
     <rdf:Description rdf:about="&locont;Furniture"/>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#HumiditySensor -->
+
+    <rdf:Description rdf:about="&locont;HumiditySensor"/>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Kitchen -->
+
+    <rdf:Description rdf:about="&locont;Kitchen"/>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#LightSensor -->
+
+    <rdf:Description rdf:about="&locont;LightSensor"/>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#LivingRoom -->
+
+    <rdf:Description rdf:about="&locont;LivingRoom"/>
     
 
 
@@ -742,13 +861,23 @@
 
     <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Sensor -->
 
-    <rdf:Description rdf:about="&locont;Sensor"/>
+    <rdf:Description rdf:about="&locont;Sensor">
+        <owl:equivalentClass rdf:resource="&device;Sensor"/>
+    </rdf:Description>
     
 
 
     <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Shower -->
 
     <rdf:Description rdf:about="&locont;Shower"/>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Smartphone -->
+
+    <rdf:Description rdf:about="&locont;Smartphone">
+        <owl:equivalentClass rdf:resource="&device;MobilePhone"/>
+    </rdf:Description>
     
 
 
@@ -761,6 +890,56 @@
     <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Table -->
 
     <rdf:Description rdf:about="&locont;Table"/>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#TemperatureSensor -->
+
+    <rdf:Description rdf:about="&locont;TemperatureSensor"/>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Device.owl#CO2LevelSensor -->
+
+    <rdf:Description rdf:about="&device;CO2LevelSensor"/>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Device.owl#Device -->
+
+    <rdf:Description rdf:about="&device;Device">
+        <rdfs:subClassOf rdf:resource="&componency;Object"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Device.owl#EnvironmentalHumiditySensor -->
+
+    <rdf:Description rdf:about="&device;EnvironmentalHumiditySensor"/>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Device.owl#EnvironmentalPressureSensor -->
+
+    <rdf:Description rdf:about="&device;EnvironmentalPressureSensor"/>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Device.owl#EnvironmentalTemperatureSensor -->
+
+    <rdf:Description rdf:about="&device;EnvironmentalTemperatureSensor"/>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Device.owl#MobilePhone -->
+
+    <rdf:Description rdf:about="&device;MobilePhone"/>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Device.owl#Sensor -->
+
+    <rdf:Description rdf:about="&device;Sensor"/>
     
 
 

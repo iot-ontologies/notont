@@ -2,39 +2,60 @@
 
 
 <!DOCTYPE rdf:RDF [
+    <!ENTITY rev "http://purl.org/stuff/rev#" >
     <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY scovo "http://vocab.deri.ie/scovo" >
+    <!ENTITY vann "http://purl.org/vocab/vann/" >
+    <!ENTITY spatial "http://geovocab.org/spatial#" >
+    <!ENTITY time "http://www.w3.org/2006/time#" >
+    <!ENTITY geometry "http://geovocab.org/geometry#" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY core2 "http://purl.org/ontology/wo/core#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY core "http://purl.org/ontology/wi/core#" >
+    <!ENTITY event "http://purl.org/NET/c4dm/event.owl#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY notont "http://elite.polito.it/ontologies/notont.owl#" >
+    <!ENTITY device "http://www.cenitmio.es/ontologies/Device.owl#" >
+    <!ENTITY ns "http://www.w3.org/2003/06/sw-vocab-status/ns#" >
+    <!ENTITY dogont "http://elite.polito.it/ontologies/dogont.owl#" >
     <!ENTITY locont "http://webmind.dico.unimi.it/CARE/locont.owl#" >
-    <!ENTITY scenario1 "http://elite.polito.it/ontologies/notont/scenario1" >
+    <!ENTITY scenario1 "http://elite.polito.it/ontologies/notont/scenario1#" >
+    <!ENTITY partof "http://www.ontologydesignpatterns.org/cp/owl/partof.owl#" >
+    <!ENTITY componency "http://www.ontologydesignpatterns.org/cp/owl/componency.owl#" >
+    <!ENTITY cpannotationschema "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#" >
 ]>
 
 
-<rdf:RDF xmlns="&scenario1;#"
+<rdf:RDF xmlns="http://elite.polito.it/ontologies/notont/scenario1#"
      xml:base="http://elite.polito.it/ontologies/notont/scenario1"
      xmlns:locont="http://webmind.dico.unimi.it/CARE/locont.owl#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rev="http://purl.org/stuff/rev#"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:core2="http://purl.org/ontology/wo/core#"
+     xmlns:spatial="http://geovocab.org/spatial#"
+     xmlns:partof="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:scenario1="http://elite.polito.it/ontologies/notont/scenario1"
+     xmlns:componency="http://www.ontologydesignpatterns.org/cp/owl/componency.owl#"
+     xmlns:scenario1="http://elite.polito.it/ontologies/notont/scenario1#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:geometry="http://geovocab.org/geometry#"
+     xmlns:dogont="http://elite.polito.it/ontologies/dogont.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:notont="http://elite.polito.it/ontologies/notont.owl#"
+     xmlns:event="http://purl.org/NET/c4dm/event.owl#"
+     xmlns:device="http://www.cenitmio.es/ontologies/Device.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:scovo="http://vocab.deri.ie/scovo"
+     xmlns:core="http://purl.org/ontology/wi/core#">
     <owl:Ontology rdf:about="http://elite.polito.it/ontologies/notont/scenario1">
         <owl:imports rdf:resource="http://elite.polito.it/ontologies/notont.owl"/>
     </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
     
 
 
@@ -49,44 +70,774 @@
     
 
 
-    <!-- http://elite.polito.it/ontologies/notont/scenario1#activity1 -->
-
-    <owl:NamedIndividual rdf:about="&scenario1;#activity1">
-        <rdf:type rdf:resource="&locont;PersonalActivity"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://elite.polito.it/ontologies/notont/scenario1#bagno -->
-
-    <owl:NamedIndividual rdf:about="&scenario1;#bagno">
-        <rdf:type rdf:resource="&locont;RestRoom"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://elite.polito.it/ontologies/notont/scenario1#giulia -->
 
-    <owl:NamedIndividual rdf:about="&scenario1;#giulia">
+    <owl:NamedIndividual rdf:about="&scenario1;giulia">
         <rdf:type rdf:resource="&locont;Employee"/>
-        <foaf:age rdf:datatype="&xsd;int">27</foaf:age>
+        <foaf:birthday rdf:datatype="&xsd;date">1987-02-26</foaf:birthday>
+        <foaf:familyName rdf:datatype="&xsd;string">Brambilla
+</foaf:familyName>
         <foaf:firstName rdf:datatype="&xsd;string">Giulia</foaf:firstName>
-        <locont:hasCurrentActivity rdf:resource="&scenario1;#activity1"/>
-        <locont:hasCurrentSymbolicLocation rdf:resource="&scenario1;#bagno"/>
-        <locont:lookingAt rdf:resource="&scenario1;#giulia"/>
-        <locont:usingArtifact rdf:resource="&scenario1;#pettine"/>
+        <foaf:nick rdf:datatype="&xsd;string">Giuly
+</foaf:nick>
+        <locont:lookingAt rdf:resource="&scenario1;giulia"/>
+        <locont:hasArtifact rdf:resource="&scenario1;nexus10"/>
+        <locont:hasArtifact rdf:resource="&scenario1;nexus5"/>
+        <core:preference rdf:resource="&scenario1;pref_category_alarms"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://elite.polito.it/ontologies/notont/scenario1#pettine -->
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house -->
 
-    <owl:NamedIndividual rdf:about="&scenario1;#pettine">
-        <rdf:type rdf:resource="&locont;Comb"/>
+    <owl:NamedIndividual rdf:about="&scenario1;house">
+        <rdf:type rdf:resource="&dogont;Flat"/>
+        <dogont:contains rdf:resource="&scenario1;house_bathroom"/>
+        <dogont:contains rdf:resource="&scenario1;house_kitchen"/>
+        <dogont:contains rdf:resource="&scenario1;house_livingroom"/>
+        <dogont:contains rdf:resource="&scenario1;house_storage_room"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bathroom -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_bathroom">
+        <rdf:type rdf:resource="&dogont;Bathroom"/>
+        <locont:hasArtifact rdf:resource="&scenario1;house_bathroom_dev_speakers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bathroom_dev_speakers -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_bathroom_dev_speakers">
+        <rdf:type rdf:resource="&device;OmnidirectionalLoudspeaker"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bedroom -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_bedroom">
+        <rdf:type rdf:resource="&dogont;Bedroom"/>
+        <locont:hasArtifact rdf:resource="&scenario1;house_bedroom_dev_speakers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bedroom_dev_speakers -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_bedroom_dev_speakers">
+        <rdf:type rdf:resource="&device;OmnidirectionalLoudspeaker"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_kitchen -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_kitchen">
+        <rdf:type rdf:resource="&dogont;Kitchen"/>
+        <locont:hasArtifact rdf:resource="&scenario1;house_kitchen_dev_speakers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_kitchen_dev_speakers -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_kitchen_dev_speakers">
+        <rdf:type rdf:resource="&device;OmnidirectionalLoudspeaker"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_livingroom -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_livingroom">
+        <rdf:type rdf:resource="&dogont;LivingRoom"/>
+        <locont:hasArtifact rdf:resource="&scenario1;house_livingroom_dev_speakers"/>
+        <locont:hasArtifact rdf:resource="&scenario1;house_livingroom_dev_tv"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_livingroom_dev_speakers -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_livingroom_dev_speakers">
+        <rdf:type rdf:resource="&device;OmnidirectionalLoudspeaker"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_livingroom_dev_tv -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_livingroom_dev_tv">
+        <rdf:type rdf:resource="&dogont;Tv"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_storage_room -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_storage_room">
+        <rdf:type rdf:resource="&dogont;StorageRoom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#line_bathroom1 -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;line_bathroom1">
+        <rdf:type rdf:resource="&geometry;LineString"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#line_bathroom2 -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;line_bathroom2">
+        <rdf:type rdf:resource="&geometry;LineString"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#line_bathroom3 -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;line_bathroom3">
+        <rdf:type rdf:resource="&geometry;LineString"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#line_bedroom1 -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;line_bedroom1">
+        <rdf:type rdf:resource="&geometry;LineString"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#line_bedroom2 -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;line_bedroom2">
+        <rdf:type rdf:resource="&geometry;LineString"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#line_bedroom3 -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;line_bedroom3">
+        <rdf:type rdf:resource="&geometry;LineString"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#line_livingroom1 -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;line_livingroom1">
+        <rdf:type rdf:resource="&geometry;LineString"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#line_livingroom2 -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;line_livingroom2">
+        <rdf:type rdf:resource="&geometry;LineString"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#line_livingroom3 -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;line_livingroom3">
+        <rdf:type rdf:resource="&geometry;LineString"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#line_livingroom4 -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;line_livingroom4">
+        <rdf:type rdf:resource="&geometry;LineString"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#luca -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;luca">
+        <rdf:type rdf:resource="&locont;Manager"/>
+        <foaf:birthday rdf:datatype="&xsd;date">1984-11-30</foaf:birthday>
+        <foaf:firstName rdf:datatype="&xsd;string">Luca</foaf:firstName>
+        <foaf:familyName rdf:datatype="&xsd;string">Maronno</foaf:familyName>
+        <foaf:nick rdf:datatype="&xsd;string">luca</foaf:nick>
+        <core:preference rdf:resource="&scenario1;pref_category_alarms"/>
+        <core:preference rdf:resource="&scenario1;pref_power_pick_over_threshold"/>
+        <locont:hasArtifact rdf:resource="&scenario1;samsung_gear2"/>
+        <locont:hasArtifact rdf:resource="&scenario1;samsung_s5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#multiline_bathroom -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;multiline_bathroom">
+        <rdf:type rdf:resource="&geometry;MultiLineString"/>
+        <geometry:lineStringMember rdf:resource="&scenario1;line_bathroom1"/>
+        <geometry:lineStringMember rdf:resource="&scenario1;line_bathroom2"/>
+        <geometry:lineStringMember rdf:resource="&scenario1;line_bathroom3"/>
+        <geometry:lineStringMember rdf:resource="&scenario1;line_livingroom4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#multiline_bedroom -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;multiline_bedroom">
+        <rdf:type rdf:resource="&geometry;MultiLineString"/>
+        <geometry:lineStringMember rdf:resource="&scenario1;line_bedroom1"/>
+        <geometry:lineStringMember rdf:resource="&scenario1;line_bedroom2"/>
+        <geometry:lineStringMember rdf:resource="&scenario1;line_bedroom3"/>
+        <geometry:lineStringMember rdf:resource="&scenario1;line_livingroom2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#multiline_livingroom -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;multiline_livingroom">
+        <rdf:type rdf:resource="&geometry;MultiLineString"/>
+        <geometry:lineStringMember rdf:resource="&scenario1;line_livingroom1"/>
+        <geometry:lineStringMember rdf:resource="&scenario1;line_livingroom2"/>
+        <geometry:lineStringMember rdf:resource="&scenario1;line_livingroom3"/>
+        <geometry:lineStringMember rdf:resource="&scenario1;line_livingroom4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#nexus10 -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;nexus10">
+        <rdf:type rdf:resource="&device;MobilePhone"/>
+        <device:hasChargingMode rdf:resource="&scenario1;nexus10"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;nexus_10_display"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;nexus_10_flashmem"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;nexus_10_front_camera"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;nexus_10_mic"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;nexus_10_ram"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;nexus_10_rear_camera"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;nexus_10_speakers"/>
+        <device:supportsPositioningsystem rdf:resource="&device;GLONASSPositioningsystem"/>
+        <device:supportsPositioningsystem rdf:resource="&device;GPSPositioningsystem"/>
+        <device:hasFlashTechnology rdf:resource="&device;LEDFlashTechnology"/>
+        <device:hasTouchScreenTechonology rdf:resource="&device;capacitiveTouchScreenTechnology"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#nexus5 -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;nexus5">
+        <rdf:type rdf:resource="&device;MobilePhone"/>
+        <device:hasChargingMode rdf:resource="&scenario1;nexus5"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;nexus_5_display"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;nexus_5_flashmem"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;nexus_5_front_camera"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;nexus_5_mic"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;nexus_5_ram"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;nexus_5_rear_camera"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;nexus_5_speakers"/>
+        <device:supportsPositioningsystem rdf:resource="&device;GLONASSPositioningsystem"/>
+        <device:supportsPositioningsystem rdf:resource="&device;GPSPositioningsystem"/>
+        <device:hasFlashTechnology rdf:resource="&device;LEDFlashTechnology"/>
+        <device:hasTouchScreenTechonology rdf:resource="&device;capacitiveTouchScreenTechnology"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#nexus_10_display -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;nexus_10_display">
+        <rdf:type rdf:resource="&device;LCDDisplay"/>
+        <device:displayResolution rdf:datatype="&xsd;string">2560x1600</device:displayResolution>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#nexus_10_flashmem -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;nexus_10_flashmem">
+        <rdf:type rdf:resource="&device;FLASHMemoryModule"/>
+        <device:memoryModuleCapacity rdf:datatype="&xsd;int">16000000000</device:memoryModuleCapacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#nexus_10_front_camera -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;nexus_10_front_camera">
+        <rdf:type rdf:resource="&device;Camera"/>
+        <device:cameraImageResolution rdf:datatype="&xsd;positiveInteger">1300000</device:cameraImageResolution>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#nexus_10_mic -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;nexus_10_mic">
+        <rdf:type rdf:resource="&device;Microphone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#nexus_10_ram -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;nexus_10_ram">
+        <rdf:type rdf:resource="&device;RAMMemoryModule"/>
+        <device:memoryModuleCapacity rdf:datatype="&xsd;int">2000000000</device:memoryModuleCapacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#nexus_10_rear_camera -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;nexus_10_rear_camera">
+        <rdf:type rdf:resource="&device;Camera"/>
+        <device:cameraImageResolution rdf:datatype="&xsd;positiveInteger">8000000</device:cameraImageResolution>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#nexus_10_speakers -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;nexus_10_speakers">
+        <rdf:type rdf:resource="&device;DigitalLoudspeaker"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#nexus_5_display -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;nexus_5_display">
+        <rdf:type rdf:resource="&device;LCDDisplay"/>
+        <device:displayResolution rdf:datatype="&xsd;string">1920 × 1080</device:displayResolution>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#nexus_5_flashmem -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;nexus_5_flashmem">
+        <rdf:type rdf:resource="&device;FLASHMemoryModule"/>
+        <device:memoryModuleCapacity rdf:datatype="&xsd;int">16000000000</device:memoryModuleCapacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#nexus_5_front_camera -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;nexus_5_front_camera">
+        <rdf:type rdf:resource="&device;Camera"/>
+        <device:cameraImageResolution rdf:datatype="&xsd;positiveInteger">1300000</device:cameraImageResolution>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#nexus_5_mic -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;nexus_5_mic">
+        <rdf:type rdf:resource="&device;Microphone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#nexus_5_ram -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;nexus_5_ram">
+        <rdf:type rdf:resource="&device;RAMMemoryModule"/>
+        <device:memoryModuleCapacity rdf:datatype="&xsd;int">2000000000</device:memoryModuleCapacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#nexus_5_rear_camera -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;nexus_5_rear_camera">
+        <rdf:type rdf:resource="&device;Camera"/>
+        <device:cameraImageResolution rdf:datatype="&xsd;positiveInteger">8000000</device:cameraImageResolution>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#nexus_5_speakers -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;nexus_5_speakers">
+        <rdf:type rdf:resource="&device;DigitalLoudspeaker"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#point_bathroom1 -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;point_bathroom1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <geometry:partOf rdf:resource="&scenario1;line_bathroom1"/>
+        <geometry:partOf rdf:resource="&scenario1;line_bathroom2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#point_bathroom2 -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;point_bathroom2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <geometry:partOf rdf:resource="&scenario1;line_bathroom2"/>
+        <geometry:partOf rdf:resource="&scenario1;line_bathroom3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#point_bedroom1 -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;point_bedroom1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <geometry:partOf rdf:resource="&scenario1;line_bedroom1"/>
+        <geometry:partOf rdf:resource="&scenario1;line_bedroom2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#point_bedroom2 -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;point_bedroom2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <geometry:partOf rdf:resource="&scenario1;line_bedroom2"/>
+        <geometry:partOf rdf:resource="&scenario1;line_bedroom3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#point_livingroom1 -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;point_livingroom1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <geometry:partOf rdf:resource="&scenario1;line_bedroom1"/>
+        <geometry:partOf rdf:resource="&scenario1;line_livingroom1"/>
+        <geometry:partOf rdf:resource="&scenario1;line_livingroom2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#point_livingroom2 -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;point_livingroom2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <geometry:partOf rdf:resource="&scenario1;line_bedroom3"/>
+        <geometry:partOf rdf:resource="&scenario1;line_livingroom2"/>
+        <geometry:partOf rdf:resource="&scenario1;line_livingroom3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#point_livingroom3 -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;point_livingroom3">
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <geometry:partOf rdf:resource="&scenario1;line_bathroom3"/>
+        <geometry:partOf rdf:resource="&scenario1;line_livingroom3"/>
+        <geometry:partOf rdf:resource="&scenario1;line_livingroom4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#point_livingroom4 -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;point_livingroom4">
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <geometry:partOf rdf:resource="&scenario1;line_bathroom1"/>
+        <geometry:partOf rdf:resource="&scenario1;line_livingroom1"/>
+        <geometry:partOf rdf:resource="&scenario1;line_livingroom4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#pref_category_alarms -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;pref_category_alarms">
+        <rdf:type rdf:resource="&core;WeightedInterest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#pref_category_energy_efficiency -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;pref_category_energy_efficiency">
+        <rdf:type rdf:resource="&core;WeightedInterest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#pref_category_plants_usage -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;pref_category_plants_usage">
+        <rdf:type rdf:resource="&core;WeightedInterest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#pref_kitchen_oven_usage -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;pref_kitchen_oven_usage">
+        <rdf:type rdf:resource="&core;WeightedInterest"/>
+        <core:topic rdf:resource="&scenario1;pref_category_plants_usage"/>
+        <core2:weight rdf:resource="&scenario1;weight_medium_priority"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#pref_power_pick_over_threshold -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;pref_power_pick_over_threshold">
+        <rdf:type rdf:resource="&core;WeightedInterest"/>
+        <core:topic rdf:resource="&scenario1;pref_category_energy_efficiency"/>
+        <core2:weight rdf:resource="&scenario1;weight_medium_priority"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#pref_security_violation -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;pref_security_violation">
+        <rdf:type rdf:resource="&core;WeightedInterest"/>
+        <core:topic rdf:resource="&scenario1;pref_category_alarms"/>
+        <core2:weight rdf:resource="&scenario1;weight_highest_priority"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#samsung_gear2 -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;samsung_gear2">
+        <rdf:type rdf:resource="&device;PersonalDigitalAssistant"/>
+        <device:hasChargingMode rdf:resource="&scenario1;samsung_gear2"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;samsung_gear2_display"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;samsung_gear2_flashmem"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;samsung_gear2_front_camera"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;samsung_gear2_heart_rate_sensor"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;samsung_gear2_infrared_sensor"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;samsung_gear2_mic"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;samsung_gear2_pedometer_sensor"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;samsung_gear2_ram"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;samsung_gear2_speakers"/>
+        <device:hasTouchScreenTechonology rdf:resource="&device;capacitiveTouchScreenTechnology"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#samsung_gear2_display -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;samsung_gear2_display">
+        <rdf:type rdf:resource="&device;LCDDisplay"/>
+        <device:displayResolution rdf:datatype="&xsd;string">320 × 320</device:displayResolution>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#samsung_gear2_flashmem -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;samsung_gear2_flashmem">
+        <rdf:type rdf:resource="&device;FLASHMemoryModule"/>
+        <device:memoryModuleCapacity rdf:datatype="&xsd;int">4000000000</device:memoryModuleCapacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#samsung_gear2_front_camera -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;samsung_gear2_front_camera">
+        <rdf:type rdf:resource="&device;Camera"/>
+        <device:cameraImageResolution rdf:datatype="&xsd;positiveInteger">2000000</device:cameraImageResolution>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#samsung_gear2_heart_rate_sensor -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;samsung_gear2_heart_rate_sensor">
+        <rdf:type rdf:resource="&device;Sensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#samsung_gear2_infrared_sensor -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;samsung_gear2_infrared_sensor">
+        <rdf:type rdf:resource="&device;Sensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#samsung_gear2_mic -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;samsung_gear2_mic">
+        <rdf:type rdf:resource="&device;Microphone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#samsung_gear2_pedometer_sensor -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;samsung_gear2_pedometer_sensor">
+        <rdf:type rdf:resource="&device;Sensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#samsung_gear2_ram -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;samsung_gear2_ram">
+        <rdf:type rdf:resource="&device;RAMMemoryModule"/>
+        <device:memoryModuleCapacity rdf:datatype="&xsd;int">512000000</device:memoryModuleCapacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#samsung_gear2_speakers -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;samsung_gear2_speakers">
+        <rdf:type rdf:resource="&device;DigitalLoudspeaker"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#samsung_s5 -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;samsung_s5">
+        <rdf:type rdf:resource="&device;MobilePhone"/>
+        <device:hasChargingMode rdf:resource="&scenario1;samsung_s5"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;samsung_s5_display"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;samsung_s5_flashmem"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;samsung_s5_front_camera"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;samsung_s5_mic"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;samsung_s5_ram"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;samsung_s5_rear_camera"/>
+        <device:hasDeviceTechnology rdf:resource="&scenario1;samsung_s5_speakers"/>
+        <device:supportsPositioningsystem rdf:resource="&device;GLONASSPositioningsystem"/>
+        <device:supportsPositioningsystem rdf:resource="&device;GPSPositioningsystem"/>
+        <device:hasFlashTechnology rdf:resource="&device;LEDFlashTechnology"/>
+        <device:hasTouchScreenTechonology rdf:resource="&device;capacitiveTouchScreenTechnology"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#samsung_s5_display -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;samsung_s5_display">
+        <rdf:type rdf:resource="&device;LCDDisplay"/>
+        <device:displayResolution rdf:datatype="&xsd;string">1920 × 1080</device:displayResolution>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#samsung_s5_flashmem -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;samsung_s5_flashmem">
+        <rdf:type rdf:resource="&device;FLASHMemoryModule"/>
+        <device:memoryModuleCapacity rdf:datatype="&xsd;int">32000000000</device:memoryModuleCapacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#samsung_s5_front_camera -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;samsung_s5_front_camera">
+        <rdf:type rdf:resource="&device;Camera"/>
+        <device:cameraImageResolution rdf:datatype="&xsd;positiveInteger">2000000</device:cameraImageResolution>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#samsung_s5_mic -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;samsung_s5_mic">
+        <rdf:type rdf:resource="&device;Microphone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#samsung_s5_ram -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;samsung_s5_ram">
+        <rdf:type rdf:resource="&device;RAMMemoryModule"/>
+        <device:memoryModuleCapacity rdf:datatype="&xsd;int">2000000000</device:memoryModuleCapacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#samsung_s5_rear_camera -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;samsung_s5_rear_camera">
+        <rdf:type rdf:resource="&device;Camera"/>
+        <device:cameraImageResolution rdf:datatype="&xsd;positiveInteger">16000000</device:cameraImageResolution>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#samsung_s5_speakers -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;samsung_s5_speakers">
+        <rdf:type rdf:resource="&device;DigitalLoudspeaker"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#weight_higher_priority -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;weight_higher_priority">
+        <rdf:type rdf:resource="&core2;Weight"/>
+        <core2:weight_value rdf:datatype="&xsd;decimal">0.75</core2:weight_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#weight_highest_priority -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;weight_highest_priority">
+        <rdf:type rdf:resource="&core2;Weight"/>
+        <core2:weight_value rdf:datatype="&xsd;decimal">1</core2:weight_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#weight_lower_priority -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;weight_lower_priority">
+        <rdf:type rdf:resource="&core2;Weight"/>
+        <core2:weight_value rdf:datatype="&xsd;decimal">0.25</core2:weight_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#weight_lowest_priority -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;weight_lowest_priority">
+        <rdf:type rdf:resource="&core2;Weight"/>
+        <core2:weight_value rdf:datatype="&xsd;decimal">0</core2:weight_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#weight_medium_priority -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;weight_medium_priority">
+        <rdf:type rdf:resource="&core2;Weight"/>
+        <core2:weight_value rdf:datatype="&xsd;decimal">0.5</core2:weight_value>
     </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
 
