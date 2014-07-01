@@ -12,7 +12,7 @@
   <owl:Ontology rdf:about="http://geovocab.org/geometry">
     <rdfs:comment>A vocabulary for describing geographical regions in RDF. $Id: geometry# 81 2012-02-05 11:06:49Z non88sense@gmail.com $</rdfs:comment>
     <rdfs:label>NeoGeo Geometry Ontology</rdfs:label>
-    <owl:imports rdf:resource="http://geovocab.org/mappings/geometry"/>
+    <!--<owl:imports rdf:resource="http://geovocab.org/mappings/geometry"/> -->
   </owl:Ontology>
   <owl:Class rdf:about="http://geovocab.org/geometry#BoundingBox">
     <rdfs:comment>Represents a bounding box composed by four line segments.</rdfs:comment>

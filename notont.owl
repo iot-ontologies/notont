@@ -9,7 +9,7 @@
     <!ENTITY scovo "http://vocab.deri.ie/scovo#" >
     <!ENTITY vann "http://purl.org/vocab/vann/" >
     <!ENTITY dcmitype "http://purl.org/dc/dcmitype/" >
-    <!ENTITY spatial "http://geovocab.org/spatial#" >
+    
     <!ENTITY time "http://www.w3.org/2006/time#" >
     <!ENTITY geometry "http://geovocab.org/geometry#" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
@@ -32,7 +32,7 @@
     <!ENTITY cpannotationschema "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#" >
 ]>
 
-
+<!--xmlns:spatial="http://geovocab.org/spatial#"-->
 <rdf:RDF xmlns="http://elite.polito.it/ontologies/notont.owl#"
      xml:base="http://elite.polito.it/ontologies/notont.owl"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
@@ -51,7 +51,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:locont="http://webmind.dico.unimi.it/CARE/locont.owl#"
-     xmlns:spatial="http://geovocab.org/spatial#"
+     
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dcmitype="http://purl.org/dc/dcmitype/"
      xmlns:geometry="http://geovocab.org/geometry#"
@@ -66,7 +66,7 @@
     <owl:Ontology rdf:about="http://elite.polito.it/ontologies/notont.owl">
         <owl:imports rdf:resource="http://elite.polito.it/ontologies/dogont.owl"/>
         <owl:imports rdf:resource="http://geovocab.org/geometry"/>
-        <owl:imports rdf:resource="http://geovocab.org/spatial"/>
+        <!--<owl:imports rdf:resource="http://geovocab.org/spatial"/>-->
         <owl:imports rdf:resource="http://purl.org/ontology/wi/core#"/>
         <owl:imports rdf:resource="http://webmind.dico.unimi.it/CARE/locont.owl"/>
         <owl:imports rdf:resource="http://www.cenitmio.es/ontologies/Device.owl"/>

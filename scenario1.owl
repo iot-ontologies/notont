@@ -361,7 +361,8 @@
 
     <owl:NamedIndividual rdf:about="&scenario1;nexus_10_display">
         <rdf:type rdf:resource="&device;LCDDisplay"/>
-        <device:displayResolution rdf:datatype="&xsd;string">2560x1600</device:displayResolution>
+        <device:displayResolutionWidth rdf:datatype="&xsd;int">1600</device:displayResolutionWidth>
+        <device:displayResolutionHeigth rdf:datatype="&xsd;int">2560</device:displayResolutionHeigth>
     </owl:NamedIndividual>
     
 
@@ -422,7 +423,8 @@
 
     <owl:NamedIndividual rdf:about="&scenario1;nexus_5_display">
         <rdf:type rdf:resource="&device;LCDDisplay"/>
-        <device:displayResolution rdf:datatype="&xsd;string">1920 × 1080</device:displayResolution>
+        <device:displayResolutionWidth rdf:datatype="&xsd;int">1080</device:displayResolutionWidth>
+        <device:displayResolutionHeigth rdf:datatype="&xsd;int">1920</device:displayResolutionHeigth>
     </owl:NamedIndividual>
     
 
@@ -640,7 +642,8 @@
 
     <owl:NamedIndividual rdf:about="&scenario1;samsung_gear2_display">
         <rdf:type rdf:resource="&device;LCDDisplay"/>
-        <device:displayResolution rdf:datatype="&xsd;string">320 × 320</device:displayResolution>
+        <device:displayResolutionHeigth rdf:datatype="&xsd;int">320</device:displayResolutionHeigth>
+        <device:displayResolutionWidth rdf:datatype="&xsd;int">320</device:displayResolutionWidth>
     </owl:NamedIndividual>
     
 
@@ -736,7 +739,8 @@
 
     <owl:NamedIndividual rdf:about="&scenario1;samsung_s5_display">
         <rdf:type rdf:resource="&device;LCDDisplay"/>
-        <device:displayResolution rdf:datatype="&xsd;string">1920 × 1080</device:displayResolution>
+        <device:displayResolutionWidth rdf:datatype="&xsd;int">1080</device:displayResolutionWidth>
+        <device:displayResolutionHeigth rdf:datatype="&xsd;int">1920</device:displayResolutionHeigth>
     </owl:NamedIndividual>
     
 
