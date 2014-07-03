@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 
-
+<!--    <!ENTITY geometry "http://geovocab.org/geometry#" >
+-->
 <!DOCTYPE rdf:RDF [
     <!ENTITY schema "http://schema.org/" >
     <!ENTITY dcam "http://purl.org/dc/dcam/" >
@@ -9,9 +10,9 @@
     <!ENTITY scovo "http://vocab.deri.ie/scovo#" >
     <!ENTITY vann "http://purl.org/vocab/vann/" >
     <!ENTITY dcmitype "http://purl.org/dc/dcmitype/" >
-    
     <!ENTITY time "http://www.w3.org/2006/time#" >
-    <!ENTITY geometry "http://geovocab.org/geometry#" >
+
+
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
@@ -32,7 +33,7 @@
     <!ENTITY cpannotationschema "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#" >
 ]>
 
-<!--xmlns:spatial="http://geovocab.org/spatial#"-->
+
 <rdf:RDF xmlns="http://elite.polito.it/ontologies/notont.owl#"
      xml:base="http://elite.polito.it/ontologies/notont.owl"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
@@ -51,10 +52,9 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:locont="http://webmind.dico.unimi.it/CARE/locont.owl#"
-     
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dcmitype="http://purl.org/dc/dcmitype/"
-     xmlns:geometry="http://geovocab.org/geometry#"
+
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
      xmlns:notont="http://elite.polito.it/ontologies/notont.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -65,12 +65,12 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#">
     <owl:Ontology rdf:about="http://elite.polito.it/ontologies/notont.owl">
         <owl:imports rdf:resource="http://elite.polito.it/ontologies/dogont.owl"/>
-        <owl:imports rdf:resource="http://geovocab.org/geometry"/>
-        <!--<owl:imports rdf:resource="http://geovocab.org/spatial"/>-->
+        <!--<owl:imports rdf:resource="http://geovocab.org/geometry"/>-->
         <owl:imports rdf:resource="http://purl.org/ontology/wi/core#"/>
         <owl:imports rdf:resource="http://webmind.dico.unimi.it/CARE/locont.owl"/>
         <owl:imports rdf:resource="http://www.cenitmio.es/ontologies/Device.owl"/>
     </owl:Ontology>
+     <!-- xmlns:geometry="http://geovocab.org/geometry#" -->
     
 
 
@@ -639,6 +639,7 @@
 
     <rdf:Description rdf:about="&dogont;Controllable">
         <owl:equivalentClass rdf:resource="&locont;Device"/>
+        <owl:equivalentClass rdf:resource="&device;Device"/>
     </rdf:Description>
     
 
@@ -659,6 +660,14 @@
     
 
 
+    <!-- http://elite.polito.it/ontologies/dogont.owl#Garden -->
+
+    <rdf:Description rdf:about="&dogont;Garden">
+        <owl:equivalentClass rdf:resource="&locont;Garden"/>
+    </rdf:Description>
+    
+
+
     <!-- http://elite.polito.it/ontologies/dogont.owl#HumiditySensor -->
 
     <rdf:Description rdf:about="&dogont;HumiditySensor">
@@ -672,6 +681,14 @@
 
     <rdf:Description rdf:about="&dogont;Kitchen">
         <owl:equivalentClass rdf:resource="&locont;Kitchen"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#Lamp -->
+
+    <rdf:Description rdf:about="&dogont;Lamp">
+        <owl:equivalentClass rdf:resource="&locont;Lamp"/>
     </rdf:Description>
     
 
@@ -803,9 +820,7 @@
 
     <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Device -->
 
-    <rdf:Description rdf:about="&locont;Device">
-        <owl:equivalentClass rdf:resource="&device;Device"/>
-    </rdf:Description>
+    <rdf:Description rdf:about="&locont;Device"/>
     
 
 
@@ -821,6 +836,12 @@
     
 
 
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Garden -->
+
+    <rdf:Description rdf:about="&locont;Garden"/>
+    
+
+
     <!-- http://webmind.dico.unimi.it/CARE/locont.owl#HumiditySensor -->
 
     <rdf:Description rdf:about="&locont;HumiditySensor"/>
@@ -830,6 +851,12 @@
     <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Kitchen -->
 
     <rdf:Description rdf:about="&locont;Kitchen"/>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Lamp -->
+
+    <rdf:Description rdf:about="&locont;Lamp"/>
     
 
 
@@ -1101,6 +1128,21 @@
         <rdfs:comment>The sub-national unit such as state (us),
 province (ca), county (uk), département (fr), and so on</rdfs:comment>
     </rdf:Description>
+    <rdf:Description rdf:about="&contact;nearestAirport">
+        <rdfs:label>nearest airport</rdfs:label>
+        <rdfs:comment>?X nearestAirport ?Y locates ?X in an international
+   context; for example, for the purpose of organizing a face-to-face
+   meeting of a W3C working group. This property is intended to mitigate
+   privacy risks of giving out detailed contact info.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://lists.w3.org/Archives/Public/www-webont-wg/2001Nov/0006.html"/>
+        <rdfs:seeAlso rdf:resource="http://www.perceive.net/pages/page/articles/year/2002/month/12#9"/>
+        <rdfs:seeAlso rdf:resource="http://www.w3.org/2001/sw/Europe/200303/geo/intro.html"/>
+        <rdfs:seeAlso rdf:resource="http://www.w3.org/2001/sw/WebOnt/webont-airports.rdf"/>
+        <rdfs:seeAlso rdf:resource="http://www.w3.org/2001/tag/ilist#httpRange-14"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&contact;fullName">
+        <rdfs:label>full name</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="file:/Users/Emanuele/Documents/Università/TESI/Notont_manu_fork/s188312-furci/imported_ontology/contact.rdf">
         <dc:title>Contact: Utility concepts for everyday life</dc:title>
         <dc:description>
@@ -1118,21 +1160,6 @@ province (ca), county (uk), département (fr), and so on</rdfs:comment>
                 <rdf:type rdf:resource="&contact;_SubjectToChange"/>
             </rdf:Description>
         </doc:persistencePolicy>
-    </rdf:Description>
-    <rdf:Description rdf:about="&contact;nearestAirport">
-        <rdfs:label>nearest airport</rdfs:label>
-        <rdfs:comment>?X nearestAirport ?Y locates ?X in an international
-   context; for example, for the purpose of organizing a face-to-face
-   meeting of a W3C working group. This property is intended to mitigate
-   privacy risks of giving out detailed contact info.</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="http://lists.w3.org/Archives/Public/www-webont-wg/2001Nov/0006.html"/>
-        <rdfs:seeAlso rdf:resource="http://www.perceive.net/pages/page/articles/year/2002/month/12#9"/>
-        <rdfs:seeAlso rdf:resource="http://www.w3.org/2001/sw/Europe/200303/geo/intro.html"/>
-        <rdfs:seeAlso rdf:resource="http://www.w3.org/2001/sw/WebOnt/webont-airports.rdf"/>
-        <rdfs:seeAlso rdf:resource="http://www.w3.org/2001/tag/ilist#httpRange-14"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="&contact;fullName">
-        <rdfs:label>full name</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="&contact;preferredURI">
         <rdfs:label>preferred</rdfs:label>
