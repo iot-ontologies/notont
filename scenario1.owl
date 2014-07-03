@@ -62,6 +62,58 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://geovocab.org/geometry#lineStringMember -->
+
+    <owl:AnnotationProperty rdf:about="&geometry;lineStringMember"/>
+    
+
+
+    <!-- http://geovocab.org/geometry#partOf -->
+
+    <owl:AnnotationProperty rdf:about="&geometry;partOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://geovocab.org/geometry#LineString -->
+
+    <owl:Class rdf:about="&geometry;LineString"/>
+    
+
+
+    <!-- http://geovocab.org/geometry#MultiLineString -->
+
+    <owl:Class rdf:about="&geometry;MultiLineString"/>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#Point -->
+
+    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Individuals
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -109,10 +161,91 @@
     
 
 
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bathroom_dev_mainlamp -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_bathroom_dev_mainlamp">
+        <rdf:type rdf:resource="&dogont;DimmableLight"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bathroom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bathroom_dev_mainlamp_dimmer -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_bathroom_dev_mainlamp_dimmer">
+        <rdf:type rdf:resource="&dogont;DimmerSwitch"/>
+        <dogont:controlledObject rdf:resource="&scenario1;house_bathroom_dev_mainlamp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bathroom_dev_sensor_co2 -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_bathroom_dev_sensor_co2">
+        <rdf:type rdf:resource="&dogont;Co2Sensor"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bathroom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bathroom_dev_sensor_humidity -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_bathroom_dev_sensor_humidity">
+        <rdf:type rdf:resource="&dogont;HumiditySensor"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bathroom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bathroom_dev_sensor_light -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_bathroom_dev_sensor_light">
+        <rdf:type rdf:resource="&dogont;LightSensor"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bathroom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bathroom_dev_sensor_noise -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_bathroom_dev_sensor_noise">
+        <rdf:type rdf:resource="&locont;SoundSensor"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bathroom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bathroom_dev_sensor_presenceandmovement -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_bathroom_dev_sensor_presenceandmovement">
+        <rdf:type rdf:resource="&dogont;PresenceAndMovementSensor"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bathroom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bathroom_dev_sensor_temperature -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_bathroom_dev_sensor_temperature">
+        <rdf:type rdf:resource="&dogont;MultipleTemperatureSensor"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bathroom"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bathroom_dev_speakers -->
 
     <owl:NamedIndividual rdf:about="&scenario1;house_bathroom_dev_speakers">
         <rdf:type rdf:resource="&device;OmnidirectionalLoudspeaker"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bathroom_dev_washingmachine -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_bathroom_dev_washingmachine">
+        <rdf:type rdf:resource="&dogont;WashingMachine"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bathroom"/>
     </owl:NamedIndividual>
     
 
@@ -122,6 +255,105 @@
     <owl:NamedIndividual rdf:about="&scenario1;house_bedroom">
         <rdf:type rdf:resource="&dogont;Bedroom"/>
         <locont:hasArtifact rdf:resource="&scenario1;house_bedroom_dev_speakers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bedroom_dev_her-lamp -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_bedroom_dev_her-lamp">
+        <rdf:type rdf:resource="&dogont;OnOffLight"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bedroom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bedroom_dev_his-lamp -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_bedroom_dev_his-lamp">
+        <rdf:type rdf:resource="&dogont;OnOffLight"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bedroom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bedroom_dev_mainlamp -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_bedroom_dev_mainlamp">
+        <rdf:type rdf:resource="&dogont;DimmableLight"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bedroom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bedroom_dev_mainlamp_dimmer -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_bedroom_dev_mainlamp_dimmer">
+        <rdf:type rdf:resource="&dogont;DimmerSwitch"/>
+        <dogont:controlledObject rdf:resource="&scenario1;house_bedroom_dev_mainlamp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bedroom_dev_sensor_co2 -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_bedroom_dev_sensor_co2">
+        <rdf:type rdf:resource="&dogont;Co2Sensor"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bedroom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bedroom_dev_sensor_humidity -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_bedroom_dev_sensor_humidity">
+        <rdf:type rdf:resource="&dogont;HumiditySensor"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bedroom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bedroom_dev_sensor_light -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_bedroom_dev_sensor_light">
+        <rdf:type rdf:resource="&dogont;LightSensor"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bedroom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bedroom_dev_sensor_noise -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_bedroom_dev_sensor_noise">
+        <rdf:type rdf:resource="&locont;SoundSensor"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bedroom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bedroom_dev_sensor_presenceandmovement -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_bedroom_dev_sensor_presenceandmovement">
+        <rdf:type rdf:resource="&dogont;PresenceAndMovementSensor"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bedroom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bedroom_dev_sensor_temperature -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_bedroom_dev_sensor_temperature">
+        <rdf:type rdf:resource="&dogont;MultipleTemperatureSensor"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bedroom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bedroom_dev_sensor_window -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_bedroom_dev_sensor_window">
+        <rdf:type rdf:resource="&dogont;WindowSensor"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bedroom"/>
     </owl:NamedIndividual>
     
 
@@ -143,6 +375,114 @@
     
 
 
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_kitchen_dev_cooker -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_kitchen_dev_cooker">
+        <rdf:type rdf:resource="&dogont;ElectricalCooker"/>
+        <dogont:isIn rdf:resource="&scenario1;house_kitchen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_kitchen_dev_dishwasher -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_kitchen_dev_dishwasher">
+        <rdf:type rdf:resource="&dogont;Dishwasher"/>
+        <dogont:isIn rdf:resource="&scenario1;house_kitchen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_kitchen_dev_fridge -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_kitchen_dev_fridge">
+        <rdf:type rdf:resource="&dogont;Fridge"/>
+        <dogont:isIn rdf:resource="&scenario1;house_kitchen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_kitchen_dev_mainlamp -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_kitchen_dev_mainlamp">
+        <rdf:type rdf:resource="&dogont;DimmableLight"/>
+        <dogont:isIn rdf:resource="&scenario1;house_kitchen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_kitchen_dev_mainlamp_dimmer -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_kitchen_dev_mainlamp_dimmer">
+        <rdf:type rdf:resource="&dogont;DimmerSwitch"/>
+        <dogont:controlledObject rdf:resource="&scenario1;house_kitchen_dev_mainlamp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_kitchen_dev_oven -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_kitchen_dev_oven">
+        <rdf:type rdf:resource="&dogont;ElectricalOven"/>
+        <dogont:isIn rdf:resource="&scenario1;house_kitchen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_kitchen_dev_sensor_co2 -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_kitchen_dev_sensor_co2">
+        <rdf:type rdf:resource="&dogont;Co2Sensor"/>
+        <dogont:isIn rdf:resource="&scenario1;house_kitchen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_kitchen_dev_sensor_humidity -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_kitchen_dev_sensor_humidity">
+        <rdf:type rdf:resource="&dogont;HumiditySensor"/>
+        <dogont:isIn rdf:resource="&scenario1;house_kitchen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_kitchen_dev_sensor_light -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_kitchen_dev_sensor_light">
+        <rdf:type rdf:resource="&dogont;LightSensor"/>
+        <dogont:isIn rdf:resource="&scenario1;house_kitchen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_kitchen_dev_sensor_noise -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_kitchen_dev_sensor_noise">
+        <rdf:type rdf:resource="&locont;SoundSensor"/>
+        <dogont:isIn rdf:resource="&scenario1;house_kitchen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_kitchen_dev_sensor_presenceandmovement -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_kitchen_dev_sensor_presenceandmovement">
+        <rdf:type rdf:resource="&dogont;PresenceAndMovementSensor"/>
+        <dogont:isIn rdf:resource="&scenario1;house_kitchen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_kitchen_dev_sensor_temperature -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_kitchen_dev_sensor_temperature">
+        <rdf:type rdf:resource="&dogont;MultipleTemperatureSensor"/>
+        <dogont:isIn rdf:resource="&scenario1;house_kitchen"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://elite.polito.it/ontologies/notont/scenario1#house_kitchen_dev_speakers -->
 
     <owl:NamedIndividual rdf:about="&scenario1;house_kitchen_dev_speakers">
@@ -157,6 +497,87 @@
         <rdf:type rdf:resource="&dogont;LivingRoom"/>
         <locont:hasArtifact rdf:resource="&scenario1;house_livingroom_dev_speakers"/>
         <locont:hasArtifact rdf:resource="&scenario1;house_livingroom_dev_tv"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_livingroom_dev_mainlamp -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_livingroom_dev_mainlamp">
+        <rdf:type rdf:resource="&dogont;DimmableLight"/>
+        <dogont:isIn rdf:resource="&scenario1;house_livingroom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_livingroom_dev_mainlamp_dimmer -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_livingroom_dev_mainlamp_dimmer">
+        <rdf:type rdf:resource="&dogont;DimmerSwitch"/>
+        <dogont:controlledObject rdf:resource="&scenario1;house_livingroom_dev_mainlamp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_livingroom_dev_sensor_co2 -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_livingroom_dev_sensor_co2">
+        <rdf:type rdf:resource="&dogont;Co2Sensor"/>
+        <dogont:isIn rdf:resource="&scenario1;house_livingroom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_livingroom_dev_sensor_humidity -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_livingroom_dev_sensor_humidity">
+        <rdf:type rdf:resource="&dogont;HumiditySensor"/>
+        <dogont:isIn rdf:resource="&scenario1;house_livingroom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_livingroom_dev_sensor_light -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_livingroom_dev_sensor_light">
+        <rdf:type rdf:resource="&dogont;LightSensor"/>
+        <dogont:isIn rdf:resource="&scenario1;house_livingroom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_livingroom_dev_sensor_noise -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_livingroom_dev_sensor_noise">
+        <rdf:type rdf:resource="&locont;SoundSensor"/>
+        <dogont:isIn rdf:resource="&scenario1;house_livingroom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_livingroom_dev_sensor_presenceandmovement -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_livingroom_dev_sensor_presenceandmovement">
+        <rdf:type rdf:resource="&dogont;PresenceAndMovementSensor"/>
+        <dogont:isIn rdf:resource="&scenario1;house_livingroom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_livingroom_dev_sensor_temperature -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_livingroom_dev_sensor_temperature">
+        <rdf:type rdf:resource="&dogont;MultipleTemperatureSensor"/>
+        <dogont:isIn rdf:resource="&scenario1;house_livingroom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_livingroom_dev_sensor_window -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_livingroom_dev_sensor_window">
+        <rdf:type rdf:resource="&dogont;WindowSensor"/>
+        <dogont:isIn rdf:resource="&scenario1;house_livingroom"/>
     </owl:NamedIndividual>
     
 
