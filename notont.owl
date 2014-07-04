@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 
-<!--    <!ENTITY geometry "http://geovocab.org/geometry#" >
--->
+
 <!DOCTYPE rdf:RDF [
     <!ENTITY schema "http://schema.org/" >
     <!ENTITY dcam "http://purl.org/dc/dcam/" >
@@ -11,8 +10,7 @@
     <!ENTITY vann "http://purl.org/vocab/vann/" >
     <!ENTITY dcmitype "http://purl.org/dc/dcmitype/" >
     <!ENTITY time "http://www.w3.org/2006/time#" >
-
-
+    <!ENTITY geometry "http://geovocab.org/geometry#" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
@@ -54,7 +52,7 @@
      xmlns:locont="http://webmind.dico.unimi.it/CARE/locont.owl#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dcmitype="http://purl.org/dc/dcmitype/"
-
+     xmlns:geometry="http://geovocab.org/geometry#"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
      xmlns:notont="http://elite.polito.it/ontologies/notont.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -65,12 +63,11 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#">
     <owl:Ontology rdf:about="http://elite.polito.it/ontologies/notont.owl">
         <owl:imports rdf:resource="http://elite.polito.it/ontologies/dogont.owl"/>
-        <!--<owl:imports rdf:resource="http://geovocab.org/geometry"/>-->
+        <owl:imports rdf:resource="http://geovocab.org/geometry"/>
         <owl:imports rdf:resource="http://purl.org/ontology/wi/core#"/>
         <owl:imports rdf:resource="http://webmind.dico.unimi.it/CARE/locont.owl"/>
         <owl:imports rdf:resource="http://www.cenitmio.es/ontologies/Device.owl"/>
     </owl:Ontology>
-     <!-- xmlns:geometry="http://geovocab.org/geometry#" -->
     
 
 
@@ -639,7 +636,6 @@
 
     <rdf:Description rdf:about="&dogont;Controllable">
         <owl:equivalentClass rdf:resource="&locont;Device"/>
-        <owl:equivalentClass rdf:resource="&device;Device"/>
     </rdf:Description>
     
 

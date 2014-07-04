@@ -1,98 +1,28 @@
+-------------------------bathroom
 
-
-
-
-
-    <!-- http://elite.polito.it/ontologies/notont/scenario1#nexus10 -->
-
-    <owl:NamedIndividual rdf:about="&scenario1;nexus10">
-        <rdf:type rdf:resource="&device;MobilePhone"/>
-        <device:hasChargingMode rdf:resource="&scenario1;nexus10"/>
-        <device:hasDeviceTechnology rdf:resource="&scenario1;nexus_10_display"/>
-        <device:hasDeviceTechnology rdf:resource="&scenario1;nexus_10_flashmem"/>
-        <device:hasDeviceTechnology rdf:resource="&scenario1;nexus_10_front_camera"/>
-        <device:hasDeviceTechnology rdf:resource="&scenario1;nexus_10_mic"/>
-        <device:hasDeviceTechnology rdf:resource="&scenario1;nexus_10_ram"/>
-        <device:hasDeviceTechnology rdf:resource="&scenario1;nexus_10_rear_camera"/>
-        <device:hasDeviceTechnology rdf:resource="&scenario1;nexus_10_speakers"/>
-        <device:supportsPositioningsystem rdf:resource="&device;GLONASSPositioningsystem"/>
-        <device:supportsPositioningsystem rdf:resource="&device;GPSPositioningsystem"/>
-        <device:hasFlashTechnology rdf:resource="&device;LEDFlashTechnology"/>
-        <device:hasTouchScreenTechonology rdf:resource="&device;capacitiveTouchScreenTechnology"/>
-    </owl:NamedIndividual>
     
 
 
+-----------------------------------------bedroom
 
 
 
-    <!-- http://elite.polito.it/ontologies/notont/scenario1#nexus_10_display -->
 
-    <owl:NamedIndividual rdf:about="&scenario1;nexus_10_display">
-        <rdf:type rdf:resource="&device;LCDDisplay"/>
-        <device:displayResolution rdf:datatype="&xsd;string">2560x1600</device:displayResolution>
-    </owl:NamedIndividual>
+
+
+
+    ------------------------------kitchen
+
+
+
+
+
+
+
+-----------------------------------living
+
+
     
-
-
-    <!-- http://elite.polito.it/ontologies/notont/scenario1#nexus_10_flashmem -->
-
-    <owl:NamedIndividual rdf:about="&scenario1;nexus_10_flashmem">
-        <rdf:type rdf:resource="&device;FLASHMemoryModule"/>
-        <device:memoryModuleCapacity rdf:datatype="&xsd;int">16000000000</device:memoryModuleCapacity>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://elite.polito.it/ontologies/notont/scenario1#nexus_10_front_camera -->
-
-    <owl:NamedIndividual rdf:about="&scenario1;nexus_10_front_camera">
-        <rdf:type rdf:resource="&device;Camera"/>
-        <device:cameraImageResolution rdf:datatype="&xsd;positiveInteger">1300000</device:cameraImageResolution>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://elite.polito.it/ontologies/notont/scenario1#nexus_10_mic -->
-
-    <owl:NamedIndividual rdf:about="&scenario1;nexus_10_mic">
-        <rdf:type rdf:resource="&device;Microphone"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://elite.polito.it/ontologies/notont/scenario1#nexus_10_ram -->
-
-    <owl:NamedIndividual rdf:about="&scenario1;nexus_10_ram">
-        <rdf:type rdf:resource="&device;RAMMemoryModule"/>
-        <device:memoryModuleCapacity rdf:datatype="&xsd;int">2000000000</device:memoryModuleCapacity>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://elite.polito.it/ontologies/notont/scenario1#nexus_10_rear_camera -->
-
-    <owl:NamedIndividual rdf:about="&scenario1;nexus_10_rear_camera">
-        <rdf:type rdf:resource="&device;Camera"/>
-        <device:cameraImageResolution rdf:datatype="&xsd;positiveInteger">8000000</device:cameraImageResolution>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://elite.polito.it/ontologies/notont/scenario1#nexus_10_speakers -->
-
-    <owl:NamedIndividual rdf:about="&scenario1;nexus_10_speakers">
-        <rdf:type rdf:resource="&device;DigitalLoudspeaker"/>
-    </owl:NamedIndividual>
-    
-
-
-
-
-
-
-
-
 
     
 
