@@ -122,6 +122,570 @@
     
 
 
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bathroom_dev_mainlamp_command_decreaselight -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bathroom_dev_mainlamp_command_decreaselight">
+        <rdf:type rdf:resource="&dogont;DecreaseLuminosityCommand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bathroom_dev_mainlamp_command_increaselight -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bathroom_dev_mainlamp_command_increaselight">
+        <rdf:type rdf:resource="&dogont;IncreaseLuminosityCommand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bathroom_dev_mainlamp_dimmer_functionality_dimmer -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bathroom_dev_mainlamp_dimmer_functionality_dimmer">
+        <rdf:type rdf:resource="&dogont;LuminosityNotificationFunctionality"/>
+        <dogont:hasNotification rdf:resource="&scenario1;dogont_bathroom_dev_mainlamp_dimmer_notification_decreaselight"/>
+        <dogont:hasNotification rdf:resource="&scenario1;dogont_bathroom_dev_mainlamp_dimmer_notification_increaselight"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bathroom_dev_mainlamp_dimmer_notification_decreaselight -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bathroom_dev_mainlamp_dimmer_notification_decreaselight">
+        <rdf:type rdf:resource="&dogont;LuminosityNotificationFunctionality"/>
+        <dogont:generateCommand rdf:resource="&scenario1;dogont_bathroom_dev_mainlamp_command_decreaselight"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bathroom_dev_mainlamp_dimmer_notification_increaselight -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bathroom_dev_mainlamp_dimmer_notification_increaselight">
+        <rdf:type rdf:resource="&dogont;LuminosityNotificationFunctionality"/>
+        <dogont:generateCommand rdf:resource="&scenario1;dogont_bathroom_dev_mainlamp_command_increaselight"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bathroom_dev_mainlamp_dimmer_state -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bathroom_dev_mainlamp_dimmer_state">
+        <rdf:type rdf:resource="&dogont;LightIntensityState"/>
+        <dogont:hasStateValue rdf:resource="&scenario1;dogont_bathroom_dev_mainlamp_dimmer_state_vale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bathroom_dev_mainlamp_dimmer_state_vale -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bathroom_dev_mainlamp_dimmer_state_vale">
+        <rdf:type rdf:resource="&dogont;BrightnessStateValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bathroom_dev_mainlamp_functionality_dimmer -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bathroom_dev_mainlamp_functionality_dimmer">
+        <rdf:type rdf:resource="&dogont;LightRegulationFunctionality"/>
+        <dogont:hasCommand rdf:resource="&scenario1;dogont_bathroom_dev_mainlamp_command_decreaselight"/>
+        <dogont:hasCommand rdf:resource="&scenario1;dogont_bathroom_dev_mainlamp_command_increaselight"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bathroom_dev_mainlamp_state -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bathroom_dev_mainlamp_state">
+        <rdf:type rdf:resource="&dogont;LightIntensityState"/>
+        <dogont:hasStateValue rdf:resource="&scenario1;dogont_bathroom_dev_mainlamp_state_value"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bathroom_dev_mainlamp_state_value -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bathroom_dev_mainlamp_state_value">
+        <rdf:type rdf:resource="&dogont;BrightnessStateValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_her-lamp_button_functionality -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_her-lamp_button_functionality">
+        <rdf:type rdf:resource="&dogont;OnOffNotificationFunctionality"/>
+        <dogont:hasNotification rdf:resource="&scenario1;dogont_bedroom_dev_her-lamp_button_notification_off"/>
+        <dogont:hasNotification rdf:resource="&scenario1;dogont_bedroom_dev_her-lamp_button_notification_on"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_her-lamp_button_notification_off -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_her-lamp_button_notification_off">
+        <rdf:type rdf:resource="&dogont;OffNotification"/>
+        <dogont:generateCommand rdf:resource="&scenario1;dogont_bedroom_dev_her-lamp_command_off"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_her-lamp_button_notification_on -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_her-lamp_button_notification_on">
+        <rdf:type rdf:resource="&dogont;OnNotification"/>
+        <dogont:generateCommand rdf:resource="&scenario1;dogont_bedroom_dev_her-lamp_command_on"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_her-lamp_button_state -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_her-lamp_button_state">
+        <rdf:type rdf:resource="&dogont;OnOffState"/>
+        <dogont:hasStateValue rdf:resource="&scenario1;dogont_bedroom_dev_her-lamp_button_state-value_off"/>
+        <dogont:hasStateValue rdf:resource="&scenario1;dogont_bedroom_dev_her-lamp_button_state-value_on"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_her-lamp_button_state-value_off -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_her-lamp_button_state-value_off">
+        <rdf:type rdf:resource="&dogont;OffStateValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_her-lamp_button_state-value_on -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_her-lamp_button_state-value_on">
+        <rdf:type rdf:resource="&dogont;OnStateValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_her-lamp_command_off -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_her-lamp_command_off">
+        <rdf:type rdf:resource="&dogont;OffCommand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_her-lamp_command_on -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_her-lamp_command_on">
+        <rdf:type rdf:resource="&dogont;OnCommand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_her-lamp_functionality_on-off -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_her-lamp_functionality_on-off">
+        <rdf:type rdf:resource="&dogont;OnOffFunctionality"/>
+        <dogont:hasCommand rdf:resource="&scenario1;dogont_bedroom_dev_her-lamp_command_off"/>
+        <dogont:hasCommand rdf:resource="&scenario1;dogont_bedroom_dev_her-lamp_command_on"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_her-lamp_state -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_her-lamp_state">
+        <rdf:type rdf:resource="&dogont;OnOffState"/>
+        <dogont:hasStateValue rdf:resource="&scenario1;dogont_bedroom_dev_her-lamp_state-value_off"/>
+        <dogont:hasStateValue rdf:resource="&scenario1;dogont_bedroom_dev_her-lamp_state-value_on"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_her-lamp_state-value_off -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_her-lamp_state-value_off">
+        <rdf:type rdf:resource="&dogont;OffStateValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_her-lamp_state-value_on -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_her-lamp_state-value_on">
+        <rdf:type rdf:resource="&dogont;OnStateValue"/>
+    </owl:NamedIndividual>
+    
+
+
+<!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_his-lamp_button_functionality -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_his-lamp_button_functionality">
+        <rdf:type rdf:resource="&dogont;OnOffNotificationFunctionality"/>
+        <dogont:hasNotification rdf:resource="&scenario1;dogont_bedroom_dev_his-lamp_button_notification_off"/>
+        <dogont:hasNotification rdf:resource="&scenario1;dogont_bedroom_dev_his-lamp_button_notification_on"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_his-lamp_button_notification_off -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_his-lamp_button_notification_off">
+        <rdf:type rdf:resource="&dogont;OffNotification"/>
+        <dogont:generateCommand rdf:resource="&scenario1;dogont_bedroom_dev_his-lamp_command_off"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_his-lamp_button_notification_on -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_his-lamp_button_notification_on">
+        <rdf:type rdf:resource="&dogont;OnNotification"/>
+        <dogont:generateCommand rdf:resource="&scenario1;dogont_bedroom_dev_his-lamp_command_on"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_his-lamp_button_state -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_his-lamp_button_state">
+        <rdf:type rdf:resource="&dogont;OnOffState"/>
+        <dogont:hasStateValue rdf:resource="&scenario1;dogont_bedroom_dev_his-lamp_button_state-value_off"/>
+        <dogont:hasStateValue rdf:resource="&scenario1;dogont_bedroom_dev_his-lamp_button_state-value_on"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_his-lamp_button_state-value_off -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_his-lamp_button_state-value_off">
+        <rdf:type rdf:resource="&dogont;OffStateValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_his-lamp_button_state-value_on -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_his-lamp_button_state-value_on">
+        <rdf:type rdf:resource="&dogont;OnStateValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_his-lamp_command_off -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_his-lamp_command_off">
+        <rdf:type rdf:resource="&dogont;OffCommand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_his-lamp_command_on -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_his-lamp_command_on">
+        <rdf:type rdf:resource="&dogont;OnCommand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_his-lamp_functionality_on-off -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_his-lamp_functionality_on-off">
+        <rdf:type rdf:resource="&dogont;OnOffFunctionality"/>
+        <dogont:hasCommand rdf:resource="&scenario1;dogont_bedroom_dev_his-lamp_command_off"/>
+        <dogont:hasCommand rdf:resource="&scenario1;dogont_bedroom_dev_his-lamp_command_on"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_his-lamp_state -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_his-lamp_state">
+        <rdf:type rdf:resource="&dogont;OnOffState"/>
+        <dogont:hasStateValue rdf:resource="&scenario1;dogont_bedroom_dev_his-lamp_state-value_off"/>
+        <dogont:hasStateValue rdf:resource="&scenario1;dogont_bedroom_dev_his-lamp_state-value_on"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_his-lamp_state-value_off -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_his-lamp_state-value_off">
+        <rdf:type rdf:resource="&dogont;OffStateValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_his-lamp_state-value_on -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_his-lamp_state-value_on">
+        <rdf:type rdf:resource="&dogont;OnStateValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_mainlamp_command_decreaselight -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_mainlamp_command_decreaselight">
+        <rdf:type rdf:resource="&dogont;DecreaseLuminosityCommand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_mainlamp_command_increaselight -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_mainlamp_command_increaselight">
+        <rdf:type rdf:resource="&dogont;IncreaseLuminosityCommand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_mainlamp_dimmer_functionality_dimmer -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_mainlamp_dimmer_functionality_dimmer">
+        <rdf:type rdf:resource="&dogont;LuminosityNotificationFunctionality"/>
+        <dogont:hasNotification rdf:resource="&scenario1;dogont_bedroom_dev_mainlamp_dimmer_notification_decreaselight"/>
+        <dogont:hasNotification rdf:resource="&scenario1;dogont_bedroom_dev_mainlamp_dimmer_notification_increaselight"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_mainlamp_dimmer_notification_decreaselight -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_mainlamp_dimmer_notification_decreaselight">
+        <rdf:type rdf:resource="&dogont;LuminosityNotificationFunctionality"/>
+        <dogont:generateCommand rdf:resource="&scenario1;dogont_bedroom_dev_mainlamp_command_decreaselight"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_mainlamp_dimmer_notification_increaselight -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_mainlamp_dimmer_notification_increaselight">
+        <rdf:type rdf:resource="&dogont;LuminosityNotificationFunctionality"/>
+        <dogont:generateCommand rdf:resource="&scenario1;dogont_bedroom_dev_mainlamp_command_increaselight"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_mainlamp_dimmer_state -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_mainlamp_dimmer_state">
+        <rdf:type rdf:resource="&dogont;LightIntensityState"/>
+        <dogont:hasStateValue rdf:resource="&scenario1;dogont_bedroom_dev_mainlamp_dimmer_state_vale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_mainlamp_dimmer_state_vale -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_mainlamp_dimmer_state_vale">
+        <rdf:type rdf:resource="&dogont;BrightnessStateValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_mainlamp_functionality_dimmer -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_mainlamp_functionality_dimmer">
+        <rdf:type rdf:resource="&dogont;LightRegulationFunctionality"/>
+        <dogont:hasCommand rdf:resource="&scenario1;dogont_bedroom_dev_mainlamp_command_decreaselight"/>
+        <dogont:hasCommand rdf:resource="&scenario1;dogont_bedroom_dev_mainlamp_command_increaselight"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_mainlamp_state -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_mainlamp_state">
+        <rdf:type rdf:resource="&dogont;LightIntensityState"/>
+        <dogont:hasStateValue rdf:resource="&scenario1;dogont_bedroom_dev_mainlamp_state_value"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_bedroom_dev_mainlamp_state_value -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_bedroom_dev_mainlamp_state_value">
+        <rdf:type rdf:resource="&dogont;BrightnessStateValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_kitchen_dev_mainlamp_command_decreaselight -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_kitchen_dev_mainlamp_command_decreaselight">
+        <rdf:type rdf:resource="&dogont;DecreaseLuminosityCommand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_kitchen_dev_mainlamp_command_increaselight -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_kitchen_dev_mainlamp_command_increaselight">
+        <rdf:type rdf:resource="&dogont;IncreaseLuminosityCommand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_kitchen_dev_mainlamp_dimmer_functionality_dimmer -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_kitchen_dev_mainlamp_dimmer_functionality_dimmer">
+        <rdf:type rdf:resource="&dogont;LuminosityNotificationFunctionality"/>
+        <dogont:hasNotification rdf:resource="&scenario1;dogont_kitchen_dev_mainlamp_dimmer_notification_decreaselight"/>
+        <dogont:hasNotification rdf:resource="&scenario1;dogont_kitchen_dev_mainlamp_dimmer_notification_increaselight"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_kitchen_dev_mainlamp_dimmer_notification_decreaselight -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_kitchen_dev_mainlamp_dimmer_notification_decreaselight">
+        <rdf:type rdf:resource="&dogont;LuminosityNotificationFunctionality"/>
+        <dogont:generateCommand rdf:resource="&scenario1;dogont_kitchen_dev_mainlamp_command_decreaselight"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_kitchen_dev_mainlamp_dimmer_notification_increaselight -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_kitchen_dev_mainlamp_dimmer_notification_increaselight">
+        <rdf:type rdf:resource="&dogont;LuminosityNotificationFunctionality"/>
+        <dogont:generateCommand rdf:resource="&scenario1;dogont_kitchen_dev_mainlamp_command_increaselight"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_kitchen_dev_mainlamp_dimmer_state -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_kitchen_dev_mainlamp_dimmer_state">
+        <rdf:type rdf:resource="&dogont;LightIntensityState"/>
+        <dogont:hasStateValue rdf:resource="&scenario1;dogont_kitchen_dev_mainlamp_dimmer_state_vale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_kitchen_dev_mainlamp_dimmer_state_vale -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_kitchen_dev_mainlamp_dimmer_state_vale">
+        <rdf:type rdf:resource="&dogont;BrightnessStateValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_kitchen_dev_mainlamp_functionality_dimmer -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_kitchen_dev_mainlamp_functionality_dimmer">
+        <rdf:type rdf:resource="&dogont;LightRegulationFunctionality"/>
+        <dogont:hasCommand rdf:resource="&scenario1;dogont_kitchen_dev_mainlamp_command_decreaselight"/>
+        <dogont:hasCommand rdf:resource="&scenario1;dogont_kitchen_dev_mainlamp_command_increaselight"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_kitchen_dev_mainlamp_state -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_kitchen_dev_mainlamp_state">
+        <rdf:type rdf:resource="&dogont;LightIntensityState"/>
+        <dogont:hasStateValue rdf:resource="&scenario1;dogont_kitchen_dev_mainlamp_state_value"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_kitchen_dev_mainlamp_state_value -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_kitchen_dev_mainlamp_state_value">
+        <rdf:type rdf:resource="&dogont;BrightnessStateValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_livingroom_dev_mainlamp_command_decreaselight -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_livingroom_dev_mainlamp_command_decreaselight">
+        <rdf:type rdf:resource="&dogont;DecreaseLuminosityCommand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_livingroom_dev_mainlamp_command_increaselight -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_livingroom_dev_mainlamp_command_increaselight">
+        <rdf:type rdf:resource="&dogont;IncreaseLuminosityCommand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_livingroom_dev_mainlamp_dimmer_functionality_dimmer -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_livingroom_dev_mainlamp_dimmer_functionality_dimmer">
+        <rdf:type rdf:resource="&dogont;LuminosityNotificationFunctionality"/>
+        <dogont:hasNotification rdf:resource="&scenario1;dogont_livingroom_dev_mainlamp_dimmer_notification_decreaselight"/>
+        <dogont:hasNotification rdf:resource="&scenario1;dogont_livingroom_dev_mainlamp_dimmer_notification_increaselight"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_livingroom_dev_mainlamp_dimmer_notification_decreaselight -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_livingroom_dev_mainlamp_dimmer_notification_decreaselight">
+        <rdf:type rdf:resource="&dogont;LuminosityNotificationFunctionality"/>
+        <dogont:generateCommand rdf:resource="&scenario1;dogont_livingroom_dev_mainlamp_command_decreaselight"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_livingroom_dev_mainlamp_dimmer_notification_increaselight -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_livingroom_dev_mainlamp_dimmer_notification_increaselight">
+        <rdf:type rdf:resource="&dogont;LuminosityNotificationFunctionality"/>
+        <dogont:generateCommand rdf:resource="&scenario1;dogont_livingroom_dev_mainlamp_command_increaselight"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_livingroom_dev_mainlamp_dimmer_state -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_livingroom_dev_mainlamp_dimmer_state">
+        <rdf:type rdf:resource="&dogont;LightIntensityState"/>
+        <dogont:hasStateValue rdf:resource="&scenario1;dogont_livingroom_dev_mainlamp_dimmer_state_vale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_livingroom_dev_mainlamp_dimmer_state_vale -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_livingroom_dev_mainlamp_dimmer_state_vale">
+        <rdf:type rdf:resource="&dogont;BrightnessStateValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_livingroom_dev_mainlamp_functionality_dimmer -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_livingroom_dev_mainlamp_functionality_dimmer">
+        <rdf:type rdf:resource="&dogont;LightRegulationFunctionality"/>
+        <dogont:hasCommand rdf:resource="&scenario1;dogont_livingroom_dev_mainlamp_command_decreaselight"/>
+        <dogont:hasCommand rdf:resource="&scenario1;dogont_livingroom_dev_mainlamp_command_increaselight"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_livingroom_dev_mainlamp_state -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_livingroom_dev_mainlamp_state">
+        <rdf:type rdf:resource="&dogont;LightIntensityState"/>
+        <dogont:hasStateValue rdf:resource="&scenario1;dogont_livingroom_dev_mainlamp_state_value"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#dogont_livingroom_dev_mainlamp_state_value -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;dogont_livingroom_dev_mainlamp_state_value">
+        <rdf:type rdf:resource="&dogont;BrightnessStateValue"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://elite.polito.it/ontologies/notont/scenario1#giulia -->
 
     <owl:NamedIndividual rdf:about="&scenario1;giulia">
@@ -159,24 +723,32 @@
     </owl:NamedIndividual>
     
 
-<!-- http://elite.polito.it/ontologies/notont/scenario1#house_bathroom_dev_mainlamp -->
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bathroom_dev_mainlamp -->
 
     <owl:NamedIndividual rdf:about="&scenario1;house_bathroom_dev_mainlamp">
         <rdf:type rdf:resource="&dogont;DimmableLight"/>
+        <dogont:hasFunctionality rdf:resource="&scenario1;dogont_bathroom_dev_mainlamp_functionality_dimmer"/>
+        <dogont:hasState rdf:resource="&scenario1;dogont_bathroom_dev_mainlamp_state"/>
         <dogont:isIn rdf:resource="&scenario1;house_bathroom"/>
+        <dogont:hasControl rdf:resource="&scenario1;house_bathroom_dev_mainlamp_dimmer"/>
     </owl:NamedIndividual>
     
+
 
     <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bathroom_dev_mainlamp_dimmer -->
 
     <owl:NamedIndividual rdf:about="&scenario1;house_bathroom_dev_mainlamp_dimmer">
         <rdf:type rdf:resource="&dogont;DimmerSwitch"/>
+        <dogont:hasFunctionality rdf:resource="&scenario1;dogont_bathroom_dev_mainlamp_dimmer_functionality_dimmer"/>
+        <dogont:hasState rdf:resource="&scenario1;dogont_bathroom_dev_mainlamp_dimmer_state"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bathroom"/>
         <dogont:controlledObject rdf:resource="&scenario1;house_bathroom_dev_mainlamp"/>
     </owl:NamedIndividual>
+    
 
 
-
-<!-- http://elite.polito.it/ontologies/notont/scenario1#house_bathroom_dev_sensor_co2 -->
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bathroom_dev_sensor_co2 -->
 
     <owl:NamedIndividual rdf:about="&scenario1;house_bathroom_dev_sensor_co2">
         <rdf:type rdf:resource="&dogont;Co2Sensor"/>
@@ -184,14 +756,14 @@
     </owl:NamedIndividual>
     
 
+
     <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bathroom_dev_sensor_humidity -->
 
     <owl:NamedIndividual rdf:about="&scenario1;house_bathroom_dev_sensor_humidity">
         <rdf:type rdf:resource="&dogont;HumiditySensor"/>
         <dogont:isIn rdf:resource="&scenario1;house_bathroom"/>
     </owl:NamedIndividual>
-
-
+    
 
 
     <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bathroom_dev_sensor_light -->
@@ -200,7 +772,7 @@
         <rdf:type rdf:resource="&dogont;LightSensor"/>
         <dogont:isIn rdf:resource="&scenario1;house_bathroom"/>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bathroom_dev_sensor_noise -->
@@ -218,6 +790,7 @@
         <rdf:type rdf:resource="&dogont;PresenceAndMovementSensor"/>
         <dogont:isIn rdf:resource="&scenario1;house_bathroom"/>
     </owl:NamedIndividual>
+    
 
 
     <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bathroom_dev_sensor_temperature -->
@@ -226,25 +799,25 @@
         <rdf:type rdf:resource="&dogont;MultipleTemperatureSensor"/>
         <dogont:isIn rdf:resource="&scenario1;house_bathroom"/>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bathroom_dev_speakers -->
 
     <owl:NamedIndividual rdf:about="&scenario1;house_bathroom_dev_speakers">
         <rdf:type rdf:resource="&device;OmnidirectionalLoudspeaker"/>
-        <dogont:isIn rdf:resource="&scenario1;house_bathroom"/>    
+        <dogont:isIn rdf:resource="&scenario1;house_bathroom"/>
     </owl:NamedIndividual>
+    
 
-        <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bathroom_dev_washingmachine -->
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bathroom_dev_washingmachine -->
 
     <owl:NamedIndividual rdf:about="&scenario1;house_bathroom_dev_washingmachine">
         <rdf:type rdf:resource="&dogont;WashingMachine"/>
         <dogont:isIn rdf:resource="&scenario1;house_bathroom"/>
     </owl:NamedIndividual>
-
     
-
 
 
     <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bedroom -->
@@ -254,19 +827,48 @@
     </owl:NamedIndividual>
     
 
-<!-- http://elite.polito.it/ontologies/notont/scenario1#house_bedroom_dev_her-lamp -->
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bedroom_dev_her-lamp -->
 
     <owl:NamedIndividual rdf:about="&scenario1;house_bedroom_dev_her-lamp">
         <rdf:type rdf:resource="&dogont;OnOffLight"/>
+        <dogont:hasFunctionality rdf:resource="&scenario1;dogont_bedroom_dev_her-lamp_functionality_on-off"/>
+        <dogont:hasState rdf:resource="&scenario1;dogont_bedroom_dev_her-lamp_state"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bedroom"/>
+        <dogont:hasControl rdf:resource="&scenario1;house_bedroom_dev_her-lamp_button"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bedroom_dev_her-lamp_button -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_bedroom_dev_her-lamp_button">
+        <rdf:type rdf:resource="&dogont;OnOffLightSwitch"/>
+        <dogont:hasFunctionality rdf:resource="&scenario1;dogont_bedroom_dev_her-lamp_button_functionality"/>
+        <dogont:hasState rdf:resource="&scenario1;dogont_bedroom_dev_her-lamp_button_state"/>
         <dogont:isIn rdf:resource="&scenario1;house_bedroom"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bedroom_dev_his-lamp -->
+<!-- http://elite.polito.it/ontologies/notont/scenario1#house_bedroom_dev_his-lamp -->
 
     <owl:NamedIndividual rdf:about="&scenario1;house_bedroom_dev_his-lamp">
         <rdf:type rdf:resource="&dogont;OnOffLight"/>
+        <dogont:hasFunctionality rdf:resource="&scenario1;dogont_bedroom_dev_his-lamp_functionality_on-off"/>
+        <dogont:hasState rdf:resource="&scenario1;dogont_bedroom_dev_his-lamp_state"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bedroom"/>
+        <dogont:hasControl rdf:resource="&scenario1;house_bedroom_dev_his-lamp_button"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bedroom_dev_his-lamp_button -->
+
+    <owl:NamedIndividual rdf:about="&scenario1;house_bedroom_dev_his-lamp_button">
+        <rdf:type rdf:resource="&dogont;OnOffLightSwitch"/>
+        <dogont:hasFunctionality rdf:resource="&scenario1;dogont_bedroom_dev_his-lamp_button_functionality"/>
+        <dogont:hasState rdf:resource="&scenario1;dogont_bedroom_dev_his-lamp_button_state"/>
         <dogont:isIn rdf:resource="&scenario1;house_bedroom"/>
     </owl:NamedIndividual>
     
@@ -276,16 +878,21 @@
 
     <owl:NamedIndividual rdf:about="&scenario1;house_bedroom_dev_mainlamp">
         <rdf:type rdf:resource="&dogont;DimmableLight"/>
+        <dogont:hasFunctionality rdf:resource="&scenario1;dogont_bedroom_dev_mainlamp_functionality_dimmer"/>
+        <dogont:hasState rdf:resource="&scenario1;dogont_bedroom_dev_mainlamp_state"/>
         <dogont:isIn rdf:resource="&scenario1;house_bedroom"/>
+        <dogont:hasControl rdf:resource="&scenario1;house_bedroom_dev_mainlamp_dimmer"/>
     </owl:NamedIndividual>
     
-
 
 
     <!-- http://elite.polito.it/ontologies/notont/scenario1#house_bedroom_dev_mainlamp_dimmer -->
 
     <owl:NamedIndividual rdf:about="&scenario1;house_bedroom_dev_mainlamp_dimmer">
         <rdf:type rdf:resource="&dogont;DimmerSwitch"/>
+        <dogont:hasFunctionality rdf:resource="&scenario1;dogont_bedroom_dev_mainlamp_dimmer_functionality_dimmer"/>
+        <dogont:hasState rdf:resource="&scenario1;dogont_bedroom_dev_mainlamp_dimmer_state"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bedroom"/>
         <dogont:controlledObject rdf:resource="&scenario1;house_bedroom_dev_mainlamp"/>
     </owl:NamedIndividual>
     
@@ -363,7 +970,6 @@
     
 
 
-
     <!-- http://elite.polito.it/ontologies/notont/scenario1#house_kitchen -->
 
     <owl:NamedIndividual rdf:about="&scenario1;house_kitchen">
@@ -399,11 +1005,14 @@
     
 
 
-<!-- http://elite.polito.it/ontologies/notont/scenario1#house_kitchen_dev_mainlamp -->
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_kitchen_dev_mainlamp -->
 
     <owl:NamedIndividual rdf:about="&scenario1;house_kitchen_dev_mainlamp">
         <rdf:type rdf:resource="&dogont;DimmableLight"/>
+        <dogont:hasFunctionality rdf:resource="&scenario1;dogont_kitchen_dev_mainlamp_functionality_dimmer"/>
+        <dogont:hasState rdf:resource="&scenario1;dogont_kitchen_dev_mainlamp_state"/>
         <dogont:isIn rdf:resource="&scenario1;house_kitchen"/>
+        <dogont:hasControl rdf:resource="&scenario1;house_kitchen_dev_mainlamp_dimmer"/>
     </owl:NamedIndividual>
     
 
@@ -412,6 +1021,9 @@
 
     <owl:NamedIndividual rdf:about="&scenario1;house_kitchen_dev_mainlamp_dimmer">
         <rdf:type rdf:resource="&dogont;DimmerSwitch"/>
+        <dogont:hasFunctionality rdf:resource="&scenario1;dogont_kitchen_dev_mainlamp_dimmer_functionality_dimmer"/>
+        <dogont:hasState rdf:resource="&scenario1;dogont_kitchen_dev_mainlamp_dimmer_state"/>
+        <dogont:isIn rdf:resource="&scenario1;house_kitchen"/>
         <dogont:controlledObject rdf:resource="&scenario1;house_kitchen_dev_mainlamp"/>
     </owl:NamedIndividual>
     
@@ -489,8 +1101,6 @@
     
 
 
-
-
     <!-- http://elite.polito.it/ontologies/notont/scenario1#house_livingroom -->
 
     <owl:NamedIndividual rdf:about="&scenario1;house_livingroom">
@@ -498,20 +1108,26 @@
     </owl:NamedIndividual>
     
 
-<!-- http://elite.polito.it/ontologies/notont/scenario1#house_livingroom_dev_mainlamp -->
+
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_livingroom_dev_mainlamp -->
 
     <owl:NamedIndividual rdf:about="&scenario1;house_livingroom_dev_mainlamp">
         <rdf:type rdf:resource="&dogont;DimmableLight"/>
+        <dogont:hasFunctionality rdf:resource="&scenario1;dogont_livingroom_dev_mainlamp_functionality_dimmer"/>
+        <dogont:hasState rdf:resource="&scenario1;dogont_livingroom_dev_mainlamp_state"/>
         <dogont:isIn rdf:resource="&scenario1;house_livingroom"/>
+        <dogont:hasControl rdf:resource="&scenario1;house_livingroom_dev_mainlamp_dimmer"/>
     </owl:NamedIndividual>
     
 
 
-
-<!-- http://elite.polito.it/ontologies/notont/scenario1#house_livingroom_dev_mainlamp_dimmer -->
+    <!-- http://elite.polito.it/ontologies/notont/scenario1#house_livingroom_dev_mainlamp_dimmer -->
 
     <owl:NamedIndividual rdf:about="&scenario1;house_livingroom_dev_mainlamp_dimmer">
         <rdf:type rdf:resource="&dogont;DimmerSwitch"/>
+        <dogont:hasFunctionality rdf:resource="&scenario1;dogont_livingroom_dev_mainlamp_dimmer_functionality_dimmer"/>
+        <dogont:hasState rdf:resource="&scenario1;dogont_livingroom_dev_mainlamp_dimmer_state"/>
+        <dogont:isIn rdf:resource="&scenario1;house_livingroom"/>
         <dogont:controlledObject rdf:resource="&scenario1;house_livingroom_dev_mainlamp"/>
     </owl:NamedIndividual>
     
@@ -586,14 +1202,16 @@
         <rdf:type rdf:resource="&device;OmnidirectionalLoudspeaker"/>
         <dogont:isIn rdf:resource="&scenario1;house_livingroom"/>
     </owl:NamedIndividual>
+    
+
 
     <!-- http://elite.polito.it/ontologies/notont/scenario1#house_livingroom_dev_tv -->
 
     <owl:NamedIndividual rdf:about="&scenario1;house_livingroom_dev_tv">
         <rdf:type rdf:resource="&dogont;Tv"/>
-        <dogont:isIn rdf:resource="&scenario1;house_livingroom"/>    
+        <dogont:isIn rdf:resource="&scenario1;house_livingroom"/>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://elite.polito.it/ontologies/notont/scenario1#house_storage_room -->

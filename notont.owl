@@ -377,6 +377,15 @@
     
 
 
+    <!-- http://elite.polito.it/ontologies/notont.owl#hasPoint -->
+
+    <owl:ObjectProperty rdf:about="&notont;hasPoint">
+        <rdfs:domain rdf:resource="&locont;Artifact"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://webmind.dico.unimi.it/CARE/locont.owl#hasArtifact -->
 
     <rdf:Description rdf:about="&locont;hasArtifact"/>
@@ -1124,21 +1133,6 @@
         <rdfs:comment>The sub-national unit such as state (us),
 province (ca), county (uk), département (fr), and so on</rdfs:comment>
     </rdf:Description>
-    <rdf:Description rdf:about="&contact;nearestAirport">
-        <rdfs:label>nearest airport</rdfs:label>
-        <rdfs:comment>?X nearestAirport ?Y locates ?X in an international
-   context; for example, for the purpose of organizing a face-to-face
-   meeting of a W3C working group. This property is intended to mitigate
-   privacy risks of giving out detailed contact info.</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="http://lists.w3.org/Archives/Public/www-webont-wg/2001Nov/0006.html"/>
-        <rdfs:seeAlso rdf:resource="http://www.perceive.net/pages/page/articles/year/2002/month/12#9"/>
-        <rdfs:seeAlso rdf:resource="http://www.w3.org/2001/sw/Europe/200303/geo/intro.html"/>
-        <rdfs:seeAlso rdf:resource="http://www.w3.org/2001/sw/WebOnt/webont-airports.rdf"/>
-        <rdfs:seeAlso rdf:resource="http://www.w3.org/2001/tag/ilist#httpRange-14"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="&contact;fullName">
-        <rdfs:label>full name</rdfs:label>
-    </rdf:Description>
     <rdf:Description rdf:about="file:/Users/Emanuele/Documents/Università/TESI/Notont_manu_fork/s188312-furci/imported_ontology/contact.rdf">
         <dc:title>Contact: Utility concepts for everyday life</dc:title>
         <dc:description>
@@ -1156,6 +1150,21 @@ province (ca), county (uk), département (fr), and so on</rdfs:comment>
                 <rdf:type rdf:resource="&contact;_SubjectToChange"/>
             </rdf:Description>
         </doc:persistencePolicy>
+    </rdf:Description>
+    <rdf:Description rdf:about="&contact;nearestAirport">
+        <rdfs:label>nearest airport</rdfs:label>
+        <rdfs:comment>?X nearestAirport ?Y locates ?X in an international
+   context; for example, for the purpose of organizing a face-to-face
+   meeting of a W3C working group. This property is intended to mitigate
+   privacy risks of giving out detailed contact info.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://lists.w3.org/Archives/Public/www-webont-wg/2001Nov/0006.html"/>
+        <rdfs:seeAlso rdf:resource="http://www.perceive.net/pages/page/articles/year/2002/month/12#9"/>
+        <rdfs:seeAlso rdf:resource="http://www.w3.org/2001/sw/Europe/200303/geo/intro.html"/>
+        <rdfs:seeAlso rdf:resource="http://www.w3.org/2001/sw/WebOnt/webont-airports.rdf"/>
+        <rdfs:seeAlso rdf:resource="http://www.w3.org/2001/tag/ilist#httpRange-14"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&contact;fullName">
+        <rdfs:label>full name</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="&contact;preferredURI">
         <rdfs:label>preferred</rdfs:label>
