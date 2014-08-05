@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.w3.org/2003/01/geo/wgs84_pos" uri="imported_ontology/wgs84_pos.owl"/>
     <uri id="User Entered Import Resolution" name="http://elite.polito.it/ontologies/dogont.owl" uri="file:/Users/Emanuele/Documents/Università/TESI/Notont/dogont/dogont.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.org/dc/elements/1.1/" uri="imported_ontology/elements_1_1.rdf"/>
     <uri id="User Entered Import Resolution" name="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl" uri="imported_ontology/cpannotationschema.owl"/>
@@ -15,20 +16,21 @@
     <uri id="User Entered Import Resolution" name="http://purl.org/NET/c4dm/event.owl" uri="imported_ontology/event.owl"/>
     <uri id="User Entered Import Resolution" name="http://geovocab.org/geometry" uri="imported_ontology/geometry.rdf"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1404910590115" name="http://elite.polito.it/ontologies/notont.owl" uri="notont.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1404910590115" name="http://elite.polito.it/ontologies/notont/scenario1" uri="scenario1.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1404910590115" name="http://purl.org/ontology/wi/core" uri="imported_ontology/wi_core.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1404910590115" name="http://purl.org/ontology/wi/core#" uri="imported_ontology/weightedinterests.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1404910590115" name="http://purl.org/ontology/wo/core" uri="imported_ontology/core.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1404910590115" name="http://webmind.dico.unimi.it/CARE/locont.owl" uri="imported_ontology/locont-2.0.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1404910590115" name="http://www.cenitmio.es/ontologies/Device.owl" uri="imported_ontology/Device_mIO.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1404910590115" name="http://www.ontologydesignpatterns.org/cp/owl/componency.owl" uri="imported_ontology/componency.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1404910590115" name="http://www.ontologydesignpatterns.org/cp/owl/partof.owl" uri="imported_ontology/partof.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1404910590115" name="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl" uri="imported_ontology/cpannotationschema.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1404910590115" name="duplicate:http://www.w3.org/2002/07/owl" uri="imported_ontology/elements_1_1.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1404910590115" name="duplicate:http://www.w3.org/2002/07/owl" uri="imported_ontology/terms.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1404910590115" name="http://www.w3.org/2003/06/sw-vocab-status/ns#" uri="imported_ontology/ns.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1404910590115" name="http://www.w3.org/2004/02/skos/core" uri="imported_ontology/skos.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1404910590115" name="http://www.w3.org/2006/time" uri="imported_ontology/time.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1407251208689" name="http://elite.polito.it/ontologies/notont.owl" uri="notont.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1407251208689" name="http://elite.polito.it/ontologies/notont/scenario1" uri="scenario1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1407251208689" name="http://purl.org/ontology/wi/core" uri="imported_ontology/wi_core.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1407251208689" name="http://purl.org/ontology/wi/core#" uri="imported_ontology/weightedinterests.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1407251208689" name="http://purl.org/ontology/wo/core" uri="imported_ontology/core.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1407251208689" name="http://webmind.dico.unimi.it/CARE/locont.owl" uri="imported_ontology/locont-2.0.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1407251208689" name="http://www.cenitmio.es/ontologies/Device.owl" uri="imported_ontology/Device_mIO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1407251208689" name="http://www.ontologydesignpatterns.org/cp/owl/componency.owl" uri="imported_ontology/componency.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1407251208689" name="http://www.ontologydesignpatterns.org/cp/owl/partof.owl" uri="imported_ontology/partof.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1407251208689" name="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl" uri="imported_ontology/cpannotationschema.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1407251208689" name="duplicate:http://www.w3.org/2002/07/owl" uri="imported_ontology/elements_1_1.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1407251208689" name="duplicate:http://www.w3.org/2002/07/owl" uri="imported_ontology/terms.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1407251208689" name="http://www.w3.org/2003/01/geo/wgs84_pos#" uri="imported_ontology/wgs84_pos.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1407251208689" name="http://www.w3.org/2003/06/sw-vocab-status/ns#" uri="imported_ontology/ns.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1407251208689" name="http://www.w3.org/2004/02/skos/core" uri="imported_ontology/skos.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1407251208689" name="http://www.w3.org/2006/time" uri="imported_ontology/time.rdf"/>
     </group>
 </catalog>
