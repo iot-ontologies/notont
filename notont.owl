@@ -377,6 +377,15 @@
     
 
 
+    <!-- http://elite.polito.it/ontologies/notont.owl#hasLine -->
+
+    <owl:ObjectProperty rdf:about="&notont;hasLine">
+        <rdfs:domain rdf:resource="&dogont;Wall"/>
+        <rdfs:range rdf:resource="&geometry;LineString"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://elite.polito.it/ontologies/notont.owl#hasPoint -->
 
     <owl:ObjectProperty rdf:about="&notont;hasPoint">

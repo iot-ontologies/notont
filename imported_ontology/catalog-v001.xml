@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1407231625915" name="http://purl.org/ontology/wi/core" uri="wi_core.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1407231625915" name="http://purl.org/ontology/wi/core#" uri="weightedinterests.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1407231625915" name="http://purl.org/ontology/wo/core" uri="core.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1407231625915" name="http://webmind.dico.unimi.it/CARE/locont.owl" uri="locont-2.0.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1407231625915" name="http://www.cenitmio.es/ontologies/Device.owl" uri="Device_mIO.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1407231625915" name="http://www.ontologydesignpatterns.org/cp/owl/componency.owl" uri="componency.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1407231625915" name="http://www.ontologydesignpatterns.org/cp/owl/partof.owl" uri="partof.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1407231625915" name="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl" uri="cpannotationschema.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1407231625915" name="duplicate:http://www.w3.org/2002/07/owl" uri="elements_1_1.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1407231625915" name="duplicate:http://www.w3.org/2002/07/owl" uri="terms.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1407231625915" name="http://www.w3.org/2003/06/sw-vocab-status/ns#" uri="ns.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1407231625915" name="http://www.w3.org/2004/02/skos/core" uri="skos.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1407231625915" name="http://www.w3.org/2006/time" uri="time.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1407321401681" name="http://purl.org/ontology/wi/core" uri="wi_core.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1407321401681" name="http://purl.org/ontology/wi/core#" uri="weightedinterests.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1407321401681" name="http://purl.org/ontology/wo/core" uri="core.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1407321401681" name="http://webmind.dico.unimi.it/CARE/locont.owl" uri="locont-2.0.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1407321401681" name="http://www.cenitmio.es/ontologies/Device.owl" uri="Device_mIO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1407321401681" name="http://www.ontologydesignpatterns.org/cp/owl/componency.owl" uri="componency.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1407321401681" name="http://www.ontologydesignpatterns.org/cp/owl/partof.owl" uri="partof.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1407321401681" name="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl" uri="cpannotationschema.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1407321401681" name="duplicate:http://www.w3.org/2002/07/owl" uri="elements_1_1.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1407321401681" name="duplicate:http://www.w3.org/2002/07/owl" uri="terms.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1407321401681" name="http://www.w3.org/2003/01/geo/wgs84_pos#" uri="wgs84_pos.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1407321401681" name="http://www.w3.org/2003/06/sw-vocab-status/ns#" uri="ns.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1407321401681" name="http://www.w3.org/2004/02/skos/core" uri="skos.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1407321401681" name="http://www.w3.org/2006/time" uri="time.rdf"/>
     </group>
 </catalog>
