@@ -70,6 +70,36 @@
     
 
 
+    <!-- http://elite.polito.it/ontologies/dogont.owl#hasGateway -->
+
+    <owl:AnnotationProperty rdf:about="&dogont;hasGateway"/>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#hasMeter -->
+
+    <owl:AnnotationProperty rdf:about="&dogont;hasMeter"/>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#hasWallOpening -->
+
+    <owl:AnnotationProperty rdf:about="&dogont;hasWallOpening"/>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#isInWall -->
+
+    <owl:AnnotationProperty rdf:about="&dogont;isInWall"/>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#sensorOf -->
+
+    <owl:AnnotationProperty rdf:about="&dogont;sensorOf"/>
+    
+
+
     <!-- http://geovocab.org/geometry#lineStringMember -->
 
     <owl:AnnotationProperty rdf:about="&geometry;lineStringMember"/>
@@ -119,6 +149,163 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#dog_bedroom_window_sensor -->
+
+    <owl:NamedIndividual rdf:about="&dogont;dog_bedroom_window_sensor">
+        <rdf:type rdf:resource="&dogont;WindowSensor"/>
+        <dogont:hasGateway>dog_bedroom_window_sensor_hasGateway_WindowSensor_1</dogont:hasGateway>
+        <dogont:hasMeter>dog_bedroom_window_sensor_hasMeter_WindowSensor_1</dogont:hasMeter>
+        <dogont:sensorOf>dog_bedroom_window_sensor_sensorOf_WindowSensor_1</dogont:sensorOf>
+        <dogont:sensorOf rdf:resource="&dogont;house_bedroom_window"/>
+        <dogont:hasGateway rdf:resource="&dogont;house_dev_zWaveGateway"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#dog_livingroom_window_sensor -->
+
+    <owl:NamedIndividual rdf:about="&dogont;dog_livingroom_window_sensor">
+        <rdf:type rdf:resource="&dogont;WindowSensor"/>
+        <dogont:sensorOf>dog_livingroom_window_sensor_sensorOf_WindowSensor_1</dogont:sensorOf>
+        <dogont:hasGateway>dog_livingroom_window_sensor_hasGateway_WindowSensor_1</dogont:hasGateway>
+        <dogont:hasMeter>dog_livingroom_window_sensor_hasMeter_WindowSensor_1</dogont:hasMeter>
+        <dogont:hasGateway rdf:resource="&dogont;house_dev_zWaveGateway"/>
+        <dogont:sensorOf rdf:resource="&dogont;house_livingroom_window"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#house_bedroom_window -->
+
+    <owl:NamedIndividual rdf:about="&dogont;house_bedroom_window">
+        <rdf:type rdf:resource="&dogont;Window"/>
+        <dogont:isInWall>house_bedroom_window_isInWall_Window_1</dogont:isInWall>
+        <dogont:isInWall rdf:resource="&dogont;wall_bedroom1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#house_dev_zWaveGateway -->
+
+    <owl:NamedIndividual rdf:about="&dogont;house_dev_zWaveGateway">
+        <rdf:type rdf:resource="&dogont;ZWaveGateway"/>
+        <dogont:nodeId rdf:datatype="&xsd;int">1</dogont:nodeId>
+        <dogont:hasMeter>house_dev_zWaveGateway_hasMeter_ZWaveGateway</dogont:hasMeter>
+        <dogont:hasGateway>house_dev_zWaveGateway_hasGateway_ZWaveGateway</dogont:hasGateway>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#house_livingroom_window -->
+
+    <owl:NamedIndividual rdf:about="&dogont;house_livingroom_window">
+        <rdf:type rdf:resource="&dogont;Window"/>
+        <dogont:isInWall>house_livingroom_window_isInWall_Window_1</dogont:isInWall>
+        <dogont:isInWall rdf:resource="&dogont;wall_livingroom1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#wall_bathroom1 -->
+
+    <owl:NamedIndividual rdf:about="&dogont;wall_bathroom1">
+        <rdf:type rdf:resource="&dogont;Wall"/>
+        <dogont:hasWallOpening>wall_bathroom1_hasWallOpening_Wall</dogont:hasWallOpening>
+        <notont:hasLine rdf:resource="&scenario1;line_bathroom1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#wall_bathroom2 -->
+
+    <owl:NamedIndividual rdf:about="&dogont;wall_bathroom2">
+        <rdf:type rdf:resource="&dogont;Wall"/>
+        <dogont:hasWallOpening>wall_bathroom2_hasWallOpening_Wall</dogont:hasWallOpening>
+        <notont:hasLine rdf:resource="&scenario1;line_bathroom2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#wall_bathroom3 -->
+
+    <owl:NamedIndividual rdf:about="&dogont;wall_bathroom3">
+        <rdf:type rdf:resource="&dogont;Wall"/>
+        <dogont:hasWallOpening>wall_bathroom3_hasWallOpening_Wall</dogont:hasWallOpening>
+        <notont:hasLine rdf:resource="&scenario1;line_bathroom3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#wall_bedroom1 -->
+
+    <owl:NamedIndividual rdf:about="&dogont;wall_bedroom1">
+        <rdf:type rdf:resource="&dogont;Wall"/>
+        <dogont:hasWallOpening>wall_bedroom1_hasWallOpening_Wall</dogont:hasWallOpening>
+        <notont:hasLine rdf:resource="&scenario1;line_bedroom1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#wall_bedroom2 -->
+
+    <owl:NamedIndividual rdf:about="&dogont;wall_bedroom2">
+        <rdf:type rdf:resource="&dogont;Wall"/>
+        <dogont:hasWallOpening>wall_bedroom2_hasWallOpening_Wall</dogont:hasWallOpening>
+        <notont:hasLine rdf:resource="&scenario1;line_bedroom2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#wall_bedroom3 -->
+
+    <owl:NamedIndividual rdf:about="&dogont;wall_bedroom3">
+        <rdf:type rdf:resource="&dogont;Wall"/>
+        <dogont:hasWallOpening>wall_bedroom3_hasWallOpening_Wall</dogont:hasWallOpening>
+        <notont:hasLine rdf:resource="&scenario1;line_bedroom3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#wall_livingroom1 -->
+
+    <owl:NamedIndividual rdf:about="&dogont;wall_livingroom1">
+        <rdf:type rdf:resource="&dogont;Wall"/>
+        <dogont:hasWallOpening>wall_livingroom1_hasWallOpening_Wall</dogont:hasWallOpening>
+        <notont:hasLine rdf:resource="&scenario1;line_livingroom1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#wall_livingroom2 -->
+
+    <owl:NamedIndividual rdf:about="&dogont;wall_livingroom2">
+        <rdf:type rdf:resource="&dogont;Wall"/>
+        <dogont:hasWallOpening>wall_livingroom2_hasWallOpening_Wall</dogont:hasWallOpening>
+        <notont:hasLine rdf:resource="&scenario1;line_livingroom2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#wall_livingroom3 -->
+
+    <owl:NamedIndividual rdf:about="&dogont;wall_livingroom3">
+        <rdf:type rdf:resource="&dogont;Wall"/>
+        <dogont:hasWallOpening>wall_livingroom3_hasWallOpening_Wall</dogont:hasWallOpening>
+        <notont:hasLine rdf:resource="&scenario1;line_livingroom3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/dogont.owl#wall_livingroom4 -->
+
+    <owl:NamedIndividual rdf:about="&dogont;wall_livingroom4">
+        <rdf:type rdf:resource="&dogont;Wall"/>
+        <dogont:hasWallOpening>wall_livingroom4_hasWallOpening_Wall</dogont:hasWallOpening>
+        <notont:hasLine rdf:resource="&scenario1;line_livingroom4"/>
+    </owl:NamedIndividual>
     
 
 
