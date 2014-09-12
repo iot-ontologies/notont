@@ -1,0 +1,75 @@
+
+//--------------------tutte le persone e relative sottoclassi
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dog: <http://elite.polito.it/ontologies/dogont.owl#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX locont: <http://webmind.dico.unimi.it/CARE/locont.owl#>
+SELECT ?entity
+	WHERE { 
+?entity a ?type.
+?type rdfs:subClassOf* locont:Person.
+
+}
+
+
+---------------------------//
+
+
+
+//------------------------visualizza tutte le proprietà dei soggetti di classe o sottoclasse locont:Person
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dog: <http://elite.polito.it/ontologies/dogont.owl#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX locont: <http://webmind.dico.unimi.it/CARE/locont.owl#>
+
+select ?emp ?prop ?val  where {
+  ?emp  rdf:type  ?type.
+?type rdfs:subClassOf* locont:Person.
+
+  ?emp ?prop ?val.
+
+}
+
+
+
+
+--------------------//tutte le classi presenti
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dog: <http://elite.polito.it/ontologies/dogont.owl#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX locont: <http://webmind.dico.unimi.it/CARE/locont.owl#>
+
+select distinct ?type where {
+  ?s a ?type
+}
+
+-----------------------------//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------//

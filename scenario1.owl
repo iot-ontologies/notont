@@ -524,11 +524,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Object">DeviceStatus</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newAlert</dogont:notificationName>
-        <dogont:notificationOf>dog_bathroom_washingmachine_notificationOf_AlertNotification</dogont:notificationOf>
         <dogont:continuousNotificationParamName>dog_bathroom_washingmachine_continuousNotificationParamName_AlertNotification</dogont:continuousNotificationParamName>
-        <dogont:returnType>DeviceStatus</dogont:returnType>
-        <dogont:generateCommand>dog_bathroom_washingmachine_generateCommand_AlertNotification</dogont:generateCommand>
         <dogont:continuousNotificationParamValue>dog_bathroom_washingmachine_continuousNotificationParamValue_AlertNotification</dogont:continuousNotificationParamValue>
+        <dogont:returnType>DeviceStatus</dogont:returnType>
+        <dogont:notificationOf>dog_bathroom_washingmachine_notificationOf_AlertNotification</dogont:notificationOf>
+        <dogont:generateCommand>dog_bathroom_washingmachine_generateCommand_AlertNotification</dogont:generateCommand>
     </owl:NamedIndividual>
     
 
@@ -540,11 +540,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;string">1</dogont:nParams>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Object">alert</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newAlert</dogont:notificationName>
-        <dogont:generateCommand>dog_kitchen_oven_generateCommand_AlertNotification</dogont:generateCommand>
+        <dogont:notificationOf>dog_kitchen_oven_notificationOf_AlertNotification</dogont:notificationOf>
         <dogont:continuousNotificationParamValue>dog_kitchen_oven_continuousNotificationParamValue_AlertNotification</dogont:continuousNotificationParamValue>
         <dogont:continuousNotificationParamName>dog_kitchen_oven_continuousNotificationParamName_AlertNotification</dogont:continuousNotificationParamName>
-        <dogont:notificationOf>dog_kitchen_oven_notificationOf_AlertNotification</dogont:notificationOf>
         <dogont:returnType>DeviceStatus</dogont:returnType>
+        <dogont:generateCommand>dog_kitchen_oven_generateCommand_AlertNotification</dogont:generateCommand>
     </owl:NamedIndividual>
     
 
@@ -674,8 +674,8 @@
 
     <owl:NamedIndividual rdf:about="&dogont;Command_dog_bathroom_light_sensor">
         <rdf:type rdf:resource="&dogont;Command"/>
-        <dogont:realCommandName>dog_bathroom_light_sensor_realCommandName_Command</dogont:realCommandName>
         <dogont:commandOf>dog_bathroom_light_sensor_commandOf_Command</dogont:commandOf>
+        <dogont:realCommandName>dog_bathroom_light_sensor_realCommandName_Command</dogont:realCommandName>
     </owl:NamedIndividual>
     
 
@@ -694,8 +694,8 @@
 
     <owl:NamedIndividual rdf:about="&dogont;Command_dog_bathroom_mainoutlet">
         <rdf:type rdf:resource="&dogont;Command"/>
-        <dogont:realCommandName>dog_bathroom_mainoutlet_realCommandName_Command</dogont:realCommandName>
         <dogont:commandOf>dog_bathroom_mainoutlet_commandOf_Command</dogont:commandOf>
+        <dogont:realCommandName>dog_bathroom_mainoutlet_realCommandName_Command</dogont:realCommandName>
     </owl:NamedIndividual>
     
 
@@ -714,8 +714,8 @@
 
     <owl:NamedIndividual rdf:about="&dogont;Command_dog_bathroom_washingmachine">
         <rdf:type rdf:resource="&dogont;Command"/>
-        <dogont:commandOf>dog_bathroom_washingmachine_commandOf_Command</dogont:commandOf>
         <dogont:realCommandName>dog_bathroom_washingmachine_realCommandName_Command</dogont:realCommandName>
+        <dogont:commandOf>dog_bathroom_washingmachine_commandOf_Command</dogont:commandOf>
     </owl:NamedIndividual>
     
 
@@ -784,8 +784,8 @@
 
     <owl:NamedIndividual rdf:about="&dogont;Command_dog_bedroom_hisoutlet">
         <rdf:type rdf:resource="&dogont;Command"/>
-        <dogont:commandOf>dog_bedroom_hisoutlet_commandOf_Command</dogont:commandOf>
         <dogont:realCommandName>dog_bedroom_hisoutlet_realCommandName_Command</dogont:realCommandName>
+        <dogont:commandOf>dog_bedroom_hisoutlet_commandOf_Command</dogont:commandOf>
     </owl:NamedIndividual>
     
 
@@ -814,8 +814,8 @@
 
     <owl:NamedIndividual rdf:about="&dogont;Command_dog_kitchen_fridgeoutlet">
         <rdf:type rdf:resource="&dogont;Command"/>
-        <dogont:realCommandName>dog_kitchen_fridgeoutlet_realCommandName_Command</dogont:realCommandName>
         <dogont:commandOf>dog_kitchen_fridgeoutlet_commandOf_Command</dogont:commandOf>
+        <dogont:realCommandName>dog_kitchen_fridgeoutlet_realCommandName_Command</dogont:realCommandName>
     </owl:NamedIndividual>
     
 
@@ -834,8 +834,8 @@
 
     <owl:NamedIndividual rdf:about="&dogont;Command_dog_kitchen_mainoutlet">
         <rdf:type rdf:resource="&dogont;Command"/>
-        <dogont:commandOf>dog_kitchen_mainoutlet_commandOf_Command</dogont:commandOf>
         <dogont:realCommandName>dog_kitchen_mainoutlet_realCommandName_Command</dogont:realCommandName>
+        <dogont:commandOf>dog_kitchen_mainoutlet_commandOf_Command</dogont:commandOf>
     </owl:NamedIndividual>
     
 
@@ -884,8 +884,8 @@
 
     <owl:NamedIndividual rdf:about="&dogont;Command_dog_kitchen_ovenoutlet">
         <rdf:type rdf:resource="&dogont;Command"/>
-        <dogont:realCommandName>dog_kitchen_ovenoutlet_realCommandName_Command</dogont:realCommandName>
         <dogont:commandOf>dog_kitchen_ovenoutlet_commandOf_Command</dogont:commandOf>
+        <dogont:realCommandName>dog_kitchen_ovenoutlet_realCommandName_Command</dogont:realCommandName>
     </owl:NamedIndividual>
     
 
@@ -1077,8 +1077,8 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:realCommandName rdf:datatype="rdf:datatype=&xsd;string">deleteGroup</dogont:realCommandName>
         <dogont:commandParamName rdf:datatype="rdf:datatype=String">groupID</dogont:commandParamName>
-        <dogont:commandParamValue>dog_bathroom_washingmachineoutlet_commandParamValue_DeleteGroupCommand</dogont:commandParamValue>
         <dogont:commandOf>dog_bathroom_washingmachineoutlet_commandOf_DeleteGroupCommand</dogont:commandOf>
+        <dogont:commandParamValue>dog_bathroom_washingmachineoutlet_commandParamValue_DeleteGroupCommand</dogont:commandParamValue>
     </owl:NamedIndividual>
     
 
@@ -1090,8 +1090,8 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:realCommandName rdf:datatype="rdf:datatype=&xsd;string">deleteGroup</dogont:realCommandName>
         <dogont:commandParamName rdf:datatype="rdf:datatype=String">groupID</dogont:commandParamName>
-        <dogont:commandOf>dog_bedroom_heroutlet_commandOf_DeleteGroupCommand</dogont:commandOf>
         <dogont:commandParamValue>dog_bedroom_heroutlet_commandParamValue_DeleteGroupCommand</dogont:commandParamValue>
+        <dogont:commandOf>dog_bedroom_heroutlet_commandOf_DeleteGroupCommand</dogont:commandOf>
     </owl:NamedIndividual>
     
 
@@ -1103,8 +1103,8 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:realCommandName rdf:datatype="rdf:datatype=&xsd;string">deleteGroup</dogont:realCommandName>
         <dogont:commandParamName rdf:datatype="rdf:datatype=String">groupID</dogont:commandParamName>
-        <dogont:commandOf>dog_bedroom_hisoutlet_commandOf_DeleteGroupCommand</dogont:commandOf>
         <dogont:commandParamValue>dog_bedroom_hisoutlet_commandParamValue_DeleteGroupCommand</dogont:commandParamValue>
+        <dogont:commandOf>dog_bedroom_hisoutlet_commandOf_DeleteGroupCommand</dogont:commandOf>
     </owl:NamedIndividual>
     
 
@@ -1116,8 +1116,8 @@
         <dogont:nParams rdf:datatype="rdf:datatype=int">1</dogont:nParams>
         <dogont:realCommandName rdf:datatype="rdf:datatype=&xsd;string">deleteGroup</dogont:realCommandName>
         <dogont:commandParamName rdf:datatype="rdf:datatype=String">groupID</dogont:commandParamName>
-        <dogont:commandParamValue>dog_bedroom_light_sensor_commandParamValue_DeleteGroupCommand</dogont:commandParamValue>
         <dogont:commandOf>dog_bedroom_light_sensor_commandOf_DeleteGroupCommand</dogont:commandOf>
+        <dogont:commandParamValue>dog_bedroom_light_sensor_commandParamValue_DeleteGroupCommand</dogont:commandParamValue>
     </owl:NamedIndividual>
     
 
@@ -1129,8 +1129,8 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:realCommandName rdf:datatype="rdf:datatype=&xsd;string">deleteGroup</dogont:realCommandName>
         <dogont:commandParamName rdf:datatype="rdf:datatype=String">groupID</dogont:commandParamName>
-        <dogont:commandParamValue>dog_kitchen_fridgeoutlet_commandParamValue_DeleteGroupCommand</dogont:commandParamValue>
         <dogont:commandOf>dog_kitchen_fridgeoutlet_commandOf_DeleteGroupCommand</dogont:commandOf>
+        <dogont:commandParamValue>dog_kitchen_fridgeoutlet_commandParamValue_DeleteGroupCommand</dogont:commandParamValue>
     </owl:NamedIndividual>
     
 
@@ -1142,8 +1142,8 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:realCommandName rdf:datatype="rdf:datatype=&xsd;string">deleteGroup</dogont:realCommandName>
         <dogont:commandParamName rdf:datatype="rdf:datatype=String">groupID</dogont:commandParamName>
-        <dogont:commandOf>dog_kitchen_mainoutlet_commandOf_DeleteGroupCommand</dogont:commandOf>
         <dogont:commandParamValue>dog_kitchen_mainoutlet_commandParamValue_DeleteGroupCommand</dogont:commandParamValue>
+        <dogont:commandOf>dog_kitchen_mainoutlet_commandOf_DeleteGroupCommand</dogont:commandOf>
     </owl:NamedIndividual>
     
 
@@ -1155,8 +1155,8 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:realCommandName rdf:datatype="rdf:datatype=&xsd;string">deleteGroup</dogont:realCommandName>
         <dogont:commandParamName rdf:datatype="rdf:datatype=String">groupID</dogont:commandParamName>
-        <dogont:commandOf>dog_kitchen_ovenoutlet_commandOf_DeleteGroupCommand</dogont:commandOf>
         <dogont:commandParamValue>dog_kitchen_ovenoutlet_commandParamValue_DeleteGroupCommand</dogont:commandParamValue>
+        <dogont:commandOf>dog_kitchen_ovenoutlet_commandOf_DeleteGroupCommand</dogont:commandOf>
     </owl:NamedIndividual>
     
 
@@ -1167,8 +1167,8 @@
         <rdf:type rdf:resource="&dogont;DeleteGroupCommand"/>
         <dogont:realCommandName rdf:datatype="rdf:datatype=&xsd;string">deleteGroup</dogont:realCommandName>
         <dogont:commandParamName rdf:datatype="rdf:datatype=String">groupID</dogont:commandParamName>
-        <dogont:commandParamValue>dog_livingroom_light_sensor_commandParamValue_DeleteGroupCommand</dogont:commandParamValue>
         <dogont:commandOf>dog_livingroom_light_sensor_commandOf_DeleteGroupCommand</dogont:commandOf>
+        <dogont:commandParamValue>dog_livingroom_light_sensor_commandParamValue_DeleteGroupCommand</dogont:commandParamValue>
     </owl:NamedIndividual>
     
 
@@ -1180,8 +1180,8 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:realCommandName rdf:datatype="rdf:datatype=&xsd;string">deleteGroup</dogont:realCommandName>
         <dogont:commandParamName rdf:datatype="rdf:datatype=String">groupID</dogont:commandParamName>
-        <dogont:commandParamValue>dog_livingroom_mainoutlet_commandParamValue_DeleteGroupCommand</dogont:commandParamValue>
         <dogont:commandOf>dog_livingroom_mainoutlet_commandOf_DeleteGroupCommand</dogont:commandOf>
+        <dogont:commandParamValue>dog_livingroom_mainoutlet_commandParamValue_DeleteGroupCommand</dogont:commandParamValue>
     </owl:NamedIndividual>
     
 
@@ -1219,8 +1219,8 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:realCommandName rdf:datatype="rdf:datatype=&xsd;string">deleteScene</dogont:realCommandName>
         <dogont:commandParamName rdf:datatype="rdf:datatype=Integer">sceneNumber</dogont:commandParamName>
-        <dogont:commandOf>dog_bathroom_washingmachineoutlet_commandOf_DeleteSceneCommand</dogont:commandOf>
         <dogont:commandParamValue>dog_bathroom_washingmachineoutlet_commandParamValue_DeleteSceneCommand</dogont:commandParamValue>
+        <dogont:commandOf>dog_bathroom_washingmachineoutlet_commandOf_DeleteSceneCommand</dogont:commandOf>
     </owl:NamedIndividual>
     
 
@@ -1297,8 +1297,8 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:realCommandName rdf:datatype="rdf:datatype=&xsd;string">deleteScene</dogont:realCommandName>
         <dogont:commandParamName rdf:datatype="rdf:datatype=Integer">sceneNumber</dogont:commandParamName>
-        <dogont:commandOf>dog_livingroom_mainoutlet_commandOf_DeleteSceneCommand</dogont:commandOf>
         <dogont:commandParamValue>dog_livingroom_mainoutlet_commandParamValue_DeleteSceneCommand</dogont:commandParamValue>
+        <dogont:commandOf>dog_livingroom_mainoutlet_commandOf_DeleteSceneCommand</dogont:commandOf>
     </owl:NamedIndividual>
     
 
@@ -1438,11 +1438,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">frequency</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newFrequencyValue</dogont:notificationName>
-        <dogont:returnType>Measure</dogont:returnType>
-        <dogont:generateCommand>generateCommand_FrequencyMeasurementNotification</dogont:generateCommand>
         <dogont:continuousNotificationParamName>continuousNotificationParamName_FrequencyMeasurementNotification</dogont:continuousNotificationParamName>
         <dogont:continuousNotificationParamValue>continuousNotificationParamValue_FrequencyMeasurementNotification</dogont:continuousNotificationParamValue>
         <dogont:notificationOf>notificationOf_FrequencyMeasurementNotification</dogont:notificationOf>
+        <dogont:generateCommand>generateCommand_FrequencyMeasurementNotification</dogont:generateCommand>
+        <dogont:returnType>Measure</dogont:returnType>
     </owl:NamedIndividual>
     
 
@@ -2671,8 +2671,8 @@
     <owl:NamedIndividual rdf:about="&dogont;IsPresentNotification_dog_bathroom_presence_sensor">
         <rdf:type rdf:resource="&dogont;IsPresentNotification"/>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">isPresent</dogont:notificationName>
-        <dogont:generateCommand>dog_bathroom_presence_sensor_generateCommand_IsPresentNotification</dogont:generateCommand>
         <dogont:notificationOf>dog_bathroom_presence_sensor_notificationOf_IsPresentNotification</dogont:notificationOf>
+        <dogont:generateCommand>dog_bathroom_presence_sensor_generateCommand_IsPresentNotification</dogont:generateCommand>
     </owl:NamedIndividual>
     
 
@@ -2682,8 +2682,8 @@
     <owl:NamedIndividual rdf:about="&dogont;IsPresentNotification_dog_bedroom_presence_sensor">
         <rdf:type rdf:resource="&dogont;IsPresentNotification"/>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">isPresent</dogont:notificationName>
-        <dogont:notificationOf>dog_bedroom_presence_sensor_notificationOf_IsPresentNotification</dogont:notificationOf>
         <dogont:generateCommand>dog_bedroom_presence_sensor_generateCommand_IsPresentNotification</dogont:generateCommand>
+        <dogont:notificationOf>dog_bedroom_presence_sensor_notificationOf_IsPresentNotification</dogont:notificationOf>
     </owl:NamedIndividual>
     
 
@@ -2801,11 +2801,11 @@
         <rdf:type rdf:resource="&dogont;LuminosityMeasurementNotification"/>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">luminosityValue</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newLuminosityValue</dogont:notificationName>
+        <dogont:generateCommand>dog_bathroom_light_sensor_generateCommand_LuminosityMeasurementNotification</dogont:generateCommand>
+        <dogont:continuousNotificationParamValue>dog_bathroom_light_sensor_continuousNotificationParamValue_LuminosityMeasurementNotification</dogont:continuousNotificationParamValue>
+        <dogont:continuousNotificationParamName>dog_bathroom_light_sensor_continuousNotificationParamName_LuminosityMeasurementNotification</dogont:continuousNotificationParamName>
         <dogont:returnType>Measure</dogont:returnType>
         <dogont:notificationOf>dog_bathroom_light_sensor_notificationOf_LuminosityMeasurementNotification</dogont:notificationOf>
-        <dogont:continuousNotificationParamValue>dog_bathroom_light_sensor_continuousNotificationParamValue_LuminosityMeasurementNotification</dogont:continuousNotificationParamValue>
-        <dogont:generateCommand>dog_bathroom_light_sensor_generateCommand_LuminosityMeasurementNotification</dogont:generateCommand>
-        <dogont:continuousNotificationParamName>dog_bathroom_light_sensor_continuousNotificationParamName_LuminosityMeasurementNotification</dogont:continuousNotificationParamName>
     </owl:NamedIndividual>
     
 
@@ -2819,9 +2819,9 @@
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">luminosityValue</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newLuminosityValue</dogont:notificationName>
         <dogont:continuousNotificationParamValue>dog_bedroom_light_sensor_continuousNotificationParamValue_LuminosityMeasurementNotification</dogont:continuousNotificationParamValue>
-        <dogont:generateCommand>dog_bedroom_light_sensor_generateCommand_LuminosityMeasurementNotification</dogont:generateCommand>
         <dogont:continuousNotificationParamName>dog_bedroom_light_sensor_continuousNotificationParamName_LuminosityMeasurementNotification</dogont:continuousNotificationParamName>
         <dogont:notificationOf>dog_bedroom_light_sensor_notificationOf_LuminosityMeasurementNotification</dogont:notificationOf>
+        <dogont:generateCommand>dog_bedroom_light_sensor_generateCommand_LuminosityMeasurementNotification</dogont:generateCommand>
     </owl:NamedIndividual>
     
 
@@ -2873,8 +2873,8 @@
     <owl:NamedIndividual rdf:about="&dogont;MovementCeasedNotification_dog_bathroom_presence_sensor">
         <rdf:type rdf:resource="&dogont;MovementCeasedNotification"/>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">ceasedMovement</dogont:notificationName>
-        <dogont:notificationOf>dog_bathroom_presence_sensor_notificationOf_MovementCeasedNotification</dogont:notificationOf>
         <dogont:generateCommand>dog_bathroom_presence_sensor_generateCommand_MovementCeasedNotification</dogont:generateCommand>
+        <dogont:notificationOf>dog_bathroom_presence_sensor_notificationOf_MovementCeasedNotification</dogont:notificationOf>
     </owl:NamedIndividual>
     
 
@@ -2895,8 +2895,8 @@
     <owl:NamedIndividual rdf:about="&dogont;MovementCeasedNotification_dog_livingroom_presence_sensor">
         <rdf:type rdf:resource="&dogont;MovementCeasedNotification"/>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">ceasedMovement</dogont:notificationName>
-        <dogont:notificationOf>dog_livingroom_presence_sensor_notificationOf_MovementCeasedNotification</dogont:notificationOf>
         <dogont:generateCommand>dog_livingroom_presence_sensor_generateCommand_MovementCeasedNotification</dogont:generateCommand>
+        <dogont:notificationOf>dog_livingroom_presence_sensor_notificationOf_MovementCeasedNotification</dogont:notificationOf>
     </owl:NamedIndividual>
     
 
@@ -2906,8 +2906,8 @@
     <owl:NamedIndividual rdf:about="&dogont;MovementDetectedNotification_dog_bathroom_presence_sensor">
         <rdf:type rdf:resource="&dogont;MovementDetectedNotification"/>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">detectedMovement</dogont:notificationName>
-        <dogont:generateCommand>dog_bathroom_presence_sensor_generateCommand_MovementDetectedNotification</dogont:generateCommand>
         <dogont:notificationOf>dog_bathroom_presence_sensor_notificationOf_MovementDetectedNotification</dogont:notificationOf>
+        <dogont:generateCommand>dog_bathroom_presence_sensor_generateCommand_MovementDetectedNotification</dogont:generateCommand>
     </owl:NamedIndividual>
     
 
@@ -3084,8 +3084,8 @@
     <owl:NamedIndividual rdf:about="&dogont;NotPresentNotification_dog_livingroom_presence_sensor">
         <rdf:type rdf:resource="&dogont;NotPresentNotification"/>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">notPresent</dogont:notificationName>
-        <dogont:generateCommand>dog_livingroom_presence_sensor_generateCommand_NotPresentNotification</dogont:generateCommand>
         <dogont:notificationOf>dog_livingroom_presence_sensor_notificationOf_NotPresentNotification</dogont:notificationOf>
+        <dogont:generateCommand>dog_livingroom_presence_sensor_generateCommand_NotPresentNotification</dogont:generateCommand>
     </owl:NamedIndividual>
     
 
@@ -4562,11 +4562,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newPowerFactorValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">powerFactor</dogont:notificationParamName>
-        <dogont:continuousNotificationParamValue>dog_bathroom_mainoutlet_continuousNotificationParamValue_PowerFactorMeasurementNotification</dogont:continuousNotificationParamValue>
         <dogont:continuousNotificationParamName>dog_bathroom_mainoutlet_continuousNotificationParamName_PowerFactorMeasurementNotification</dogont:continuousNotificationParamName>
-        <dogont:notificationOf>dog_bathroom_mainoutlet_notificationOf_PowerFactorMeasurementNotification</dogont:notificationOf>
         <dogont:generateCommand>dog_bathroom_mainoutlet_generateCommand_PowerFactorMeasurementNotification</dogont:generateCommand>
         <dogont:returnType>Measure</dogont:returnType>
+        <dogont:continuousNotificationParamValue>dog_bathroom_mainoutlet_continuousNotificationParamValue_PowerFactorMeasurementNotification</dogont:continuousNotificationParamValue>
+        <dogont:notificationOf>dog_bathroom_mainoutlet_notificationOf_PowerFactorMeasurementNotification</dogont:notificationOf>
     </owl:NamedIndividual>
     
 
@@ -4578,11 +4578,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newPowerFactorValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">powerFactor</dogont:notificationParamName>
-        <dogont:continuousNotificationParamValue>dog_bathroom_washingmachineoutlet_continuousNotificationParamValue_PowerFactorMeasurementNotification</dogont:continuousNotificationParamValue>
         <dogont:notificationOf>dog_bathroom_washingmachineoutlet_notificationOf_PowerFactorMeasurementNotification</dogont:notificationOf>
+        <dogont:continuousNotificationParamValue>dog_bathroom_washingmachineoutlet_continuousNotificationParamValue_PowerFactorMeasurementNotification</dogont:continuousNotificationParamValue>
+        <dogont:continuousNotificationParamName>dog_bathroom_washingmachineoutlet_continuousNotificationParamName_PowerFactorMeasurementNotification</dogont:continuousNotificationParamName>
         <dogont:returnType>Measure</dogont:returnType>
         <dogont:generateCommand>dog_bathroom_washingmachineoutlet_generateCommand_PowerFactorMeasurementNotification</dogont:generateCommand>
-        <dogont:continuousNotificationParamName>dog_bathroom_washingmachineoutlet_continuousNotificationParamName_PowerFactorMeasurementNotification</dogont:continuousNotificationParamName>
     </owl:NamedIndividual>
     
 
@@ -4594,10 +4594,10 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newPowerFactorValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">powerFactor</dogont:notificationParamName>
-        <dogont:continuousNotificationParamValue>dog_bedroom_heroutlet_continuousNotificationParamValue_PowerFactorMeasurementNotification</dogont:continuousNotificationParamValue>
-        <dogont:returnType>Measure</dogont:returnType>
-        <dogont:continuousNotificationParamName>dog_bedroom_heroutlet_continuousNotificationParamName_PowerFactorMeasurementNotification</dogont:continuousNotificationParamName>
         <dogont:notificationOf>dog_bedroom_heroutlet_notificationOf_PowerFactorMeasurementNotification</dogont:notificationOf>
+        <dogont:continuousNotificationParamName>dog_bedroom_heroutlet_continuousNotificationParamName_PowerFactorMeasurementNotification</dogont:continuousNotificationParamName>
+        <dogont:returnType>Measure</dogont:returnType>
+        <dogont:continuousNotificationParamValue>dog_bedroom_heroutlet_continuousNotificationParamValue_PowerFactorMeasurementNotification</dogont:continuousNotificationParamValue>
         <dogont:generateCommand>dog_bedroom_heroutlet_generateCommand_PowerFactorMeasurementNotification</dogont:generateCommand>
     </owl:NamedIndividual>
     
@@ -4610,11 +4610,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newPowerFactorValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">powerFactor</dogont:notificationParamName>
-        <dogont:continuousNotificationParamName>dog_bedroom_hisoutlet_continuousNotificationParamName_PowerFactorMeasurementNotification</dogont:continuousNotificationParamName>
         <dogont:notificationOf>dog_bedroom_hisoutlet_notificationOf_PowerFactorMeasurementNotification</dogont:notificationOf>
         <dogont:generateCommand>dog_bedroom_hisoutlet_generateCommand_PowerFactorMeasurementNotification</dogont:generateCommand>
-        <dogont:continuousNotificationParamValue>dog_bedroom_hisoutlet_continuousNotificationParamValue_PowerFactorMeasurementNotification</dogont:continuousNotificationParamValue>
         <dogont:returnType>Measure</dogont:returnType>
+        <dogont:continuousNotificationParamName>dog_bedroom_hisoutlet_continuousNotificationParamName_PowerFactorMeasurementNotification</dogont:continuousNotificationParamName>
+        <dogont:continuousNotificationParamValue>dog_bedroom_hisoutlet_continuousNotificationParamValue_PowerFactorMeasurementNotification</dogont:continuousNotificationParamValue>
     </owl:NamedIndividual>
     
 
@@ -4628,9 +4628,9 @@
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">powerFactor</dogont:notificationParamName>
         <dogont:continuousNotificationParamValue>dog_kitchen_fridgeoutlet_continuousNotificationParamValue_PowerFactorMeasurementNotification</dogont:continuousNotificationParamValue>
         <dogont:notificationOf>dog_kitchen_fridgeoutlet_notificationOf_PowerFactorMeasurementNotification</dogont:notificationOf>
+        <dogont:returnType>Measure</dogont:returnType>
         <dogont:continuousNotificationParamName>dog_kitchen_fridgeoutlet_continuousNotificationParamName_PowerFactorMeasurementNotification</dogont:continuousNotificationParamName>
         <dogont:generateCommand>dog_kitchen_fridgeoutlet_generateCommand_PowerFactorMeasurementNotification</dogont:generateCommand>
-        <dogont:returnType>Measure</dogont:returnType>
     </owl:NamedIndividual>
     
 
@@ -4643,9 +4643,9 @@
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newPowerFactorValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">powerFactor</dogont:notificationParamName>
         <dogont:continuousNotificationParamName>dog_kitchen_mainoutlet_continuousNotificationParamName_PowerFactorMeasurementNotification</dogont:continuousNotificationParamName>
-        <dogont:returnType>Measure</dogont:returnType>
-        <dogont:generateCommand>dog_kitchen_mainoutlet_generateCommand_PowerFactorMeasurementNotification</dogont:generateCommand>
         <dogont:notificationOf>dog_kitchen_mainoutlet_notificationOf_PowerFactorMeasurementNotification</dogont:notificationOf>
+        <dogont:generateCommand>dog_kitchen_mainoutlet_generateCommand_PowerFactorMeasurementNotification</dogont:generateCommand>
+        <dogont:returnType>Measure</dogont:returnType>
         <dogont:continuousNotificationParamValue>dog_kitchen_mainoutlet_continuousNotificationParamValue_PowerFactorMeasurementNotification</dogont:continuousNotificationParamValue>
     </owl:NamedIndividual>
     
@@ -4658,11 +4658,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newPowerFactorValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">powerFactor</dogont:notificationParamName>
-        <dogont:continuousNotificationParamValue>dog_kitchen_ovenoutlet_continuousNotificationParamValue_PowerFactorMeasurementNotification</dogont:continuousNotificationParamValue>
         <dogont:returnType>Measure</dogont:returnType>
-        <dogont:continuousNotificationParamName>dog_kitchen_ovenoutlet_continuousNotificationParamName_PowerFactorMeasurementNotification</dogont:continuousNotificationParamName>
         <dogont:generateCommand>dog_kitchen_ovenoutlet_generateCommand_PowerFactorMeasurementNotification</dogont:generateCommand>
+        <dogont:continuousNotificationParamName>dog_kitchen_ovenoutlet_continuousNotificationParamName_PowerFactorMeasurementNotification</dogont:continuousNotificationParamName>
         <dogont:notificationOf>dog_kitchen_ovenoutlet_notificationOf_PowerFactorMeasurementNotification</dogont:notificationOf>
+        <dogont:continuousNotificationParamValue>dog_kitchen_ovenoutlet_continuousNotificationParamValue_PowerFactorMeasurementNotification</dogont:continuousNotificationParamValue>
     </owl:NamedIndividual>
     
 
@@ -4674,11 +4674,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newPowerFactorValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">powerFactor</dogont:notificationParamName>
-        <dogont:continuousNotificationParamValue>dog_livingroom_mainoutlet_continuousNotificationParamValue_PowerFactorMeasurementNotification</dogont:continuousNotificationParamValue>
-        <dogont:continuousNotificationParamName>dog_livingroom_mainoutlet_continuousNotificationParamName_PowerFactorMeasurementNotification</dogont:continuousNotificationParamName>
-        <dogont:generateCommand>dog_livingroom_mainoutlet_generateCommand_PowerFactorMeasurementNotification</dogont:generateCommand>
         <dogont:returnType>Measure</dogont:returnType>
         <dogont:notificationOf>dog_livingroom_mainoutlet_notificationOf_PowerFactorMeasurementNotification</dogont:notificationOf>
+        <dogont:generateCommand>dog_livingroom_mainoutlet_generateCommand_PowerFactorMeasurementNotification</dogont:generateCommand>
+        <dogont:continuousNotificationParamValue>dog_livingroom_mainoutlet_continuousNotificationParamValue_PowerFactorMeasurementNotification</dogont:continuousNotificationParamValue>
+        <dogont:continuousNotificationParamName>dog_livingroom_mainoutlet_continuousNotificationParamName_PowerFactorMeasurementNotification</dogont:continuousNotificationParamName>
     </owl:NamedIndividual>
     
 
@@ -4690,10 +4690,10 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newPowerFactorValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">powerFactor</dogont:notificationParamName>
-        <dogont:returnType>Measure</dogont:returnType>
         <dogont:notificationOf>dog_livingroom_tvoutlet_notificationOf_PowerFactorMeasurementNotification</dogont:notificationOf>
         <dogont:generateCommand>dog_livingroom_tvoutlet_generateCommand_PowerFactorMeasurementNotification</dogont:generateCommand>
         <dogont:continuousNotificationParamName>dog_livingroom_tvoutlet_continuousNotificationParamName_PowerFactorMeasurementNotification</dogont:continuousNotificationParamName>
+        <dogont:returnType>Measure</dogont:returnType>
         <dogont:continuousNotificationParamValue>dog_livingroom_tvoutlet_continuousNotificationParamValue_PowerFactorMeasurementNotification</dogont:continuousNotificationParamValue>
     </owl:NamedIndividual>
     
@@ -4979,8 +4979,8 @@
     <owl:NamedIndividual rdf:about="&dogont;PressedNotification_dog_bedroom_herlamp_button">
         <rdf:type rdf:resource="&dogont;PressedNotification"/>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">pressed</dogont:notificationName>
-        <dogont:generateCommand>dog_bedroom_herlamp_button_generateCommand_PressedNotification</dogont:generateCommand>
         <dogont:notificationOf>dog_bedroom_herlamp_button_notificationOf_PressedNotification</dogont:notificationOf>
+        <dogont:generateCommand>dog_bedroom_herlamp_button_generateCommand_PressedNotification</dogont:generateCommand>
     </owl:NamedIndividual>
     
 
@@ -5001,8 +5001,8 @@
     <owl:NamedIndividual rdf:about="&dogont;PressedNotification_dog_bedroom_mainlamp_button">
         <rdf:type rdf:resource="&dogont;PressedNotification"/>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">pressed</dogont:notificationName>
-        <dogont:notificationOf>dog_bedroom_mainlamp_button_notificationOf_PressedNotification</dogont:notificationOf>
         <dogont:generateCommand>dog_bedroom_mainlamp_button_generateCommand_PressedNotification</dogont:generateCommand>
+        <dogont:notificationOf>dog_bedroom_mainlamp_button_notificationOf_PressedNotification</dogont:notificationOf>
     </owl:NamedIndividual>
     
 
@@ -5012,8 +5012,8 @@
     <owl:NamedIndividual rdf:about="&dogont;PressedNotification_dog_livingroom_mainlamp_button">
         <rdf:type rdf:resource="&dogont;PressedNotification"/>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">pressed</dogont:notificationName>
-        <dogont:generateCommand>dog_livingroom_mainlamp_button_generateCommand_PressedNotification</dogont:generateCommand>
         <dogont:notificationOf>dog_livingroom_mainlamp_button_notificationOf_PressedNotification</dogont:notificationOf>
+        <dogont:generateCommand>dog_livingroom_mainlamp_button_generateCommand_PressedNotification</dogont:generateCommand>
     </owl:NamedIndividual>
     
 
@@ -5164,8 +5164,8 @@
     <owl:NamedIndividual rdf:about="&dogont;ReleasedNotification_dog_bathroom_mainlamp_button">
         <rdf:type rdf:resource="&dogont;ReleasedNotification"/>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">released</dogont:notificationName>
-        <dogont:notificationOf>dog_bathroom_mainlamp_button_notificationOf_ReleasedNotification</dogont:notificationOf>
         <dogont:generateCommand>dog_bathroom_mainlamp_button_generateCommand_ReleasedNotification</dogont:generateCommand>
+        <dogont:notificationOf>dog_bathroom_mainlamp_button_notificationOf_ReleasedNotification</dogont:notificationOf>
     </owl:NamedIndividual>
     
 
@@ -5175,8 +5175,8 @@
     <owl:NamedIndividual rdf:about="&dogont;ReleasedNotification_dog_bedroom_herlamp_button">
         <rdf:type rdf:resource="&dogont;ReleasedNotification"/>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">released</dogont:notificationName>
-        <dogont:generateCommand>dog_bedroom_herlamp_button_generateCommand_ReleasedNotification</dogont:generateCommand>
         <dogont:notificationOf>dog_bedroom_herlamp_button_notificationOf_ReleasedNotification</dogont:notificationOf>
+        <dogont:generateCommand>dog_bedroom_herlamp_button_generateCommand_ReleasedNotification</dogont:generateCommand>
     </owl:NamedIndividual>
     
 
@@ -5186,8 +5186,8 @@
     <owl:NamedIndividual rdf:about="&dogont;ReleasedNotification_dog_bedroom_hislamp_button">
         <rdf:type rdf:resource="&dogont;ReleasedNotification"/>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">released</dogont:notificationName>
-        <dogont:notificationOf>dog_bedroom_hislamp_button_notificationOf_ReleasedNotification</dogont:notificationOf>
         <dogont:generateCommand>dog_bedroom_hislamp_button_generateCommand_ReleasedNotification</dogont:generateCommand>
+        <dogont:notificationOf>dog_bedroom_hislamp_button_notificationOf_ReleasedNotification</dogont:notificationOf>
     </owl:NamedIndividual>
     
 
@@ -5197,8 +5197,8 @@
     <owl:NamedIndividual rdf:about="&dogont;ReleasedNotification_dog_bedroom_mainlamp_button">
         <rdf:type rdf:resource="&dogont;ReleasedNotification"/>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">released</dogont:notificationName>
-        <dogont:generateCommand>dog_bedroom_mainlamp_button_generateCommand_ReleasedNotification</dogont:generateCommand>
         <dogont:notificationOf>dog_bedroom_mainlamp_button_notificationOf_ReleasedNotification</dogont:notificationOf>
+        <dogont:generateCommand>dog_bedroom_mainlamp_button_generateCommand_ReleasedNotification</dogont:generateCommand>
     </owl:NamedIndividual>
     
 
@@ -5393,8 +5393,8 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:commandParamName rdf:datatype="rdf:datatype=Measure">remainingTime</dogont:commandParamName>
         <dogont:realCommandName rdf:datatype="rdf:datatype=&xsd;string">setStartTime</dogont:realCommandName>
-        <dogont:commandOf>dog_bathroom_washingmachine_commandOf_SetRemainingTimeCommand</dogont:commandOf>
         <dogont:commandParamValue>dog_bathroom_washingmachine_commandParamValue_SetRemainingTimeCommand</dogont:commandParamValue>
+        <dogont:commandOf>dog_bathroom_washingmachine_commandOf_SetRemainingTimeCommand</dogont:commandOf>
     </owl:NamedIndividual>
     
 
@@ -5406,8 +5406,8 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;string">1</dogont:nParams>
         <dogont:commandParamName rdf:datatype="rdf:datatype=Measure">remainingTime</dogont:commandParamName>
         <dogont:realCommandName rdf:datatype="rdf:datatype=&xsd;string">setStartTime</dogont:realCommandName>
-        <dogont:commandOf>dog_kitchen_oven_commandOf_SetRemainingTimeCommand</dogont:commandOf>
         <dogont:commandParamValue>dog_kitchen_oven_commandParamValue_SetRemainingTimeCommand</dogont:commandParamValue>
+        <dogont:commandOf>dog_kitchen_oven_commandOf_SetRemainingTimeCommand</dogont:commandOf>
     </owl:NamedIndividual>
     
 
@@ -5419,8 +5419,8 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:realCommandName rdf:datatype="rdf:datatype=&xsd;string">setStartTime</dogont:realCommandName>
         <dogont:commandParamName rdf:datatype="rdf:datatype=Measure">startTime</dogont:commandParamName>
-        <dogont:commandParamValue>dog_bathroom_washingmachine_commandParamValue_SetStartTimeCommand</dogont:commandParamValue>
         <dogont:commandOf>dog_bathroom_washingmachine_commandOf_SetStartTimeCommand</dogont:commandOf>
+        <dogont:commandParamValue>dog_bathroom_washingmachine_commandParamValue_SetStartTimeCommand</dogont:commandParamValue>
     </owl:NamedIndividual>
     
 
@@ -5432,8 +5432,8 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;string">1</dogont:nParams>
         <dogont:realCommandName rdf:datatype="rdf:datatype=&xsd;string">setStartTime</dogont:realCommandName>
         <dogont:commandParamName rdf:datatype="rdf:datatype=Measure">startTime</dogont:commandParamName>
-        <dogont:commandOf>dog_kitchen_oven_commandOf_SetStartTimeCommand</dogont:commandOf>
         <dogont:commandParamValue>dog_kitchen_oven_commandParamValue_SetStartTimeCommand</dogont:commandParamValue>
+        <dogont:commandOf>dog_kitchen_oven_commandOf_SetStartTimeCommand</dogont:commandOf>
     </owl:NamedIndividual>
     
 
@@ -5445,8 +5445,8 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:realCommandName rdf:datatype="rdf:datatype=&xsd;string">setVolume</dogont:realCommandName>
         <dogont:commandParamName rdf:datatype="rdf:datatype=Integer">volume</dogont:commandParamName>
-        <dogont:commandOf>dog_livingroom_tv_commandOf_SetVolumeCommand</dogont:commandOf>
         <dogont:commandParamValue>dog_livingroom_tv_commandParamValue_SetVolumeCommand</dogont:commandParamValue>
+        <dogont:commandOf>dog_livingroom_tv_commandOf_SetVolumeCommand</dogont:commandOf>
     </owl:NamedIndividual>
     
 
@@ -5629,11 +5629,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newActiveEnergyValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">value</dogont:notificationParamName>
-        <dogont:returnType>Measure</dogont:returnType>
-        <dogont:generateCommand>dog_bathroom_mainoutlet_generateCommand_SinglePhaseActiveEnergyMeasurementNotification</dogont:generateCommand>
-        <dogont:continuousNotificationParamValue>dog_bathroom_mainoutlet_continuousNotificationParamValue_SinglePhaseActiveEnergyMeasurementNotification</dogont:continuousNotificationParamValue>
         <dogont:notificationOf>dog_bathroom_mainoutlet_notificationOf_SinglePhaseActiveEnergyMeasurementNotification</dogont:notificationOf>
         <dogont:continuousNotificationParamName>dog_bathroom_mainoutlet_continuousNotificationParamName_SinglePhaseActiveEnergyMeasurementNotification</dogont:continuousNotificationParamName>
+        <dogont:generateCommand>dog_bathroom_mainoutlet_generateCommand_SinglePhaseActiveEnergyMeasurementNotification</dogont:generateCommand>
+        <dogont:continuousNotificationParamValue>dog_bathroom_mainoutlet_continuousNotificationParamValue_SinglePhaseActiveEnergyMeasurementNotification</dogont:continuousNotificationParamValue>
+        <dogont:returnType>Measure</dogont:returnType>
     </owl:NamedIndividual>
     
 
@@ -5645,11 +5645,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newActiveEnergyValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">value</dogont:notificationParamName>
-        <dogont:continuousNotificationParamValue>dog_bathroom_washingmachineoutlet_continuousNotificationParamValue_SinglePhaseActiveEnergyMeasurementNotification</dogont:continuousNotificationParamValue>
-        <dogont:returnType>Measure</dogont:returnType>
         <dogont:continuousNotificationParamName>dog_bathroom_washingmachineoutlet_continuousNotificationParamName_SinglePhaseActiveEnergyMeasurementNotification</dogont:continuousNotificationParamName>
-        <dogont:notificationOf>dog_bathroom_washingmachineoutlet_notificationOf_SinglePhaseActiveEnergyMeasurementNotification</dogont:notificationOf>
+        <dogont:continuousNotificationParamValue>dog_bathroom_washingmachineoutlet_continuousNotificationParamValue_SinglePhaseActiveEnergyMeasurementNotification</dogont:continuousNotificationParamValue>
         <dogont:generateCommand>dog_bathroom_washingmachineoutlet_generateCommand_SinglePhaseActiveEnergyMeasurementNotification</dogont:generateCommand>
+        <dogont:notificationOf>dog_bathroom_washingmachineoutlet_notificationOf_SinglePhaseActiveEnergyMeasurementNotification</dogont:notificationOf>
+        <dogont:returnType>Measure</dogont:returnType>
     </owl:NamedIndividual>
     
 
@@ -5661,11 +5661,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newActiveEnergyValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">value</dogont:notificationParamName>
-        <dogont:generateCommand>dog_bedroom_heroutlet_generateCommand_SinglePhaseActiveEnergyMeasurementNotification</dogont:generateCommand>
+        <dogont:continuousNotificationParamName>dog_bedroom_heroutlet_continuousNotificationParamName_SinglePhaseActiveEnergyMeasurementNotification</dogont:continuousNotificationParamName>
         <dogont:returnType>Measure</dogont:returnType>
+        <dogont:generateCommand>dog_bedroom_heroutlet_generateCommand_SinglePhaseActiveEnergyMeasurementNotification</dogont:generateCommand>
         <dogont:notificationOf>dog_bedroom_heroutlet_notificationOf_SinglePhaseActiveEnergyMeasurementNotification</dogont:notificationOf>
         <dogont:continuousNotificationParamValue>dog_bedroom_heroutlet_continuousNotificationParamValue_SinglePhaseActiveEnergyMeasurementNotification</dogont:continuousNotificationParamValue>
-        <dogont:continuousNotificationParamName>dog_bedroom_heroutlet_continuousNotificationParamName_SinglePhaseActiveEnergyMeasurementNotification</dogont:continuousNotificationParamName>
     </owl:NamedIndividual>
     
 
@@ -5678,8 +5678,8 @@
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newActiveEnergyValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">value</dogont:notificationParamName>
         <dogont:continuousNotificationParamName>dog_bedroom_hisoutlet_continuousNotificationParamName_SinglePhaseActiveEnergyMeasurementNotification</dogont:continuousNotificationParamName>
-        <dogont:returnType>Measure</dogont:returnType>
         <dogont:notificationOf>dog_bedroom_hisoutlet_notificationOf_SinglePhaseActiveEnergyMeasurementNotification</dogont:notificationOf>
+        <dogont:returnType>Measure</dogont:returnType>
         <dogont:continuousNotificationParamValue>dog_bedroom_hisoutlet_continuousNotificationParamValue_SinglePhaseActiveEnergyMeasurementNotification</dogont:continuousNotificationParamValue>
         <dogont:generateCommand>dog_bedroom_hisoutlet_generateCommand_SinglePhaseActiveEnergyMeasurementNotification</dogont:generateCommand>
     </owl:NamedIndividual>
@@ -5696,8 +5696,8 @@
         <dogont:continuousNotificationParamValue>dog_kitchen_fridgeoutlet_continuousNotificationParamValue_SinglePhaseActiveEnergyMeasurementNotification</dogont:continuousNotificationParamValue>
         <dogont:generateCommand>dog_kitchen_fridgeoutlet_generateCommand_SinglePhaseActiveEnergyMeasurementNotification</dogont:generateCommand>
         <dogont:continuousNotificationParamName>dog_kitchen_fridgeoutlet_continuousNotificationParamName_SinglePhaseActiveEnergyMeasurementNotification</dogont:continuousNotificationParamName>
-        <dogont:returnType>Measure</dogont:returnType>
         <dogont:notificationOf>dog_kitchen_fridgeoutlet_notificationOf_SinglePhaseActiveEnergyMeasurementNotification</dogont:notificationOf>
+        <dogont:returnType>Measure</dogont:returnType>
     </owl:NamedIndividual>
     
 
@@ -5709,11 +5709,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newActiveEnergyValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">value</dogont:notificationParamName>
-        <dogont:continuousNotificationParamValue>dog_kitchen_mainoutlet_continuousNotificationParamValue_SinglePhaseActiveEnergyMeasurementNotification</dogont:continuousNotificationParamValue>
-        <dogont:returnType>Measure</dogont:returnType>
         <dogont:generateCommand>dog_kitchen_mainoutlet_generateCommand_SinglePhaseActiveEnergyMeasurementNotification</dogont:generateCommand>
         <dogont:notificationOf>dog_kitchen_mainoutlet_notificationOf_SinglePhaseActiveEnergyMeasurementNotification</dogont:notificationOf>
+        <dogont:returnType>Measure</dogont:returnType>
         <dogont:continuousNotificationParamName>dog_kitchen_mainoutlet_continuousNotificationParamName_SinglePhaseActiveEnergyMeasurementNotification</dogont:continuousNotificationParamName>
+        <dogont:continuousNotificationParamValue>dog_kitchen_mainoutlet_continuousNotificationParamValue_SinglePhaseActiveEnergyMeasurementNotification</dogont:continuousNotificationParamValue>
     </owl:NamedIndividual>
     
 
@@ -5726,9 +5726,9 @@
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newActiveEnergyValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">value</dogont:notificationParamName>
         <dogont:notificationOf>dog_kitchen_ovenoutlet_notificationOf_SinglePhaseActiveEnergyMeasurementNotification</dogont:notificationOf>
-        <dogont:continuousNotificationParamValue>dog_kitchen_ovenoutlet_continuousNotificationParamValue_SinglePhaseActiveEnergyMeasurementNotification</dogont:continuousNotificationParamValue>
         <dogont:returnType>Measure</dogont:returnType>
         <dogont:generateCommand>dog_kitchen_ovenoutlet_generateCommand_SinglePhaseActiveEnergyMeasurementNotification</dogont:generateCommand>
+        <dogont:continuousNotificationParamValue>dog_kitchen_ovenoutlet_continuousNotificationParamValue_SinglePhaseActiveEnergyMeasurementNotification</dogont:continuousNotificationParamValue>
         <dogont:continuousNotificationParamName>dog_kitchen_ovenoutlet_continuousNotificationParamName_SinglePhaseActiveEnergyMeasurementNotification</dogont:continuousNotificationParamName>
     </owl:NamedIndividual>
     
@@ -5741,11 +5741,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newActiveEnergyValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">value</dogont:notificationParamName>
-        <dogont:returnType>Measure</dogont:returnType>
+        <dogont:generateCommand>dog_livingroom_mainoutlet_generateCommand_SinglePhaseActiveEnergyMeasurementNotification</dogont:generateCommand>
         <dogont:continuousNotificationParamName>dog_livingroom_mainoutlet_continuousNotificationParamName_SinglePhaseActiveEnergyMeasurementNotification</dogont:continuousNotificationParamName>
         <dogont:continuousNotificationParamValue>dog_livingroom_mainoutlet_continuousNotificationParamValue_SinglePhaseActiveEnergyMeasurementNotification</dogont:continuousNotificationParamValue>
-        <dogont:generateCommand>dog_livingroom_mainoutlet_generateCommand_SinglePhaseActiveEnergyMeasurementNotification</dogont:generateCommand>
         <dogont:notificationOf>dog_livingroom_mainoutlet_notificationOf_SinglePhaseActiveEnergyMeasurementNotification</dogont:notificationOf>
+        <dogont:returnType>Measure</dogont:returnType>
     </owl:NamedIndividual>
     
 
@@ -5757,11 +5757,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newActiveEnergyValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">value</dogont:notificationParamName>
+        <dogont:generateCommand>dog_livingroom_tvoutlet_generateCommand_SinglePhaseActiveEnergyMeasurementNotification</dogont:generateCommand>
+        <dogont:notificationOf>dog_livingroom_tvoutlet_notificationOf_SinglePhaseActiveEnergyMeasurementNotification</dogont:notificationOf>
         <dogont:continuousNotificationParamName>dog_livingroom_tvoutlet_continuousNotificationParamName_SinglePhaseActiveEnergyMeasurementNotification</dogont:continuousNotificationParamName>
         <dogont:continuousNotificationParamValue>dog_livingroom_tvoutlet_continuousNotificationParamValue_SinglePhaseActiveEnergyMeasurementNotification</dogont:continuousNotificationParamValue>
-        <dogont:notificationOf>dog_livingroom_tvoutlet_notificationOf_SinglePhaseActiveEnergyMeasurementNotification</dogont:notificationOf>
         <dogont:returnType>Measure</dogont:returnType>
-        <dogont:generateCommand>dog_livingroom_tvoutlet_generateCommand_SinglePhaseActiveEnergyMeasurementNotification</dogont:generateCommand>
     </owl:NamedIndividual>
     
 
@@ -6035,10 +6035,10 @@
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newActivePowerValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">powerValue</dogont:notificationParamName>
         <dogont:generateCommand>dog_bathroom_mainoutlet_generateCommand_SinglePhaseActivePowerMeasurementNotification</dogont:generateCommand>
+        <dogont:returnType>Measure</dogont:returnType>
+        <dogont:continuousNotificationParamValue>dog_bathroom_mainoutlet_continuousNotificationParamValue_SinglePhaseActivePowerMeasurementNotification</dogont:continuousNotificationParamValue>
         <dogont:continuousNotificationParamName>dog_bathroom_mainoutlet_continuousNotificationParamName_SinglePhaseActivePowerMeasurementNotification</dogont:continuousNotificationParamName>
         <dogont:notificationOf>dog_bathroom_mainoutlet_notificationOf_SinglePhaseActivePowerMeasurementNotification</dogont:notificationOf>
-        <dogont:continuousNotificationParamValue>dog_bathroom_mainoutlet_continuousNotificationParamValue_SinglePhaseActivePowerMeasurementNotification</dogont:continuousNotificationParamValue>
-        <dogont:returnType>Measure</dogont:returnType>
     </owl:NamedIndividual>
     
 
@@ -6050,11 +6050,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newActivePowerValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">powerValue</dogont:notificationParamName>
-        <dogont:continuousNotificationParamValue>dog_bathroom_washingmachineoutlet_continuousNotificationParamValue_SinglePhaseActivePowerMeasurementNotification</dogont:continuousNotificationParamValue>
         <dogont:notificationOf>dog_bathroom_washingmachineoutlet_notificationOf_SinglePhaseActivePowerMeasurementNotification</dogont:notificationOf>
-        <dogont:returnType>Measure</dogont:returnType>
-        <dogont:continuousNotificationParamName>dog_bathroom_washingmachineoutlet_continuousNotificationParamName_SinglePhaseActivePowerMeasurementNotification</dogont:continuousNotificationParamName>
+        <dogont:continuousNotificationParamValue>dog_bathroom_washingmachineoutlet_continuousNotificationParamValue_SinglePhaseActivePowerMeasurementNotification</dogont:continuousNotificationParamValue>
         <dogont:generateCommand>dog_bathroom_washingmachineoutlet_generateCommand_SinglePhaseActivePowerMeasurementNotification</dogont:generateCommand>
+        <dogont:continuousNotificationParamName>dog_bathroom_washingmachineoutlet_continuousNotificationParamName_SinglePhaseActivePowerMeasurementNotification</dogont:continuousNotificationParamName>
+        <dogont:returnType>Measure</dogont:returnType>
     </owl:NamedIndividual>
     
 
@@ -6066,11 +6066,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newActivePowerValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">powerValue</dogont:notificationParamName>
+        <dogont:continuousNotificationParamName>dog_bedroom_heroutlet_continuousNotificationParamName_SinglePhaseActivePowerMeasurementNotification</dogont:continuousNotificationParamName>
+        <dogont:notificationOf>dog_bedroom_heroutlet_notificationOf_SinglePhaseActivePowerMeasurementNotification</dogont:notificationOf>
+        <dogont:generateCommand>dog_bedroom_heroutlet_generateCommand_SinglePhaseActivePowerMeasurementNotification</dogont:generateCommand>
         <dogont:returnType>Measure</dogont:returnType>
         <dogont:continuousNotificationParamValue>dog_bedroom_heroutlet_continuousNotificationParamValue_SinglePhaseActivePowerMeasurementNotification</dogont:continuousNotificationParamValue>
-        <dogont:generateCommand>dog_bedroom_heroutlet_generateCommand_SinglePhaseActivePowerMeasurementNotification</dogont:generateCommand>
-        <dogont:notificationOf>dog_bedroom_heroutlet_notificationOf_SinglePhaseActivePowerMeasurementNotification</dogont:notificationOf>
-        <dogont:continuousNotificationParamName>dog_bedroom_heroutlet_continuousNotificationParamName_SinglePhaseActivePowerMeasurementNotification</dogont:continuousNotificationParamName>
     </owl:NamedIndividual>
     
 
@@ -6082,9 +6082,9 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newActivePowerValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">powerValue</dogont:notificationParamName>
+        <dogont:notificationOf>dog_bedroom_hisoutlet_notificationOf_SinglePhaseActivePowerMeasurementNotification</dogont:notificationOf>
         <dogont:returnType>Measure</dogont:returnType>
         <dogont:generateCommand>dog_bedroom_hisoutlet_generateCommand_SinglePhaseActivePowerMeasurementNotification</dogont:generateCommand>
-        <dogont:notificationOf>dog_bedroom_hisoutlet_notificationOf_SinglePhaseActivePowerMeasurementNotification</dogont:notificationOf>
         <dogont:continuousNotificationParamName>dog_bedroom_hisoutlet_continuousNotificationParamName_SinglePhaseActivePowerMeasurementNotification</dogont:continuousNotificationParamName>
         <dogont:continuousNotificationParamValue>dog_bedroom_hisoutlet_continuousNotificationParamValue_SinglePhaseActivePowerMeasurementNotification</dogont:continuousNotificationParamValue>
     </owl:NamedIndividual>
@@ -6098,11 +6098,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newActivePowerValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">powerValue</dogont:notificationParamName>
-        <dogont:continuousNotificationParamValue>dog_kitchen_fridgeoutlet_continuousNotificationParamValue_SinglePhaseActivePowerMeasurementNotification</dogont:continuousNotificationParamValue>
-        <dogont:continuousNotificationParamName>dog_kitchen_fridgeoutlet_continuousNotificationParamName_SinglePhaseActivePowerMeasurementNotification</dogont:continuousNotificationParamName>
-        <dogont:generateCommand>dog_kitchen_fridgeoutlet_generateCommand_SinglePhaseActivePowerMeasurementNotification</dogont:generateCommand>
-        <dogont:notificationOf>dog_kitchen_fridgeoutlet_notificationOf_SinglePhaseActivePowerMeasurementNotification</dogont:notificationOf>
         <dogont:returnType>Measure</dogont:returnType>
+        <dogont:notificationOf>dog_kitchen_fridgeoutlet_notificationOf_SinglePhaseActivePowerMeasurementNotification</dogont:notificationOf>
+        <dogont:continuousNotificationParamName>dog_kitchen_fridgeoutlet_continuousNotificationParamName_SinglePhaseActivePowerMeasurementNotification</dogont:continuousNotificationParamName>
+        <dogont:continuousNotificationParamValue>dog_kitchen_fridgeoutlet_continuousNotificationParamValue_SinglePhaseActivePowerMeasurementNotification</dogont:continuousNotificationParamValue>
+        <dogont:generateCommand>dog_kitchen_fridgeoutlet_generateCommand_SinglePhaseActivePowerMeasurementNotification</dogont:generateCommand>
     </owl:NamedIndividual>
     
 
@@ -6114,11 +6114,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newActivePowerValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">powerValue</dogont:notificationParamName>
-        <dogont:returnType>Measure</dogont:returnType>
         <dogont:continuousNotificationParamValue>dog_kitchen_mainoutlet_continuousNotificationParamValue_SinglePhaseActivePowerMeasurementNotification</dogont:continuousNotificationParamValue>
         <dogont:continuousNotificationParamName>dog_kitchen_mainoutlet_continuousNotificationParamName_SinglePhaseActivePowerMeasurementNotification</dogont:continuousNotificationParamName>
-        <dogont:notificationOf>dog_kitchen_mainoutlet_notificationOf_SinglePhaseActivePowerMeasurementNotification</dogont:notificationOf>
         <dogont:generateCommand>dog_kitchen_mainoutlet_generateCommand_SinglePhaseActivePowerMeasurementNotification</dogont:generateCommand>
+        <dogont:returnType>Measure</dogont:returnType>
+        <dogont:notificationOf>dog_kitchen_mainoutlet_notificationOf_SinglePhaseActivePowerMeasurementNotification</dogont:notificationOf>
     </owl:NamedIndividual>
     
 
@@ -6131,9 +6131,9 @@
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newActivePowerValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">powerValue</dogont:notificationParamName>
         <dogont:continuousNotificationParamValue>dog_kitchen_ovenoutlet_continuousNotificationParamValue_SinglePhaseActivePowerMeasurementNotification</dogont:continuousNotificationParamValue>
-        <dogont:returnType>Measure</dogont:returnType>
         <dogont:continuousNotificationParamName>dog_kitchen_ovenoutlet_continuousNotificationParamName_SinglePhaseActivePowerMeasurementNotification</dogont:continuousNotificationParamName>
         <dogont:notificationOf>dog_kitchen_ovenoutlet_notificationOf_SinglePhaseActivePowerMeasurementNotification</dogont:notificationOf>
+        <dogont:returnType>Measure</dogont:returnType>
         <dogont:generateCommand>dog_kitchen_ovenoutlet_generateCommand_SinglePhaseActivePowerMeasurementNotification</dogont:generateCommand>
     </owl:NamedIndividual>
     
@@ -6146,11 +6146,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newActivePowerValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">powerValue</dogont:notificationParamName>
-        <dogont:continuousNotificationParamName>dog_livingroom_mainoutlet_continuousNotificationParamName_SinglePhaseActivePowerMeasurementNotification</dogont:continuousNotificationParamName>
-        <dogont:generateCommand>dog_livingroom_mainoutlet_generateCommand_SinglePhaseActivePowerMeasurementNotification</dogont:generateCommand>
+        <dogont:continuousNotificationParamValue>dog_livingroom_mainoutlet_continuousNotificationParamValue_SinglePhaseActivePowerMeasurementNotification</dogont:continuousNotificationParamValue>
         <dogont:notificationOf>dog_livingroom_mainoutlet_notificationOf_SinglePhaseActivePowerMeasurementNotification</dogont:notificationOf>
         <dogont:returnType>Measure</dogont:returnType>
-        <dogont:continuousNotificationParamValue>dog_livingroom_mainoutlet_continuousNotificationParamValue_SinglePhaseActivePowerMeasurementNotification</dogont:continuousNotificationParamValue>
+        <dogont:generateCommand>dog_livingroom_mainoutlet_generateCommand_SinglePhaseActivePowerMeasurementNotification</dogont:generateCommand>
+        <dogont:continuousNotificationParamName>dog_livingroom_mainoutlet_continuousNotificationParamName_SinglePhaseActivePowerMeasurementNotification</dogont:continuousNotificationParamName>
     </owl:NamedIndividual>
     
 
@@ -6162,10 +6162,10 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newActivePowerValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">powerValue</dogont:notificationParamName>
-        <dogont:notificationOf>dog_livingroom_tvoutlet_notificationOf_SinglePhaseActivePowerMeasurementNotification</dogont:notificationOf>
+        <dogont:returnType>Measure</dogont:returnType>
         <dogont:generateCommand>dog_livingroom_tvoutlet_generateCommand_SinglePhaseActivePowerMeasurementNotification</dogont:generateCommand>
         <dogont:continuousNotificationParamValue>dog_livingroom_tvoutlet_continuousNotificationParamValue_SinglePhaseActivePowerMeasurementNotification</dogont:continuousNotificationParamValue>
-        <dogont:returnType>Measure</dogont:returnType>
+        <dogont:notificationOf>dog_livingroom_tvoutlet_notificationOf_SinglePhaseActivePowerMeasurementNotification</dogont:notificationOf>
         <dogont:continuousNotificationParamName>dog_livingroom_tvoutlet_continuousNotificationParamName_SinglePhaseActivePowerMeasurementNotification</dogont:continuousNotificationParamName>
     </owl:NamedIndividual>
     
@@ -6439,11 +6439,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newReactiveEnergyValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">value</dogont:notificationParamName>
-        <dogont:continuousNotificationParamValue>dog_bathroom_mainoutlet_continuousNotificationParamValue_SinglePhaseReactiveEnergyMeasurementNotification</dogont:continuousNotificationParamValue>
-        <dogont:returnType>Measure</dogont:returnType>
-        <dogont:notificationOf>dog_bathroom_mainoutlet_notificationOf_SinglePhaseReactiveEnergyMeasurementNotification</dogont:notificationOf>
         <dogont:continuousNotificationParamName>dog_bathroom_mainoutlet_continuousNotificationParamName_SinglePhaseReactiveEnergyMeasurementNotification</dogont:continuousNotificationParamName>
         <dogont:generateCommand>dog_bathroom_mainoutlet_generateCommand_SinglePhaseReactiveEnergyMeasurementNotification</dogont:generateCommand>
+        <dogont:continuousNotificationParamValue>dog_bathroom_mainoutlet_continuousNotificationParamValue_SinglePhaseReactiveEnergyMeasurementNotification</dogont:continuousNotificationParamValue>
+        <dogont:notificationOf>dog_bathroom_mainoutlet_notificationOf_SinglePhaseReactiveEnergyMeasurementNotification</dogont:notificationOf>
+        <dogont:returnType>Measure</dogont:returnType>
     </owl:NamedIndividual>
     
 
@@ -6455,11 +6455,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newReactiveEnergyValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">value</dogont:notificationParamName>
-        <dogont:continuousNotificationParamValue>dog_bathroom_washingmachineoutlet_continuousNotificationParamValue_SinglePhaseReactiveEnergyMeasurementNotification</dogont:continuousNotificationParamValue>
-        <dogont:continuousNotificationParamName>dog_bathroom_washingmachineoutlet_continuousNotificationParamName_SinglePhaseReactiveEnergyMeasurementNotification</dogont:continuousNotificationParamName>
         <dogont:notificationOf>dog_bathroom_washingmachineoutlet_notificationOf_SinglePhaseReactiveEnergyMeasurementNotification</dogont:notificationOf>
         <dogont:returnType>Measure</dogont:returnType>
+        <dogont:continuousNotificationParamName>dog_bathroom_washingmachineoutlet_continuousNotificationParamName_SinglePhaseReactiveEnergyMeasurementNotification</dogont:continuousNotificationParamName>
         <dogont:generateCommand>dog_bathroom_washingmachineoutlet_generateCommand_SinglePhaseReactiveEnergyMeasurementNotification</dogont:generateCommand>
+        <dogont:continuousNotificationParamValue>dog_bathroom_washingmachineoutlet_continuousNotificationParamValue_SinglePhaseReactiveEnergyMeasurementNotification</dogont:continuousNotificationParamValue>
     </owl:NamedIndividual>
     
 
@@ -6471,11 +6471,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newReactiveEnergyValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">value</dogont:notificationParamName>
-        <dogont:notificationOf>dog_bedroom_heroutlet_notificationOf_SinglePhaseReactiveEnergyMeasurementNotification</dogont:notificationOf>
         <dogont:continuousNotificationParamName>dog_bedroom_heroutlet_continuousNotificationParamName_SinglePhaseReactiveEnergyMeasurementNotification</dogont:continuousNotificationParamName>
-        <dogont:returnType>Measure</dogont:returnType>
-        <dogont:continuousNotificationParamValue>dog_bedroom_heroutlet_continuousNotificationParamValue_SinglePhaseReactiveEnergyMeasurementNotification</dogont:continuousNotificationParamValue>
         <dogont:generateCommand>dog_bedroom_heroutlet_generateCommand_SinglePhaseReactiveEnergyMeasurementNotification</dogont:generateCommand>
+        <dogont:notificationOf>dog_bedroom_heroutlet_notificationOf_SinglePhaseReactiveEnergyMeasurementNotification</dogont:notificationOf>
+        <dogont:continuousNotificationParamValue>dog_bedroom_heroutlet_continuousNotificationParamValue_SinglePhaseReactiveEnergyMeasurementNotification</dogont:continuousNotificationParamValue>
+        <dogont:returnType>Measure</dogont:returnType>
     </owl:NamedIndividual>
     
 
@@ -6487,11 +6487,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newReactiveEnergyValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">value</dogont:notificationParamName>
-        <dogont:notificationOf>dog_bedroom_hisoutlet_notificationOf_SinglePhaseReactiveEnergyMeasurementNotification</dogont:notificationOf>
-        <dogont:returnType>Measure</dogont:returnType>
-        <dogont:continuousNotificationParamName>dog_bedroom_hisoutlet_continuousNotificationParamName_SinglePhaseReactiveEnergyMeasurementNotification</dogont:continuousNotificationParamName>
-        <dogont:continuousNotificationParamValue>dog_bedroom_hisoutlet_continuousNotificationParamValue_SinglePhaseReactiveEnergyMeasurementNotification</dogont:continuousNotificationParamValue>
         <dogont:generateCommand>dog_bedroom_hisoutlet_generateCommand_SinglePhaseReactiveEnergyMeasurementNotification</dogont:generateCommand>
+        <dogont:continuousNotificationParamValue>dog_bedroom_hisoutlet_continuousNotificationParamValue_SinglePhaseReactiveEnergyMeasurementNotification</dogont:continuousNotificationParamValue>
+        <dogont:returnType>Measure</dogont:returnType>
+        <dogont:notificationOf>dog_bedroom_hisoutlet_notificationOf_SinglePhaseReactiveEnergyMeasurementNotification</dogont:notificationOf>
+        <dogont:continuousNotificationParamName>dog_bedroom_hisoutlet_continuousNotificationParamName_SinglePhaseReactiveEnergyMeasurementNotification</dogont:continuousNotificationParamName>
     </owl:NamedIndividual>
     
 
@@ -6504,10 +6504,10 @@
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newReactiveEnergyValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">value</dogont:notificationParamName>
         <dogont:notificationOf>dog_kitchen_fridgeoutlet_notificationOf_SinglePhaseReactiveEnergyMeasurementNotification</dogont:notificationOf>
-        <dogont:generateCommand>dog_kitchen_fridgeoutlet_generateCommand_SinglePhaseReactiveEnergyMeasurementNotification</dogont:generateCommand>
-        <dogont:continuousNotificationParamValue>dog_kitchen_fridgeoutlet_continuousNotificationParamValue_SinglePhaseReactiveEnergyMeasurementNotification</dogont:continuousNotificationParamValue>
         <dogont:returnType>Measure</dogont:returnType>
         <dogont:continuousNotificationParamName>dog_kitchen_fridgeoutlet_continuousNotificationParamName_SinglePhaseReactiveEnergyMeasurementNotification</dogont:continuousNotificationParamName>
+        <dogont:continuousNotificationParamValue>dog_kitchen_fridgeoutlet_continuousNotificationParamValue_SinglePhaseReactiveEnergyMeasurementNotification</dogont:continuousNotificationParamValue>
+        <dogont:generateCommand>dog_kitchen_fridgeoutlet_generateCommand_SinglePhaseReactiveEnergyMeasurementNotification</dogont:generateCommand>
     </owl:NamedIndividual>
     
 
@@ -6519,9 +6519,9 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newReactiveEnergyValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">value</dogont:notificationParamName>
-        <dogont:returnType>Measure</dogont:returnType>
         <dogont:continuousNotificationParamValue>dog_kitchen_mainoutlet_continuousNotificationParamValue_SinglePhaseReactiveEnergyMeasurementNotification</dogont:continuousNotificationParamValue>
         <dogont:notificationOf>dog_kitchen_mainoutlet_notificationOf_SinglePhaseReactiveEnergyMeasurementNotification</dogont:notificationOf>
+        <dogont:returnType>Measure</dogont:returnType>
         <dogont:continuousNotificationParamName>dog_kitchen_mainoutlet_continuousNotificationParamName_SinglePhaseReactiveEnergyMeasurementNotification</dogont:continuousNotificationParamName>
         <dogont:generateCommand>dog_kitchen_mainoutlet_generateCommand_SinglePhaseReactiveEnergyMeasurementNotification</dogont:generateCommand>
     </owl:NamedIndividual>
@@ -6535,11 +6535,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newReactiveEnergyValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">value</dogont:notificationParamName>
-        <dogont:continuousNotificationParamValue>dog_kitchen_ovenoutlet_continuousNotificationParamValue_SinglePhaseReactiveEnergyMeasurementNotification</dogont:continuousNotificationParamValue>
-        <dogont:generateCommand>dog_kitchen_ovenoutlet_generateCommand_SinglePhaseReactiveEnergyMeasurementNotification</dogont:generateCommand>
-        <dogont:notificationOf>dog_kitchen_ovenoutlet_notificationOf_SinglePhaseReactiveEnergyMeasurementNotification</dogont:notificationOf>
         <dogont:continuousNotificationParamName>dog_kitchen_ovenoutlet_continuousNotificationParamName_SinglePhaseReactiveEnergyMeasurementNotification</dogont:continuousNotificationParamName>
+        <dogont:generateCommand>dog_kitchen_ovenoutlet_generateCommand_SinglePhaseReactiveEnergyMeasurementNotification</dogont:generateCommand>
         <dogont:returnType>Measure</dogont:returnType>
+        <dogont:continuousNotificationParamValue>dog_kitchen_ovenoutlet_continuousNotificationParamValue_SinglePhaseReactiveEnergyMeasurementNotification</dogont:continuousNotificationParamValue>
+        <dogont:notificationOf>dog_kitchen_ovenoutlet_notificationOf_SinglePhaseReactiveEnergyMeasurementNotification</dogont:notificationOf>
     </owl:NamedIndividual>
     
 
@@ -6551,11 +6551,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">newReactiveEnergyValue</dogont:notificationName>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">value</dogont:notificationParamName>
-        <dogont:continuousNotificationParamValue>dog_livingroom_mainoutlet_continuousNotificationParamValue_SinglePhaseReactiveEnergyMeasurementNotification</dogont:continuousNotificationParamValue>
         <dogont:notificationOf>dog_livingroom_mainoutlet_notificationOf_SinglePhaseReactiveEnergyMeasurementNotification</dogont:notificationOf>
-        <dogont:continuousNotificationParamName>dog_livingroom_mainoutlet_continuousNotificationParamName_SinglePhaseReactiveEnergyMeasurementNotification</dogont:continuousNotificationParamName>
-        <dogont:returnType>Measure</dogont:returnType>
         <dogont:generateCommand>dog_livingroom_mainoutlet_generateCommand_SinglePhaseReactiveEnergyMeasurementNotification</dogont:generateCommand>
+        <dogont:returnType>Measure</dogont:returnType>
+        <dogont:continuousNotificationParamName>dog_livingroom_mainoutlet_continuousNotificationParamName_SinglePhaseReactiveEnergyMeasurementNotification</dogont:continuousNotificationParamName>
+        <dogont:continuousNotificationParamValue>dog_livingroom_mainoutlet_continuousNotificationParamValue_SinglePhaseReactiveEnergyMeasurementNotification</dogont:continuousNotificationParamValue>
     </owl:NamedIndividual>
     
 
@@ -6569,9 +6569,9 @@
         <dogont:notificationParamName rdf:datatype="rdf:datatype=Measure">value</dogont:notificationParamName>
         <dogont:notificationOf>dog_livingroom_tvoutlet_notificationOf_SinglePhaseReactiveEnergyMeasurementNotification</dogont:notificationOf>
         <dogont:continuousNotificationParamName>dog_livingroom_tvoutlet_continuousNotificationParamName_SinglePhaseReactiveEnergyMeasurementNotification</dogont:continuousNotificationParamName>
-        <dogont:generateCommand>dog_livingroom_tvoutlet_generateCommand_SinglePhaseReactiveEnergyMeasurementNotification</dogont:generateCommand>
         <dogont:continuousNotificationParamValue>dog_livingroom_tvoutlet_continuousNotificationParamValue_SinglePhaseReactiveEnergyMeasurementNotification</dogont:continuousNotificationParamValue>
         <dogont:returnType>Measure</dogont:returnType>
+        <dogont:generateCommand>dog_livingroom_tvoutlet_generateCommand_SinglePhaseReactiveEnergyMeasurementNotification</dogont:generateCommand>
     </owl:NamedIndividual>
     
 
@@ -7150,11 +7150,11 @@
         <rdf:type rdf:resource="&dogont;StateChangeNotification"/>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=State">newState</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">stateChanged</dogont:notificationName>
-        <dogont:notificationOf>dog_bathroom_light_sensor_notificationOf_StateChangeNotification</dogont:notificationOf>
         <dogont:continuousNotificationParamValue>dog_bathroom_light_sensor_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
-        <dogont:returnType>DeviceStatus</dogont:returnType>
         <dogont:continuousNotificationParamName>dog_bathroom_light_sensor_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
         <dogont:generateCommand>dog_bathroom_light_sensor_generateCommand_StateChangeNotification</dogont:generateCommand>
+        <dogont:notificationOf>dog_bathroom_light_sensor_notificationOf_StateChangeNotification</dogont:notificationOf>
+        <dogont:returnType>DeviceStatus</dogont:returnType>
     </owl:NamedIndividual>
     
 
@@ -7166,11 +7166,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=State">newState</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">stateChanged</dogont:notificationName>
-        <dogont:notificationOf>dog_bathroom_mainlamp_notificationOf_StateChangeNotification</dogont:notificationOf>
         <dogont:returnType>DeviceStatus</dogont:returnType>
         <dogont:continuousNotificationParamValue>dog_bathroom_mainlamp_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
-        <dogont:generateCommand>dog_bathroom_mainlamp_generateCommand_StateChangeNotification</dogont:generateCommand>
         <dogont:continuousNotificationParamName>dog_bathroom_mainlamp_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
+        <dogont:generateCommand>dog_bathroom_mainlamp_generateCommand_StateChangeNotification</dogont:generateCommand>
+        <dogont:notificationOf>dog_bathroom_mainlamp_notificationOf_StateChangeNotification</dogont:notificationOf>
     </owl:NamedIndividual>
     
 
@@ -7183,8 +7183,8 @@
         <dogont:notificationParamName rdf:datatype="rdf:datatype=State">newState</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">stateChanged</dogont:notificationName>
         <dogont:continuousNotificationParamName>dog_bathroom_mainlamp_button_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
-        <dogont:notificationOf>dog_bathroom_mainlamp_button_notificationOf_StateChangeNotification</dogont:notificationOf>
         <dogont:continuousNotificationParamValue>dog_bathroom_mainlamp_button_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
+        <dogont:notificationOf>dog_bathroom_mainlamp_button_notificationOf_StateChangeNotification</dogont:notificationOf>
         <dogont:returnType>DeviceStatus</dogont:returnType>
         <dogont:generateCommand>dog_bathroom_mainlamp_button_generateCommand_StateChangeNotification</dogont:generateCommand>
     </owl:NamedIndividual>
@@ -7198,11 +7198,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=State">newState</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">stateChanged</dogont:notificationName>
-        <dogont:notificationOf>dog_bathroom_mainoutlet_notificationOf_StateChangeNotification</dogont:notificationOf>
-        <dogont:generateCommand>dog_bathroom_mainoutlet_generateCommand_StateChangeNotification</dogont:generateCommand>
-        <dogont:continuousNotificationParamValue>dog_bathroom_mainoutlet_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
         <dogont:continuousNotificationParamName>dog_bathroom_mainoutlet_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
+        <dogont:generateCommand>dog_bathroom_mainoutlet_generateCommand_StateChangeNotification</dogont:generateCommand>
         <dogont:returnType>DeviceStatus</dogont:returnType>
+        <dogont:notificationOf>dog_bathroom_mainoutlet_notificationOf_StateChangeNotification</dogont:notificationOf>
+        <dogont:continuousNotificationParamValue>dog_bathroom_mainoutlet_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
     </owl:NamedIndividual>
     
 
@@ -7215,9 +7215,9 @@
         <dogont:notificationParamName rdf:datatype="rdf:datatype=State">newState</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">stateChanged</dogont:notificationName>
         <dogont:generateCommand>dog_bathroom_presence_sensor_generateCommand_StateChangeNotification</dogont:generateCommand>
-        <dogont:returnType>DeviceStatus</dogont:returnType>
         <dogont:continuousNotificationParamName>dog_bathroom_presence_sensor_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
         <dogont:notificationOf>dog_bathroom_presence_sensor_notificationOf_StateChangeNotification</dogont:notificationOf>
+        <dogont:returnType>DeviceStatus</dogont:returnType>
         <dogont:continuousNotificationParamValue>dog_bathroom_presence_sensor_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
     </owl:NamedIndividual>
     
@@ -7248,9 +7248,9 @@
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">stateChanged</dogont:notificationName>
         <dogont:notificationOf>dog_bathroom_washingmachine_notificationOf_StateChangeNotification</dogont:notificationOf>
         <dogont:continuousNotificationParamValue>dog_bathroom_washingmachine_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
+        <dogont:generateCommand>dog_bathroom_washingmachine_generateCommand_StateChangeNotification</dogont:generateCommand>
         <dogont:returnType>DeviceStatus</dogont:returnType>
         <dogont:continuousNotificationParamName>dog_bathroom_washingmachine_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
-        <dogont:generateCommand>dog_bathroom_washingmachine_generateCommand_StateChangeNotification</dogont:generateCommand>
     </owl:NamedIndividual>
     
 
@@ -7262,11 +7262,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=State">newState</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">stateChanged</dogont:notificationName>
-        <dogont:notificationOf>dog_bathroom_washingmachineoutlet_notificationOf_StateChangeNotification</dogont:notificationOf>
-        <dogont:continuousNotificationParamName>dog_bathroom_washingmachineoutlet_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
-        <dogont:returnType>DeviceStatus</dogont:returnType>
         <dogont:generateCommand>dog_bathroom_washingmachineoutlet_generateCommand_StateChangeNotification</dogont:generateCommand>
+        <dogont:notificationOf>dog_bathroom_washingmachineoutlet_notificationOf_StateChangeNotification</dogont:notificationOf>
+        <dogont:returnType>DeviceStatus</dogont:returnType>
         <dogont:continuousNotificationParamValue>dog_bathroom_washingmachineoutlet_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
+        <dogont:continuousNotificationParamName>dog_bathroom_washingmachineoutlet_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
     </owl:NamedIndividual>
     
 
@@ -7278,11 +7278,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=State">newState</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">stateChanged</dogont:notificationName>
-        <dogont:notificationOf>dog_bedroom_herlamp_notificationOf_StateChangeNotification</dogont:notificationOf>
-        <dogont:continuousNotificationParamValue>dog_bedroom_herlamp_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
-        <dogont:continuousNotificationParamName>dog_bedroom_herlamp_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
         <dogont:generateCommand>dog_bedroom_herlamp_generateCommand_StateChangeNotification</dogont:generateCommand>
+        <dogont:continuousNotificationParamValue>dog_bedroom_herlamp_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
         <dogont:returnType>DeviceStatus</dogont:returnType>
+        <dogont:continuousNotificationParamName>dog_bedroom_herlamp_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
+        <dogont:notificationOf>dog_bedroom_herlamp_notificationOf_StateChangeNotification</dogont:notificationOf>
     </owl:NamedIndividual>
     
 
@@ -7294,11 +7294,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=State">newState</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">stateChanged</dogont:notificationName>
-        <dogont:continuousNotificationParamName>dog_bedroom_herlamp_button_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
-        <dogont:notificationOf>dog_bedroom_herlamp_button_notificationOf_StateChangeNotification</dogont:notificationOf>
         <dogont:returnType>DeviceStatus</dogont:returnType>
-        <dogont:generateCommand>dog_bedroom_herlamp_button_generateCommand_StateChangeNotification</dogont:generateCommand>
         <dogont:continuousNotificationParamValue>dog_bedroom_herlamp_button_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
+        <dogont:generateCommand>dog_bedroom_herlamp_button_generateCommand_StateChangeNotification</dogont:generateCommand>
+        <dogont:notificationOf>dog_bedroom_herlamp_button_notificationOf_StateChangeNotification</dogont:notificationOf>
+        <dogont:continuousNotificationParamName>dog_bedroom_herlamp_button_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
     </owl:NamedIndividual>
     
 
@@ -7310,11 +7310,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=State">newState</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">stateChanged</dogont:notificationName>
-        <dogont:generateCommand>dog_bedroom_heroutlet_generateCommand_StateChangeNotification</dogont:generateCommand>
+        <dogont:notificationOf>dog_bedroom_heroutlet_notificationOf_StateChangeNotification</dogont:notificationOf>
         <dogont:returnType>DeviceStatus</dogont:returnType>
         <dogont:continuousNotificationParamValue>dog_bedroom_heroutlet_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
-        <dogont:notificationOf>dog_bedroom_heroutlet_notificationOf_StateChangeNotification</dogont:notificationOf>
         <dogont:continuousNotificationParamName>dog_bedroom_heroutlet_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
+        <dogont:generateCommand>dog_bedroom_heroutlet_generateCommand_StateChangeNotification</dogont:generateCommand>
     </owl:NamedIndividual>
     
 
@@ -7326,11 +7326,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=State">newState</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">stateChanged</dogont:notificationName>
-        <dogont:generateCommand>dog_bedroom_hislamp_generateCommand_StateChangeNotification</dogont:generateCommand>
-        <dogont:returnType>DeviceStatus</dogont:returnType>
         <dogont:continuousNotificationParamValue>dog_bedroom_hislamp_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
+        <dogont:returnType>DeviceStatus</dogont:returnType>
         <dogont:continuousNotificationParamName>dog_bedroom_hislamp_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
         <dogont:notificationOf>dog_bedroom_hislamp_notificationOf_StateChangeNotification</dogont:notificationOf>
+        <dogont:generateCommand>dog_bedroom_hislamp_generateCommand_StateChangeNotification</dogont:generateCommand>
     </owl:NamedIndividual>
     
 
@@ -7342,11 +7342,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=State">newState</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">stateChanged</dogont:notificationName>
-        <dogont:continuousNotificationParamName>dog_bedroom_hislamp_button_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
+        <dogont:continuousNotificationParamValue>dog_bedroom_hislamp_button_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
         <dogont:returnType>DeviceStatus</dogont:returnType>
+        <dogont:continuousNotificationParamName>dog_bedroom_hislamp_button_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
         <dogont:generateCommand>dog_bedroom_hislamp_button_generateCommand_StateChangeNotification</dogont:generateCommand>
         <dogont:notificationOf>dog_bedroom_hislamp_button_notificationOf_StateChangeNotification</dogont:notificationOf>
-        <dogont:continuousNotificationParamValue>dog_bedroom_hislamp_button_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
     </owl:NamedIndividual>
     
 
@@ -7358,11 +7358,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=State">newState</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">stateChanged</dogont:notificationName>
-        <dogont:notificationOf>dog_bedroom_hisoutlet_notificationOf_StateChangeNotification</dogont:notificationOf>
-        <dogont:returnType>DeviceStatus</dogont:returnType>
-        <dogont:generateCommand>dog_bedroom_hisoutlet_generateCommand_StateChangeNotification</dogont:generateCommand>
         <dogont:continuousNotificationParamValue>dog_bedroom_hisoutlet_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
+        <dogont:notificationOf>dog_bedroom_hisoutlet_notificationOf_StateChangeNotification</dogont:notificationOf>
         <dogont:continuousNotificationParamName>dog_bedroom_hisoutlet_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
+        <dogont:generateCommand>dog_bedroom_hisoutlet_generateCommand_StateChangeNotification</dogont:generateCommand>
+        <dogont:returnType>DeviceStatus</dogont:returnType>
     </owl:NamedIndividual>
     
 
@@ -7390,11 +7390,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=int">1</dogont:nParams>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=State">newState</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">stateChanged</dogont:notificationName>
-        <dogont:continuousNotificationParamName>dog_bedroom_light_sensor_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
         <dogont:returnType>DeviceStatus</dogont:returnType>
+        <dogont:continuousNotificationParamValue>dog_bedroom_light_sensor_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
         <dogont:notificationOf>dog_bedroom_light_sensor_notificationOf_StateChangeNotification</dogont:notificationOf>
         <dogont:generateCommand>dog_bedroom_light_sensor_generateCommand_StateChangeNotification</dogont:generateCommand>
-        <dogont:continuousNotificationParamValue>dog_bedroom_light_sensor_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
+        <dogont:continuousNotificationParamName>dog_bedroom_light_sensor_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
     </owl:NamedIndividual>
     
 
@@ -7406,9 +7406,9 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=State">newState</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">stateChanged</dogont:notificationName>
+        <dogont:continuousNotificationParamValue>dog_bedroom_mainlamp_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
         <dogont:returnType>DeviceStatus</dogont:returnType>
         <dogont:generateCommand>dog_bedroom_mainlamp_generateCommand_StateChangeNotification</dogont:generateCommand>
-        <dogont:continuousNotificationParamValue>dog_bedroom_mainlamp_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
         <dogont:continuousNotificationParamName>dog_bedroom_mainlamp_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
         <dogont:notificationOf>dog_bedroom_mainlamp_notificationOf_StateChangeNotification</dogont:notificationOf>
     </owl:NamedIndividual>
@@ -7422,11 +7422,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=State">newState</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">stateChanged</dogont:notificationName>
-        <dogont:continuousNotificationParamName>dog_bedroom_mainlamp_button_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
-        <dogont:notificationOf>dog_bedroom_mainlamp_button_notificationOf_StateChangeNotification</dogont:notificationOf>
-        <dogont:generateCommand>dog_bedroom_mainlamp_button_generateCommand_StateChangeNotification</dogont:generateCommand>
-        <dogont:continuousNotificationParamValue>dog_bedroom_mainlamp_button_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
         <dogont:returnType>DeviceStatus</dogont:returnType>
+        <dogont:notificationOf>dog_bedroom_mainlamp_button_notificationOf_StateChangeNotification</dogont:notificationOf>
+        <dogont:continuousNotificationParamName>dog_bedroom_mainlamp_button_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
+        <dogont:continuousNotificationParamValue>dog_bedroom_mainlamp_button_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
+        <dogont:generateCommand>dog_bedroom_mainlamp_button_generateCommand_StateChangeNotification</dogont:generateCommand>
     </owl:NamedIndividual>
     
 
@@ -7438,11 +7438,11 @@
         <dogont:nParams rdf:datatype="&xsd;int">1</dogont:nParams>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=State">newState</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">stateChanged</dogont:notificationName>
-        <dogont:continuousNotificationParamName>dog_bedroom_presence_sensor_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
-        <dogont:returnType>DeviceStatus</dogont:returnType>
-        <dogont:notificationOf>dog_bedroom_presence_sensor_notificationOf_StateChangeNotification</dogont:notificationOf>
-        <dogont:continuousNotificationParamValue>dog_bedroom_presence_sensor_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
         <dogont:generateCommand>dog_bedroom_presence_sensor_generateCommand_StateChangeNotification</dogont:generateCommand>
+        <dogont:returnType>DeviceStatus</dogont:returnType>
+        <dogont:continuousNotificationParamName>dog_bedroom_presence_sensor_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
+        <dogont:continuousNotificationParamValue>dog_bedroom_presence_sensor_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
+        <dogont:notificationOf>dog_bedroom_presence_sensor_notificationOf_StateChangeNotification</dogont:notificationOf>
     </owl:NamedIndividual>
     
 
@@ -7486,11 +7486,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=State">newState</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">stateChanged</dogont:notificationName>
-        <dogont:generateCommand>generateCommand_StateChangeNotification</dogont:generateCommand>
         <dogont:continuousNotificationParamValue>continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
-        <dogont:returnType>DeviceStatus</dogont:returnType>
         <dogont:continuousNotificationParamName>continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
+        <dogont:generateCommand>generateCommand_StateChangeNotification</dogont:generateCommand>
         <dogont:notificationOf>notificationOf_StateChangeNotification</dogont:notificationOf>
+        <dogont:returnType>DeviceStatus</dogont:returnType>
     </owl:NamedIndividual>
     
 
@@ -7502,11 +7502,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=State">newState</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">stateChanged</dogont:notificationName>
-        <dogont:returnType>DeviceStatus</dogont:returnType>
-        <dogont:continuousNotificationParamName>dog_kitchen_fridgeoutlet_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
-        <dogont:generateCommand>dog_kitchen_fridgeoutlet_generateCommand_StateChangeNotification</dogont:generateCommand>
         <dogont:continuousNotificationParamValue>dog_kitchen_fridgeoutlet_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
         <dogont:notificationOf>dog_kitchen_fridgeoutlet_notificationOf_StateChangeNotification</dogont:notificationOf>
+        <dogont:generateCommand>dog_kitchen_fridgeoutlet_generateCommand_StateChangeNotification</dogont:generateCommand>
+        <dogont:returnType>DeviceStatus</dogont:returnType>
+        <dogont:continuousNotificationParamName>dog_kitchen_fridgeoutlet_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
     </owl:NamedIndividual>
     
 
@@ -7518,11 +7518,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=State">newState</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">stateChanged</dogont:notificationName>
+        <dogont:continuousNotificationParamValue>dog_kitchen_mainoutlet_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
+        <dogont:returnType>DeviceStatus</dogont:returnType>
+        <dogont:continuousNotificationParamName>dog_kitchen_mainoutlet_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
         <dogont:notificationOf>dog_kitchen_mainoutlet_notificationOf_StateChangeNotification</dogont:notificationOf>
         <dogont:generateCommand>dog_kitchen_mainoutlet_generateCommand_StateChangeNotification</dogont:generateCommand>
-        <dogont:continuousNotificationParamValue>dog_kitchen_mainoutlet_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
-        <dogont:continuousNotificationParamName>dog_kitchen_mainoutlet_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
-        <dogont:returnType>DeviceStatus</dogont:returnType>
     </owl:NamedIndividual>
     
 
@@ -7536,9 +7536,9 @@
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">stateChanged</dogont:notificationName>
         <dogont:generateCommand>dog_kitchen_oven_generateCommand_StateChangeNotification</dogont:generateCommand>
         <dogont:returnType>DeviceStatus</dogont:returnType>
+        <dogont:continuousNotificationParamValue>dog_kitchen_oven_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
         <dogont:notificationOf>dog_kitchen_oven_notificationOf_StateChangeNotification</dogont:notificationOf>
         <dogont:continuousNotificationParamName>dog_kitchen_oven_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
-        <dogont:continuousNotificationParamValue>dog_kitchen_oven_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
     </owl:NamedIndividual>
     
 
@@ -7550,11 +7550,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=State">newState</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">stateChanged</dogont:notificationName>
+        <dogont:generateCommand>dog_kitchen_ovenoutlet_generateCommand_StateChangeNotification</dogont:generateCommand>
+        <dogont:continuousNotificationParamValue>dog_kitchen_ovenoutlet_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
         <dogont:continuousNotificationParamName>dog_kitchen_ovenoutlet_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
         <dogont:notificationOf>dog_kitchen_ovenoutlet_notificationOf_StateChangeNotification</dogont:notificationOf>
         <dogont:returnType>DeviceStatus</dogont:returnType>
-        <dogont:generateCommand>dog_kitchen_ovenoutlet_generateCommand_StateChangeNotification</dogont:generateCommand>
-        <dogont:continuousNotificationParamValue>dog_kitchen_ovenoutlet_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
     </owl:NamedIndividual>
     
 
@@ -7582,10 +7582,10 @@
         <dogont:returnType rdf:datatype="&xsd;string">DeviceStatus</dogont:returnType>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=State">newState</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">stateChanged</dogont:notificationName>
-        <dogont:generateCommand>dog_livingroom_light_sensor_generateCommand_StateChangeNotification</dogont:generateCommand>
         <dogont:notificationOf>dog_livingroom_light_sensor_notificationOf_StateChangeNotification</dogont:notificationOf>
-        <dogont:continuousNotificationParamValue>dog_livingroom_light_sensor_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
+        <dogont:generateCommand>dog_livingroom_light_sensor_generateCommand_StateChangeNotification</dogont:generateCommand>
         <dogont:continuousNotificationParamName>dog_livingroom_light_sensor_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
+        <dogont:continuousNotificationParamValue>dog_livingroom_light_sensor_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
     </owl:NamedIndividual>
     
 
@@ -7597,11 +7597,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=State">newState</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">stateChanged</dogont:notificationName>
-        <dogont:notificationOf>dog_livingroom_mainlamp_notificationOf_StateChangeNotification</dogont:notificationOf>
         <dogont:continuousNotificationParamName>dog_livingroom_mainlamp_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
-        <dogont:generateCommand>dog_livingroom_mainlamp_generateCommand_StateChangeNotification</dogont:generateCommand>
+        <dogont:notificationOf>dog_livingroom_mainlamp_notificationOf_StateChangeNotification</dogont:notificationOf>
         <dogont:continuousNotificationParamValue>dog_livingroom_mainlamp_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
         <dogont:returnType>DeviceStatus</dogont:returnType>
+        <dogont:generateCommand>dog_livingroom_mainlamp_generateCommand_StateChangeNotification</dogont:generateCommand>
     </owl:NamedIndividual>
     
 
@@ -7613,11 +7613,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=State">newState</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">stateChanged</dogont:notificationName>
+        <dogont:notificationOf>dog_livingroom_mainlamp_button_notificationOf_StateChangeNotification</dogont:notificationOf>
         <dogont:continuousNotificationParamValue>dog_livingroom_mainlamp_button_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
-        <dogont:generateCommand>dog_livingroom_mainlamp_button_generateCommand_StateChangeNotification</dogont:generateCommand>
         <dogont:continuousNotificationParamName>dog_livingroom_mainlamp_button_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
         <dogont:returnType>DeviceStatus</dogont:returnType>
-        <dogont:notificationOf>dog_livingroom_mainlamp_button_notificationOf_StateChangeNotification</dogont:notificationOf>
+        <dogont:generateCommand>dog_livingroom_mainlamp_button_generateCommand_StateChangeNotification</dogont:generateCommand>
     </owl:NamedIndividual>
     
 
@@ -7630,10 +7630,10 @@
         <dogont:notificationParamName rdf:datatype="rdf:datatype=State">newState</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">stateChanged</dogont:notificationName>
         <dogont:continuousNotificationParamName>dog_livingroom_mainoutlet_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
-        <dogont:continuousNotificationParamValue>dog_livingroom_mainoutlet_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
-        <dogont:notificationOf>dog_livingroom_mainoutlet_notificationOf_StateChangeNotification</dogont:notificationOf>
-        <dogont:generateCommand>dog_livingroom_mainoutlet_generateCommand_StateChangeNotification</dogont:generateCommand>
         <dogont:returnType>DeviceStatus</dogont:returnType>
+        <dogont:continuousNotificationParamValue>dog_livingroom_mainoutlet_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
+        <dogont:generateCommand>dog_livingroom_mainoutlet_generateCommand_StateChangeNotification</dogont:generateCommand>
+        <dogont:notificationOf>dog_livingroom_mainoutlet_notificationOf_StateChangeNotification</dogont:notificationOf>
     </owl:NamedIndividual>
     
 
@@ -7645,11 +7645,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=State">newState</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">stateChanged</dogont:notificationName>
-        <dogont:returnType>DeviceStatus</dogont:returnType>
         <dogont:continuousNotificationParamValue>dog_livingroom_presence_sensor_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
+        <dogont:notificationOf>dog_livingroom_presence_sensor_notificationOf_StateChangeNotification</dogont:notificationOf>
+        <dogont:returnType>DeviceStatus</dogont:returnType>
         <dogont:generateCommand>dog_livingroom_presence_sensor_generateCommand_StateChangeNotification</dogont:generateCommand>
         <dogont:continuousNotificationParamName>dog_livingroom_presence_sensor_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
-        <dogont:notificationOf>dog_livingroom_presence_sensor_notificationOf_StateChangeNotification</dogont:notificationOf>
     </owl:NamedIndividual>
     
 
@@ -7677,11 +7677,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=State">newState</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">stateChanged</dogont:notificationName>
-        <dogont:generateCommand>dog_livingroom_tv_generateCommand_StateChangeNotification</dogont:generateCommand>
+        <dogont:continuousNotificationParamName>dog_livingroom_tv_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
         <dogont:notificationOf>dog_livingroom_tv_notificationOf_StateChangeNotification</dogont:notificationOf>
         <dogont:continuousNotificationParamValue>dog_livingroom_tv_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
         <dogont:returnType>DeviceStatus</dogont:returnType>
-        <dogont:continuousNotificationParamName>dog_livingroom_tv_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
+        <dogont:generateCommand>dog_livingroom_tv_generateCommand_StateChangeNotification</dogont:generateCommand>
     </owl:NamedIndividual>
     
 
@@ -7693,11 +7693,11 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:notificationParamName rdf:datatype="rdf:datatype=State">newState</dogont:notificationParamName>
         <dogont:notificationName rdf:datatype="rdf:datatype=&xsd;string">stateChanged</dogont:notificationName>
-        <dogont:continuousNotificationParamValue>dog_livingroom_tvoutlet_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
         <dogont:notificationOf>dog_livingroom_tvoutlet_notificationOf_StateChangeNotification</dogont:notificationOf>
-        <dogont:returnType>DeviceStatus</dogont:returnType>
-        <dogont:continuousNotificationParamName>dog_livingroom_tvoutlet_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
+        <dogont:continuousNotificationParamValue>dog_livingroom_tvoutlet_continuousNotificationParamValue_StateChangeNotification</dogont:continuousNotificationParamValue>
         <dogont:generateCommand>dog_livingroom_tvoutlet_generateCommand_StateChangeNotification</dogont:generateCommand>
+        <dogont:continuousNotificationParamName>dog_livingroom_tvoutlet_continuousNotificationParamName_StateChangeNotification</dogont:continuousNotificationParamName>
+        <dogont:returnType>DeviceStatus</dogont:returnType>
     </owl:NamedIndividual>
     
 
@@ -7766,8 +7766,8 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:commandParamName rdf:datatype="rdf:datatype=String">groupID</dogont:commandParamName>
         <dogont:realCommandName rdf:datatype="rdf:datatype=&xsd;string">storeGroup</dogont:realCommandName>
-        <dogont:commandParamValue>dog_bathroom_mainoutlet_commandParamValue_StoreGroupCommand</dogont:commandParamValue>
         <dogont:commandOf>dog_bathroom_mainoutlet_commandOf_StoreGroupCommand</dogont:commandOf>
+        <dogont:commandParamValue>dog_bathroom_mainoutlet_commandParamValue_StoreGroupCommand</dogont:commandParamValue>
     </owl:NamedIndividual>
     
 
@@ -7792,8 +7792,8 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:commandParamName rdf:datatype="rdf:datatype=String">groupID</dogont:commandParamName>
         <dogont:realCommandName rdf:datatype="rdf:datatype=&xsd;string">storeGroup</dogont:realCommandName>
-        <dogont:commandParamValue>dog_bedroom_heroutlet_commandParamValue_StoreGroupCommand</dogont:commandParamValue>
         <dogont:commandOf>dog_bedroom_heroutlet_commandOf_StoreGroupCommand</dogont:commandOf>
+        <dogont:commandParamValue>dog_bedroom_heroutlet_commandParamValue_StoreGroupCommand</dogont:commandParamValue>
     </owl:NamedIndividual>
     
 
@@ -7818,8 +7818,8 @@
         <dogont:nParams rdf:datatype="rdf:datatype=int">1</dogont:nParams>
         <dogont:commandParamName rdf:datatype="rdf:datatype=String">groupID</dogont:commandParamName>
         <dogont:realCommandName rdf:datatype="rdf:datatype=&xsd;string">storeGroup</dogont:realCommandName>
-        <dogont:commandParamValue>dog_bedroom_light_sensor_commandParamValue_StoreGroupCommand</dogont:commandParamValue>
         <dogont:commandOf>dog_bedroom_light_sensor_commandOf_StoreGroupCommand</dogont:commandOf>
+        <dogont:commandParamValue>dog_bedroom_light_sensor_commandParamValue_StoreGroupCommand</dogont:commandParamValue>
     </owl:NamedIndividual>
     
 
@@ -7869,8 +7869,8 @@
         <rdf:type rdf:resource="&dogont;StoreGroupCommand"/>
         <dogont:commandParamName rdf:datatype="rdf:datatype=String">groupID</dogont:commandParamName>
         <dogont:realCommandName rdf:datatype="rdf:datatype=&xsd;string">storeGroup</dogont:realCommandName>
-        <dogont:commandOf>dog_livingroom_light_sensor_commandOf_StoreGroupCommand</dogont:commandOf>
         <dogont:commandParamValue>dog_livingroom_light_sensor_commandParamValue_StoreGroupCommand</dogont:commandParamValue>
+        <dogont:commandOf>dog_livingroom_light_sensor_commandOf_StoreGroupCommand</dogont:commandOf>
     </owl:NamedIndividual>
     
 
@@ -7908,8 +7908,8 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:commandParamName rdf:datatype="rdf:datatype=Integer">sceneNumber</dogont:commandParamName>
         <dogont:realCommandName rdf:datatype="rdf:datatype=&xsd;string">storeScene</dogont:realCommandName>
-        <dogont:commandParamValue>dog_bathroom_mainoutlet_commandParamValue_StoreSceneCommand</dogont:commandParamValue>
         <dogont:commandOf>dog_bathroom_mainoutlet_commandOf_StoreSceneCommand</dogont:commandOf>
+        <dogont:commandParamValue>dog_bathroom_mainoutlet_commandParamValue_StoreSceneCommand</dogont:commandParamValue>
     </owl:NamedIndividual>
     
 
@@ -7934,8 +7934,8 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:commandParamName rdf:datatype="rdf:datatype=Integer">sceneNumber</dogont:commandParamName>
         <dogont:realCommandName rdf:datatype="rdf:datatype=&xsd;string">storeScene</dogont:realCommandName>
-        <dogont:commandOf>dog_bedroom_heroutlet_commandOf_StoreSceneCommand</dogont:commandOf>
         <dogont:commandParamValue>dog_bedroom_heroutlet_commandParamValue_StoreSceneCommand</dogont:commandParamValue>
+        <dogont:commandOf>dog_bedroom_heroutlet_commandOf_StoreSceneCommand</dogont:commandOf>
     </owl:NamedIndividual>
     
 
@@ -7973,8 +7973,8 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:commandParamName rdf:datatype="rdf:datatype=Integer">sceneNumber</dogont:commandParamName>
         <dogont:realCommandName rdf:datatype="rdf:datatype=&xsd;string">storeScene</dogont:realCommandName>
-        <dogont:commandParamValue>dog_kitchen_mainoutlet_commandParamValue_StoreSceneCommand</dogont:commandParamValue>
         <dogont:commandOf>dog_kitchen_mainoutlet_commandOf_StoreSceneCommand</dogont:commandOf>
+        <dogont:commandParamValue>dog_kitchen_mainoutlet_commandParamValue_StoreSceneCommand</dogont:commandParamValue>
     </owl:NamedIndividual>
     
 
@@ -7999,8 +7999,8 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:commandParamName rdf:datatype="rdf:datatype=Integer">sceneNumber</dogont:commandParamName>
         <dogont:realCommandName rdf:datatype="rdf:datatype=&xsd;string">storeScene</dogont:realCommandName>
-        <dogont:commandOf>dog_livingroom_mainoutlet_commandOf_StoreSceneCommand</dogont:commandOf>
         <dogont:commandParamValue>dog_livingroom_mainoutlet_commandParamValue_StoreSceneCommand</dogont:commandParamValue>
+        <dogont:commandOf>dog_livingroom_mainoutlet_commandOf_StoreSceneCommand</dogont:commandOf>
     </owl:NamedIndividual>
     
 
@@ -8012,8 +8012,8 @@
         <dogont:nParams rdf:datatype="rdf:datatype=&xsd;int">1</dogont:nParams>
         <dogont:commandParamName rdf:datatype="rdf:datatype=Integer">sceneNumber</dogont:commandParamName>
         <dogont:realCommandName rdf:datatype="rdf:datatype=&xsd;string">storeScene</dogont:realCommandName>
-        <dogont:commandOf>dog_livingroom_tvoutlet_commandOf_StoreSceneCommand</dogont:commandOf>
         <dogont:commandParamValue>dog_livingroom_tvoutlet_commandParamValue_StoreSceneCommand</dogont:commandParamValue>
+        <dogont:commandOf>dog_livingroom_tvoutlet_commandOf_StoreSceneCommand</dogont:commandOf>
     </owl:NamedIndividual>
     
 
@@ -8087,8 +8087,8 @@
 
     <owl:NamedIndividual rdf:about="&dogont;VolumeRegulationFunctionality_dog_livingroom_tv">
         <rdf:type rdf:resource="&dogont;VolumeRegulationFunctionality"/>
-        <dogont:maxValue>50</dogont:maxValue>
         <dogont:minValue>0</dogont:minValue>
+        <dogont:maxValue>50</dogont:maxValue>
         <dogont:stepValue>1</dogont:stepValue>
         <dogont:hasCommand rdf:resource="&dogont;DecreaseVolumeCommand_dog_livingroom_tv"/>
         <dogont:hasCommand rdf:resource="&dogont;IncreaseVolumeCommand_dog_livingroom_tv"/>
@@ -8122,8 +8122,6 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_ZwaveGateway">
         <rdf:type rdf:resource="&dogont;ZWaveGateway"/>
-        <dogont:hasMeter>dog_ZwaveGateway_hasMeter_ZWaveGateway</dogont:hasMeter>
-        <dogont:hasGateway>dog_ZwaveGateway_hasGateway_ZWaveGateway</dogont:hasGateway>
         <dogont:hasFunctionality rdf:resource="&dogont;AssociateFunctionality_dog_ZwaveGateway"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_ZwaveGateway"/>
     </owl:NamedIndividual>
@@ -8134,12 +8132,12 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_bathroom_humidity_sensor">
         <rdf:type rdf:resource="&dogont;HumiditySensor"/>
-        <dogont:hasGateway>dog_bathroom_humidity_sensor_hasGateway_HumiditySensor</dogont:hasGateway>
-        <dogont:hasMeter>dog_bathroom_humidity_sensor_hasMeter_HumiditySensor</dogont:hasMeter>
         <dogont:hasFunctionality rdf:resource="&dogont;HumidityMeasurementFunctionality_dog_bathroom_humidity_sensor"/>
         <dogont:hasFunctionality rdf:resource="&dogont;HumidityMeasurementNotificationFunctionality_dog_bathroom_humidity_sensor"/>
         <dogont:hasState rdf:resource="&dogont;HumidityMeasurementState_dog_bathroom_humidity_sensor"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_bathroom_humidity_sensor"/>
+        <dogont:hasGateway rdf:resource="&dogont;dog_ZwaveGateway"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bathroom"/>
     </owl:NamedIndividual>
     
 
@@ -8148,14 +8146,13 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_bathroom_light_sensor">
         <rdf:type rdf:resource="&dogont;LightSensor"/>
-        <dogont:hasGateway>dog_bathroom_light_sensor_hasGateway_LightSensor</dogont:hasGateway>
-        <dogont:hasMeter>dog_bathroom_light_sensor_hasMeter_LightSensor</dogont:hasMeter>
         <dogont:hasFunctionality rdf:resource="&dogont;GroupFunctionality_dog_bathroom_light_sensor"/>
         <dogont:hasState rdf:resource="&dogont;LightIntensityState_dog_bathroom_light_sensor"/>
         <dogont:hasFunctionality rdf:resource="&dogont;LightSensingFunctionality_dog_bathroom_light_sensor"/>
         <dogont:hasFunctionality rdf:resource="&dogont;LuminosityNotificationFunctionality_dog_bathroom_light_sensor"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_bathroom_light_sensor"/>
         <dogont:hasGateway rdf:resource="&dogont;dog_ZwaveGateway"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bathroom"/>
     </owl:NamedIndividual>
     
 
@@ -8164,9 +8161,6 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_bathroom_mainlamp">
         <rdf:type rdf:resource="&dogont;SimpleLamp"/>
-        <dogont:isIn>dog_bathroom_mainlamp_isIn_SimpleLamp</dogont:isIn>
-        <dogont:hasMeter>dog_bathroom_mainlamp_hasMeter_SimpleLamp</dogont:hasMeter>
-        <dogont:hasGateway>dog_bathroom_mainlamp_hasGateway_SimpleLamp</dogont:hasGateway>
         <dogont:hasFunctionality rdf:resource="&dogont;OnOffFunctionality_dog_bathroom_mainlamp"/>
         <dogont:hasState rdf:resource="&dogont;OnOffState_dog_bathroom_mainlamp"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_bathroom_mainlamp"/>
@@ -8180,10 +8174,6 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_bathroom_mainlamp_button">
         <rdf:type rdf:resource="&dogont;Button"/>
-        <dogont:isIn>dog_bathroom_mainlamp_button_isIn_Button</dogont:isIn>
-        <dogont:controlledObject>dog_bathroom_mainlamp_button_controlledObject_Button</dogont:controlledObject>
-        <dogont:hasGateway>dog_bathroom_mainlamp_button_hasGateway_Button</dogont:hasGateway>
-        <dogont:hasMeter>dog_bathroom_mainlamp_button_hasMeter_Button</dogont:hasMeter>
         <dogont:hasFunctionality rdf:resource="&dogont;ButtonNotificationFunctionality_dog_bathroom_mainlamp_button"/>
         <dogont:hasState rdf:resource="&dogont;OnOffState_dog_bathroom_mainlamp_button"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_bathroom_mainlamp_button"/>
@@ -8198,10 +8188,6 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_bathroom_mainoutlet">
         <rdf:type rdf:resource="&dogont;MeteringPowerOutlet"/>
-        <dogont:plugOf>dog_bathroom_mainoutlet_plugOf_MeteringPowerOutlet</dogont:plugOf>
-        <dogont:hasMeter>dog_bathroom_mainoutlet_hasMeter_MeteringPowerOutlet</dogont:hasMeter>
-        <dogont:hasGateway>dog_bathroom_mainoutlet_hasGateway_MeteringPowerOutlet</dogont:hasGateway>
-        <dogont:meterOf>dog_bathroom_mainoutlet_meterOf_MeteringPowerOutlet</dogont:meterOf>
         <dogont:hasFunctionality rdf:resource="&dogont;GroupFunctionality_dog_bathroom_mainoutlet"/>
         <dogont:hasFunctionality rdf:resource="&dogont;OnOffFunctionality_dog_bathroom_mainoutlet"/>
         <dogont:hasState rdf:resource="&dogont;OnOffState_dog_bathroom_mainoutlet"/>
@@ -8220,6 +8206,7 @@
         <dogont:hasState rdf:resource="&dogont;SinglePhaseReactiveEnergyState_dog_bathroom_mainoutlet"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_bathroom_mainoutlet"/>
         <dogont:hasGateway rdf:resource="&dogont;dog_ZwaveGateway"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bathroom"/>
     </owl:NamedIndividual>
     
 
@@ -8228,14 +8215,13 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_bathroom_presence_sensor">
         <rdf:type rdf:resource="&dogont;PresenceAndMovementSensor"/>
-        <dogont:hasGateway>dog_bathroom_presence_sensor_hasGateway_PresenceAndMovementSensor</dogont:hasGateway>
-        <dogont:hasMeter>dog_bathroom_presence_sensor_hasMeter_PresenceAndMovementSensor</dogont:hasMeter>
         <dogont:hasFunctionality rdf:resource="&dogont;MovementNotificationFunctionality_dog_bathroom_presence_sensor"/>
         <dogont:hasState rdf:resource="&dogont;MovementState_dog_bathroom_presence_sensor"/>
         <dogont:hasFunctionality rdf:resource="&dogont;PresenceNotificationFunctionality_dog_bathroom_presence_sensor"/>
         <dogont:hasState rdf:resource="&dogont;PresenceState_dog_bathroom_presence_sensor"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_bathroom_presence_sensor"/>
         <dogont:hasGateway rdf:resource="&dogont;dog_ZwaveGateway"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bathroom"/>
     </owl:NamedIndividual>
     
 
@@ -8244,10 +8230,9 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_bathroom_temperature_sensor">
         <rdf:type rdf:resource="&dogont;TemperatureSensor"/>
-        <dogont:hasMeter>dog_bathroom_temperature_sensor_hasMeter_TemperatureSensor_</dogont:hasMeter>
-        <dogont:hasGateway>dog_bathroom_temperature_sensor_hasGateway_TemperatureSensor_</dogont:hasGateway>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_bathroom_temperature_sensor_"/>
         <dogont:hasGateway rdf:resource="&dogont;dog_ZwaveGateway"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bathroom"/>
     </owl:NamedIndividual>
     
 
@@ -8256,10 +8241,6 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_bathroom_washingmachine">
         <rdf:type rdf:resource="&dogont;WashingMachine"/>
-        <dogont:pluggedIn>dog_bathroom_washingmachine_pluggedIn_WashingMachine</dogont:pluggedIn>
-        <dogont:hasMeter>dog_bathroom_washingmachine_hasMeter_WashingMachine</dogont:hasMeter>
-        <dogont:hasGateway>dog_bathroom_washingmachine_hasGateway_WashingMachine</dogont:hasGateway>
-        <dogont:isIn>dog_bathroom_washingmachine_isIn_WashingMachine</dogont:isIn>
         <dogont:hasFunctionality rdf:resource="&dogont;AlertNotificationFunctionality_dog_bathroom_washingmachine"/>
         <dogont:hasFunctionality rdf:resource="&dogont;CycleTimingControlFunctionality_dog_bathroom_washingmachine"/>
         <dogont:hasFunctionality rdf:resource="&dogont;CycleTimingQueryFunctionality_dog_bathroom_washingmachine"/>
@@ -8270,6 +8251,9 @@
         <dogont:hasFunctionality rdf:resource="&dogont;StartStopPauseFunctionality_dog_bathroom_washingmachine"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_bathroom_washingmachine"/>
         <dogont:hasState rdf:resource="&dogont;WashingApplianceState_dog_bathroom_washingmachine"/>
+        <dogont:hasGateway rdf:resource="&dogont;dog_ZwaveGateway"/>
+        <dogont:pluggedIn rdf:resource="&dogont;dog_bathroom_washingmachineoutlet"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bathroom"/>
     </owl:NamedIndividual>
     
 
@@ -8278,10 +8262,9 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_bathroom_washingmachineoutlet">
         <rdf:type rdf:resource="&dogont;MeteringPowerOutlet"/>
-        <dogont:hasMeter>dog_bathroom_washingmachineoutlet_hasMeter_MeteringPowerOutlet</dogont:hasMeter>
         <dogont:plugOf>dog_bathroom_washingmachineoutlet_plugOf_MeteringPowerOutlet</dogont:plugOf>
-        <dogont:hasGateway>dog_bathroom_washingmachineoutlet_hasGateway_MeteringPowerOutlet</dogont:hasGateway>
         <dogont:meterOf>dog_bathroom_washingmachineoutlet_meterOf_MeteringPowerOutlet</dogont:meterOf>
+        <dogont:hasMeter>dog_bathroom_washingmachineoutlet_hasMeter_MeteringPowerOutlet</dogont:hasMeter>
         <dogont:hasFunctionality rdf:resource="&dogont;GroupFunctionality_dog_bathroom_washingmachineoutlet"/>
         <dogont:hasFunctionality rdf:resource="&dogont;OnOffFunctionality_dog_bathroom_washingmachineoutlet"/>
         <dogont:hasState rdf:resource="&dogont;OnOffState_dog_bathroom_washingmachineoutlet"/>
@@ -8300,6 +8283,8 @@
         <dogont:hasState rdf:resource="&dogont;SinglePhaseReactiveEnergyState_dog_bathroom_washingmachineoutlet"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_bathroom_washingmachineoutlet"/>
         <dogont:hasGateway rdf:resource="&dogont;dog_ZwaveGateway"/>
+        <dogont:plugOf rdf:resource="&dogont;dog_bathroom_washingmachine"/>
+        <dogont:isIn rdf:resource="&scenario1;multiline_bathroom"/>
     </owl:NamedIndividual>
     
 
@@ -8308,9 +8293,6 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_bedroom_herlamp">
         <rdf:type rdf:resource="&dogont;SimpleLamp"/>
-        <dogont:hasMeter>dog_bedroom_herlamp_hasMeter_SimpleLamp</dogont:hasMeter>
-        <dogont:hasGateway>dog_bedroom_herlamp_hasGateway_SimpleLamp</dogont:hasGateway>
-        <dogont:isIn>dog_bedroom_herlamp_isIn_SimpleLamp</dogont:isIn>
         <dogont:hasFunctionality rdf:resource="&dogont;OnOffFunctionality_dog_bedroom_herlamp"/>
         <dogont:hasState rdf:resource="&dogont;OnOffState_dog_bedroom_herlamp"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_bedroom_herlamp"/>
@@ -8324,10 +8306,6 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_bedroom_herlamp_button">
         <rdf:type rdf:resource="&dogont;Button"/>
-        <dogont:controlledObject>dog_bedroom_herlamp_button_controlledObject_Button</dogont:controlledObject>
-        <dogont:hasMeter>dog_bedroom_herlamp_button_hasMeter_Button</dogont:hasMeter>
-        <dogont:isIn>dog_bedroom_herlamp_button_isIn_Button</dogont:isIn>
-        <dogont:hasGateway>dog_bedroom_herlamp_button_hasGateway_Button</dogont:hasGateway>
         <dogont:hasFunctionality rdf:resource="&dogont;ButtonNotificationFunctionality_dog_bedroom_herlamp_button"/>
         <dogont:hasState rdf:resource="&dogont;OnOffState_dog_bedroom_herlamp_button"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_bedroom_herlamp_button"/>
@@ -8342,10 +8320,6 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_bedroom_heroutlet">
         <rdf:type rdf:resource="&dogont;MeteringPowerOutlet"/>
-        <dogont:hasMeter>dog_bedroom_heroutlet_hasMeter_MeteringPowerOutlet</dogont:hasMeter>
-        <dogont:hasGateway>dog_bedroom_heroutlet_hasGateway_MeteringPowerOutlet</dogont:hasGateway>
-        <dogont:meterOf>dog_bedroom_heroutlet_meterOf_MeteringPowerOutlet</dogont:meterOf>
-        <dogont:plugOf>dog_bedroom_heroutlet_plugOf_MeteringPowerOutlet</dogont:plugOf>
         <dogont:hasFunctionality rdf:resource="&dogont;GroupFunctionality_dog_bedroom_heroutlet"/>
         <dogont:hasFunctionality rdf:resource="&dogont;OnOffFunctionality_dog_bedroom_heroutlet"/>
         <dogont:hasState rdf:resource="&dogont;OnOffState_dog_bedroom_heroutlet"/>
@@ -8364,6 +8338,7 @@
         <dogont:hasState rdf:resource="&dogont;SinglePhaseReactiveEnergyState_dog_bedroom_heroutlet"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_bedroom_heroutlet"/>
         <dogont:hasGateway rdf:resource="&dogont;dog_ZwaveGateway"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bedroom"/>
     </owl:NamedIndividual>
     
 
@@ -8372,9 +8347,6 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_bedroom_hislamp">
         <rdf:type rdf:resource="&dogont;SimpleLamp"/>
-        <dogont:hasMeter>dog_bedroom_hislamp_hasMeter_SimpleLamp</dogont:hasMeter>
-        <dogont:isIn>dog_bedroom_hislamp_isIn_SimpleLamp</dogont:isIn>
-        <dogont:hasGateway>dog_bedroom_hislamp_hasGateway_SimpleLamp</dogont:hasGateway>
         <dogont:hasFunctionality rdf:resource="&dogont;OnOffFunctionality_dog_bedroom_hislamp"/>
         <dogont:hasState rdf:resource="&dogont;OnOffState_dog_bedroom_hislamp"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_bedroom_hislamp"/>
@@ -8388,10 +8360,6 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_bedroom_hislamp_button">
         <rdf:type rdf:resource="&dogont;Button"/>
-        <dogont:isIn>dog_bedroom_hislamp_button_isIn_Button</dogont:isIn>
-        <dogont:hasGateway>dog_bedroom_hislamp_button_hasGateway_Button</dogont:hasGateway>
-        <dogont:controlledObject>dog_bedroom_hislamp_button_controlledObject_Button</dogont:controlledObject>
-        <dogont:hasMeter>dog_bedroom_hislamp_button_hasMeter_Button</dogont:hasMeter>
         <dogont:hasFunctionality rdf:resource="&dogont;ButtonNotificationFunctionality_dog_bedroom_hislamp_button"/>
         <dogont:hasState rdf:resource="&dogont;OnOffState_dog_bedroom_hislamp_button"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_bedroom_hislamp_button"/>
@@ -8406,10 +8374,6 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_bedroom_hisoutlet">
         <rdf:type rdf:resource="&dogont;MeteringPowerOutlet"/>
-        <dogont:hasMeter>dog_bedroom_hisoutlet_hasMeter_MeteringPowerOutlet</dogont:hasMeter>
-        <dogont:meterOf>dog_bedroom_hisoutlet_meterOf_MeteringPowerOutlet</dogont:meterOf>
-        <dogont:plugOf>dog_bedroom_hisoutlet_plugOf_MeteringPowerOutlet</dogont:plugOf>
-        <dogont:hasGateway>dog_bedroom_hisoutlet_hasGateway_MeteringPowerOutlet</dogont:hasGateway>
         <dogont:hasFunctionality rdf:resource="&dogont;GroupFunctionality_dog_bedroom_hisoutlet"/>
         <dogont:hasFunctionality rdf:resource="&dogont;OnOffFunctionality_dog_bedroom_hisoutlet"/>
         <dogont:hasState rdf:resource="&dogont;OnOffState_dog_bedroom_hisoutlet"/>
@@ -8428,6 +8392,7 @@
         <dogont:hasState rdf:resource="&dogont;SinglePhaseReactiveEnergyState_dog_bedroom_hisoutlet"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_bedroom_hisoutlet"/>
         <dogont:hasGateway rdf:resource="&dogont;dog_ZwaveGateway"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bedroom"/>
     </owl:NamedIndividual>
     
 
@@ -8436,13 +8401,12 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_bedroom_humidity_sensor">
         <rdf:type rdf:resource="&dogont;HumiditySensor"/>
-        <dogont:hasGateway>dog_bedroom_humidity_sensor_hasGateway_HumiditySensor</dogont:hasGateway>
-        <dogont:hasMeter>dog_bedroom_humidity_sensor_hasMeter_HumiditySensor</dogont:hasMeter>
         <dogont:hasFunctionality rdf:resource="&dogont;HumidityMeasurementFunctionality_dog_bedroom_humidity_sensor"/>
         <dogont:hasFunctionality rdf:resource="&dogont;HumidityMeasurementNotificationFunctionality_dog_bedroom_humidity_sensor"/>
         <dogont:hasState rdf:resource="&dogont;HumidityMeasurementState_dog_bedroom_humidity_sensor"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_bedroom_humidity_sensor"/>
         <dogont:hasGateway rdf:resource="&dogont;dog_ZwaveGateway"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bedroom"/>
     </owl:NamedIndividual>
     
 
@@ -8451,14 +8415,13 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_bedroom_light_sensor">
         <rdf:type rdf:resource="&dogont;LightSensor"/>
-        <dogont:hasGateway>dog_bedroom_light_sensor_hasGateway_LightSensor</dogont:hasGateway>
-        <dogont:hasMeter>dog_bedroom_light_sensor_hasMeter_LightSensor</dogont:hasMeter>
         <dogont:hasFunctionality rdf:resource="&dogont;GroupFunctionality_dog_bedroom_light_sensor"/>
         <dogont:hasState rdf:resource="&dogont;LightIntensityState_dog_bedroom_light_sensor"/>
         <dogont:hasFunctionality rdf:resource="&dogont;LightSensingFunctionality_dog_bedroom_light_sensor"/>
         <dogont:hasFunctionality rdf:resource="&dogont;LuminosityNotificationFunctionality_dog_bedroom_light_sensor"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_bedroom_light_sensor"/>
         <dogont:hasGateway rdf:resource="&dogont;dog_ZwaveGateway"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bedroom"/>
     </owl:NamedIndividual>
     
 
@@ -8467,9 +8430,6 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_bedroom_mainlamp">
         <rdf:type rdf:resource="&dogont;SimpleLamp"/>
-        <dogont:isIn>dog_bedroom_mainlamp_isIn_SimpleLamp</dogont:isIn>
-        <dogont:hasMeter>dog_bedroom_mainlamp_hasMeter_SimpleLamp</dogont:hasMeter>
-        <dogont:hasGateway>dog_bedroom_mainlamp_hasGateway_SimpleLamp</dogont:hasGateway>
         <dogont:hasFunctionality rdf:resource="&dogont;OnOffFunctionality_dog_bedroom_mainlamp"/>
         <dogont:hasState rdf:resource="&dogont;OnOffState_dog_bedroom_mainlamp"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_bedroom_mainlamp"/>
@@ -8483,10 +8443,6 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_bedroom_mainlamp_button">
         <rdf:type rdf:resource="&dogont;Button"/>
-        <dogont:hasMeter>dog_bedroom_mainlamp_button_hasMeter_Button</dogont:hasMeter>
-        <dogont:hasGateway>dog_bedroom_mainlamp_button_hasGateway_Button</dogont:hasGateway>
-        <dogont:controlledObject>dog_bedroom_mainlamp_button_controlledObject_Button</dogont:controlledObject>
-        <dogont:isIn>dog_bedroom_mainlamp_button_isIn_Button</dogont:isIn>
         <dogont:hasFunctionality rdf:resource="&dogont;ButtonNotificationFunctionality_dog_bedroom_mainlamp_button"/>
         <dogont:hasState rdf:resource="&dogont;OnOffState_dog_bedroom_mainlamp_button"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_bedroom_mainlamp_button"/>
@@ -8501,14 +8457,13 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_bedroom_presence_sensor">
         <rdf:type rdf:resource="&dogont;PresenceAndMovementSensor"/>
-        <dogont:hasMeter>dog_bedroom_presence_sensor_hasMeter_PresenceAndMovementSensor</dogont:hasMeter>
-        <dogont:hasGateway>dog_bedroom_presence_sensor_hasGateway_PresenceAndMovementSensor</dogont:hasGateway>
         <dogont:hasFunctionality rdf:resource="&dogont;MovementNotificationFunctionality_dog_bedroom_presence_sensor"/>
         <dogont:hasState rdf:resource="&dogont;MovementState_dog_bedroom_presence_sensor"/>
         <dogont:hasFunctionality rdf:resource="&dogont;PresenceNotificationFunctionality_dog_bedroom_presence_sensor"/>
         <dogont:hasState rdf:resource="&dogont;PresenceState_dog_bedroom_presence_sensor"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_bedroom_presence_sensor"/>
         <dogont:hasGateway rdf:resource="&dogont;dog_ZwaveGateway"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bedroom"/>
     </owl:NamedIndividual>
     
 
@@ -8517,10 +8472,9 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_bedroom_temperature_sensor">
         <rdf:type rdf:resource="&dogont;TemperatureSensor"/>
-        <dogont:hasGateway>dog_bedroom_temperature_sensor_hasGateway_TemperatureSensor</dogont:hasGateway>
-        <dogont:hasMeter>dog_bedroom_temperature_sensor_hasMeter_TemperatureSensor</dogont:hasMeter>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_bedroom_temperature_sensor"/>
         <dogont:hasGateway rdf:resource="&dogont;dog_ZwaveGateway"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bedroom"/>
     </owl:NamedIndividual>
     
 
@@ -8529,9 +8483,6 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_bedroom_window_sensor">
         <rdf:type rdf:resource="&dogont;WindowSensor"/>
-        <dogont:hasGateway>dog_bedroom_window_sensor_hasGateway_WindowSensor</dogont:hasGateway>
-        <dogont:sensorOf>dog_bedroom_window_sensor_sensorOf_WindowSensor</dogont:sensorOf>
-        <dogont:hasMeter>dog_bedroom_window_sensor_hasMeter_WindowSensor</dogont:hasMeter>
         <dogont:hasFunctionality rdf:resource="&dogont;Functionality_dog_bedroom_window_sensor"/>
         <dogont:hasFunctionality rdf:resource="&dogont;Functionality_dog_bedroom_window_sensor_2"/>
         <dogont:hasFunctionality rdf:resource="&dogont;Functionality_dog_bedroom_window_sensor_3"/>
@@ -8540,6 +8491,7 @@
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_bedroom_window_sensor"/>
         <dogont:hasGateway rdf:resource="&dogont;dog_ZwaveGateway"/>
         <dogont:sensorOf rdf:resource="&dogont;house_bedroom_window"/>
+        <dogont:isIn rdf:resource="&scenario1;house_bedroom"/>
     </owl:NamedIndividual>
     
 
@@ -8548,9 +8500,6 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_kitchen_fridge">
         <rdf:type rdf:resource="&dogont;FrequencyMeter"/>
-        <dogont:meterOf>meterOf_FrequencyMeter</dogont:meterOf>
-        <dogont:hasGateway>hasGateway_FrequencyMeter</dogont:hasGateway>
-        <dogont:hasMeter>hasMeter_FrequencyMeter</dogont:hasMeter>
         <dogont:hasFunctionality rdf:resource="&dogont;FrequencyMeasurementFunctionality_dog_kitchen_fridge"/>
         <dogont:hasFunctionality rdf:resource="&dogont;FrequencyMeasurementNotificationFunctionality_dog_kitchen_fridge"/>
         <dogont:hasState rdf:resource="&dogont;FrequencyMeasurementState_dog_kitchen_fridge"/>
@@ -8566,10 +8515,6 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_kitchen_fridgeoutlet">
         <rdf:type rdf:resource="&dogont;MeteringPowerOutlet"/>
-        <dogont:plugOf>dog_kitchen_fridgeoutlet_plugOf_MeteringPowerOutlet</dogont:plugOf>
-        <dogont:hasGateway>dog_kitchen_fridgeoutlet_hasGateway_MeteringPowerOutlet</dogont:hasGateway>
-        <dogont:meterOf>dog_kitchen_fridgeoutlet_meterOf_MeteringPowerOutlet</dogont:meterOf>
-        <dogont:hasMeter>dog_kitchen_fridgeoutlet_hasMeter_MeteringPowerOutlet</dogont:hasMeter>
         <dogont:hasFunctionality rdf:resource="&dogont;GroupFunctionality_dog_kitchen_fridgeoutlet"/>
         <dogont:hasFunctionality rdf:resource="&dogont;OnOffFunctionality_dog_kitchen_fridgeoutlet"/>
         <dogont:hasState rdf:resource="&dogont;OnOffState_dog_kitchen_fridgeoutlet"/>
@@ -8588,6 +8533,7 @@
         <dogont:hasState rdf:resource="&dogont;SinglePhaseReactiveEnergyState_dog_kitchen_fridgeoutlet"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_kitchen_fridgeoutlet"/>
         <dogont:hasGateway rdf:resource="&dogont;dog_ZwaveGateway"/>
+        <dogont:isIn rdf:resource="&scenario1;house_kitchen"/>
     </owl:NamedIndividual>
     
 
@@ -8596,10 +8542,6 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_kitchen_mainoutlet">
         <rdf:type rdf:resource="&dogont;MeteringPowerOutlet"/>
-        <dogont:hasGateway>dog_kitchen_mainoutlet_hasGateway_MeteringPowerOutlet</dogont:hasGateway>
-        <dogont:meterOf>dog_kitchen_mainoutlet_meterOf_MeteringPowerOutlet</dogont:meterOf>
-        <dogont:hasMeter>dog_kitchen_mainoutlet_hasMeter_MeteringPowerOutlet</dogont:hasMeter>
-        <dogont:plugOf>dog_kitchen_mainoutlet_plugOf_MeteringPowerOutlet</dogont:plugOf>
         <dogont:hasFunctionality rdf:resource="&dogont;GroupFunctionality_dog_kitchen_mainoutlet"/>
         <dogont:hasFunctionality rdf:resource="&dogont;OnOffFunctionality_dog_kitchen_mainoutlet"/>
         <dogont:hasState rdf:resource="&dogont;OnOffState_dog_kitchen_mainoutlet"/>
@@ -8618,6 +8560,7 @@
         <dogont:hasState rdf:resource="&dogont;SinglePhaseReactiveEnergyState_dog_kitchen_mainoutlet"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_kitchen_mainoutlet"/>
         <dogont:hasGateway rdf:resource="&dogont;dog_ZwaveGateway"/>
+        <dogont:isIn rdf:resource="&scenario1;house_kitchen"/>
     </owl:NamedIndividual>
     
 
@@ -8626,10 +8569,6 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_kitchen_oven">
         <rdf:type rdf:resource="&dogont;Oven"/>
-        <dogont:isIn>dog_kitchen_oven_isIn_Oven</dogont:isIn>
-        <dogont:hasGateway>dog_kitchen_oven_hasGateway_Oven</dogont:hasGateway>
-        <dogont:pluggedIn>dog_kitchen_oven_pluggedIn_Oven</dogont:pluggedIn>
-        <dogont:hasMeter>dog_kitchen_oven_hasMeter_Oven</dogont:hasMeter>
         <dogont:hasFunctionality rdf:resource="&dogont;AlertNotificationFunctionality_dog_kitchen_oven"/>
         <dogont:hasFunctionality rdf:resource="&dogont;CycleTimingControlFunctionality_dog_kitchen_oven"/>
         <dogont:hasFunctionality rdf:resource="&dogont;CycleTimingQueryFunctionality_dog_kitchen_oven"/>
@@ -8652,10 +8591,6 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_kitchen_ovenoutlet">
         <rdf:type rdf:resource="&dogont;MeteringPowerOutlet"/>
-        <dogont:hasGateway>dog_kitchen_ovenoutlet_hasGateway_MeteringPowerOutlet</dogont:hasGateway>
-        <dogont:plugOf>dog_kitchen_ovenoutlet_plugOf_MeteringPowerOutlet</dogont:plugOf>
-        <dogont:hasMeter>dog_kitchen_ovenoutlet_hasMeter_MeteringPowerOutlet</dogont:hasMeter>
-        <dogont:meterOf>dog_kitchen_ovenoutlet_meterOf_MeteringPowerOutlet</dogont:meterOf>
         <dogont:hasFunctionality rdf:resource="&dogont;GroupFunctionality_dog_kitchen_ovenoutlet"/>
         <dogont:hasFunctionality rdf:resource="&dogont;OnOffFunctionality_dog_kitchen_ovenoutlet"/>
         <dogont:hasState rdf:resource="&dogont;OnOffState_dog_kitchen_ovenoutlet"/>
@@ -8674,6 +8609,8 @@
         <dogont:hasState rdf:resource="&dogont;SinglePhaseReactiveEnergyState_dog_kitchen_ovenoutlet"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_kitchen_ovenoutlet"/>
         <dogont:hasGateway rdf:resource="&dogont;dog_ZwaveGateway"/>
+        <dogont:plugOf rdf:resource="&dogont;dog_kitchen_oven"/>
+        <dogont:isIn rdf:resource="&scenario1;house_kitchen"/>
     </owl:NamedIndividual>
     
 
@@ -8682,12 +8619,12 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_livingroom_humidity_sensor">
         <rdf:type rdf:resource="&dogont;HumiditySensor"/>
-        <dogont:hasMeter>dog_livingroom_humidity_sensor_hasMeter_HumiditySensor</dogont:hasMeter>
-        <dogont:hasGateway>dog_livingroom_humidity_sensor_hasGateway_HumiditySensor</dogont:hasGateway>
         <dogont:hasFunctionality rdf:resource="&dogont;HumidityMeasurementFunctionality_dog_livingroom_humidity_sensor"/>
         <dogont:hasFunctionality rdf:resource="&dogont;HumidityMeasurementNotificationFunctionality_dog_livingroom_humidity_sensor"/>
         <dogont:hasState rdf:resource="&dogont;HumidityMeasurementState_dog_livingroom_humidity_sensor"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_livingroom_humidity_sensor"/>
+        <dogont:hasGateway rdf:resource="&dogont;dog_ZwaveGateway"/>
+        <dogont:isIn rdf:resource="&scenario1;house_livingroom"/>
     </owl:NamedIndividual>
     
 
@@ -8696,14 +8633,13 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_livingroom_light_sensor">
         <rdf:type rdf:resource="&dogont;LightSensor"/>
-        <dogont:hasMeter>dog_livingroom_light_sensor_hasMeter_LightSensor</dogont:hasMeter>
-        <dogont:hasGateway>dog_livingroom_light_sensor_hasGateway_LightSensor</dogont:hasGateway>
         <dogont:hasFunctionality rdf:resource="&dogont;GroupFunctionality_dog_livingroom_light_sensor"/>
         <dogont:hasState rdf:resource="&dogont;LightIntensityState_dog_livingroom_light_sensor"/>
         <dogont:hasFunctionality rdf:resource="&dogont;LightSensingFunctionality_dog_livingroom_light_sensor"/>
         <dogont:hasFunctionality rdf:resource="&dogont;LuminosityNotificationFunctionality_dog_livingroom_light_sensor"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_livingroom_light_sensor"/>
         <dogont:hasGateway rdf:resource="&dogont;dog_ZwaveGateway"/>
+        <dogont:isIn rdf:resource="&scenario1;house_livingroom"/>
     </owl:NamedIndividual>
     
 
@@ -8712,9 +8648,6 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_livingroom_mainlamp">
         <rdf:type rdf:resource="&dogont;SimpleLamp"/>
-        <dogont:hasGateway>dog_livingroom_mainlamp_hasGateway_SimpleLamp</dogont:hasGateway>
-        <dogont:hasMeter>dog_livingroom_mainlamp_hasMeter_SimpleLamp</dogont:hasMeter>
-        <dogont:isIn>dog_livingroom_mainlamp_isIn_SimpleLamp</dogont:isIn>
         <dogont:hasFunctionality rdf:resource="&dogont;OnOffFunctionality_dog_livingroom_mainlamp"/>
         <dogont:hasState rdf:resource="&dogont;OnOffState_dog_livingroom_mainlamp"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_livingroom_mainlamp"/>
@@ -8728,10 +8661,6 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_livingroom_mainlamp_button">
         <rdf:type rdf:resource="&dogont;Button"/>
-        <dogont:hasMeter>dog_livingroom_mainlamp_button_hasMeter_Button</dogont:hasMeter>
-        <dogont:isIn>dog_livingroom_mainlamp_button_isIn_Button</dogont:isIn>
-        <dogont:hasGateway>dog_livingroom_mainlamp_button_hasGateway_Button</dogont:hasGateway>
-        <dogont:controlledObject>dog_livingroom_mainlamp_button_controlledObject_Button</dogont:controlledObject>
         <dogont:hasFunctionality rdf:resource="&dogont;ButtonNotificationFunctionality_dog_livingroom_mainlamp_button"/>
         <dogont:hasState rdf:resource="&dogont;OnOffState_dog_livingroom_mainlamp_button"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_livingroom_mainlamp_button"/>
@@ -8746,10 +8675,6 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_livingroom_mainoutlet">
         <rdf:type rdf:resource="&dogont;MeteringPowerOutlet"/>
-        <dogont:plugOf>dog_livingroom_mainoutlet_plugOf_MeteringPowerOutlet</dogont:plugOf>
-        <dogont:hasMeter>dog_livingroom_mainoutlet_hasMeter_MeteringPowerOutlet</dogont:hasMeter>
-        <dogont:hasGateway>dog_livingroom_mainoutlet_hasGateway_MeteringPowerOutlet</dogont:hasGateway>
-        <dogont:meterOf>dog_livingroom_mainoutlet_meterOf_MeteringPowerOutlet</dogont:meterOf>
         <dogont:hasFunctionality rdf:resource="&dogont;GroupFunctionality_dog_livingroom_mainoutlet"/>
         <dogont:hasFunctionality rdf:resource="&dogont;OnOffFunctionality_dog_livingroom_mainoutlet"/>
         <dogont:hasState rdf:resource="&dogont;OnOffState_dog_livingroom_mainoutlet"/>
@@ -8768,6 +8693,7 @@
         <dogont:hasState rdf:resource="&dogont;SinglePhaseReactiveEnergyState_dog_livingroom_mainoutlet"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_livingroom_mainoutlet"/>
         <dogont:hasGateway rdf:resource="&dogont;dog_ZwaveGateway"/>
+        <dogont:isIn rdf:resource="&scenario1;house_livingroom"/>
     </owl:NamedIndividual>
     
 
@@ -8776,14 +8702,13 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_livingroom_presence_sensor">
         <rdf:type rdf:resource="&dogont;PresenceAndMovementSensor"/>
-        <dogont:hasGateway>dog_livingroom_presence_sensor_hasGateway_PresenceAndMovementSensor</dogont:hasGateway>
-        <dogont:hasMeter>dog_livingroom_presence_sensor_hasMeter_PresenceAndMovementSensor</dogont:hasMeter>
         <dogont:hasFunctionality rdf:resource="&dogont;MovementNotificationFunctionality_dog_livingroom_presence_sensor"/>
         <dogont:hasState rdf:resource="&dogont;MovementState_dog_livingroom_presence_sensor"/>
         <dogont:hasFunctionality rdf:resource="&dogont;PresenceNotificationFunctionality_dog_livingroom_presence_sensor"/>
         <dogont:hasState rdf:resource="&dogont;PresenceState_dog_livingroom_presence_sensor"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_livingroom_presence_sensor"/>
         <dogont:hasGateway rdf:resource="&dogont;dog_ZwaveGateway"/>
+        <dogont:isIn rdf:resource="&scenario1;house_livingroom"/>
     </owl:NamedIndividual>
     
 
@@ -8792,10 +8717,9 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_livingroom_temperature_sensor">
         <rdf:type rdf:resource="&dogont;TemperatureSensor"/>
-        <dogont:hasGateway>dog_livingroom_temperature_sensor_hasGateway_TemperatureSensor</dogont:hasGateway>
-        <dogont:hasMeter>dog_livingroom_temperature_sensor_hasMeter_TemperatureSensor</dogont:hasMeter>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_livingroom_temperature_sensor"/>
         <dogont:hasGateway rdf:resource="&dogont;dog_ZwaveGateway"/>
+        <dogont:isIn rdf:resource="&scenario1;house_livingroom"/>
     </owl:NamedIndividual>
     
 
@@ -8804,10 +8728,6 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_livingroom_tv">
         <rdf:type rdf:resource="&dogont;Tv"/>
-        <dogont:hasGateway>dog_livingroom_tv_hasGateway_Tv</dogont:hasGateway>
-        <dogont:isIn>dog_livingroom_tv_isIn_Tv</dogont:isIn>
-        <dogont:pluggedIn>dog_livingroom_tv_pluggedIn_Tv</dogont:pluggedIn>
-        <dogont:hasMeter>dog_livingroom_tv_hasMeter_Tv</dogont:hasMeter>
         <dogont:hasFunctionality rdf:resource="&dogont;OnOffStandByFunctionality_dog_livingroom_tv"/>
         <dogont:hasState rdf:resource="&dogont;StandByOnOffState_dog_livingroom_tv"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_livingroom_tv"/>
@@ -8826,10 +8746,6 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_livingroom_tvoutlet">
         <rdf:type rdf:resource="&dogont;MeteringPowerOutlet"/>
-        <dogont:plugOf>dog_livingroom_tvoutlet_plugOf_MeteringPowerOutlet</dogont:plugOf>
-        <dogont:meterOf>dog_livingroom_tvoutlet_meterOf_MeteringPowerOutlet</dogont:meterOf>
-        <dogont:hasGateway>dog_livingroom_tvoutlet_hasGateway_MeteringPowerOutlet</dogont:hasGateway>
-        <dogont:hasMeter>dog_livingroom_tvoutlet_hasMeter_MeteringPowerOutlet</dogont:hasMeter>
         <dogont:hasFunctionality rdf:resource="&dogont;GroupFunctionality_dog_livingroom_tvoutlet"/>
         <dogont:hasFunctionality rdf:resource="&dogont;OnOffFunctionality_dog_livingroom_tvoutlet"/>
         <dogont:hasState rdf:resource="&dogont;OnOffState_dog_livingroom_tvoutlet"/>
@@ -8848,6 +8764,8 @@
         <dogont:hasState rdf:resource="&dogont;SinglePhaseReactiveEnergyState_dog_livingroom_tvoutlet"/>
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_livingroom_tvoutlet"/>
         <dogont:hasGateway rdf:resource="&dogont;dog_ZwaveGateway"/>
+        <dogont:plugOf rdf:resource="&dogont;dog_livingroom_tv"/>
+        <dogont:isIn rdf:resource="&scenario1;house_livingroom"/>
     </owl:NamedIndividual>
     
 
@@ -8856,9 +8774,6 @@
 
     <owl:NamedIndividual rdf:about="&dogont;dog_livingroom_window_sensor">
         <rdf:type rdf:resource="&dogont;WindowSensor"/>
-        <dogont:sensorOf>dog_livingroom_window_sensor_sensorOf_WindowSensor</dogont:sensorOf>
-        <dogont:hasGateway>dog_livingroom_window_sensor_hasGateway_WindowSensor</dogont:hasGateway>
-        <dogont:hasMeter>dog_livingroom_window_sensor_hasMeter_WindowSensor</dogont:hasMeter>
         <dogont:hasFunctionality rdf:resource="&dogont;Functionality_dog_livingroom_window_sensor"/>
         <dogont:hasFunctionality rdf:resource="&dogont;Functionality_dog_livingroom_window_sensor_2"/>
         <dogont:hasFunctionality rdf:resource="&dogont;Functionality_dog_livingroom_window_sensor_3"/>
@@ -8867,6 +8782,7 @@
         <dogont:hasFunctionality rdf:resource="&dogont;StateChangeNotificationFunctionality_dog_livingroom_window_sensor"/>
         <dogont:hasGateway rdf:resource="&dogont;dog_ZwaveGateway"/>
         <dogont:sensorOf rdf:resource="&dogont;house_livingroom_window"/>
+        <dogont:isIn rdf:resource="&scenario1;house_livingroom"/>
     </owl:NamedIndividual>
     
 
@@ -9016,11 +8932,9 @@
     <owl:NamedIndividual rdf:about="&scenario1;giulia">
         <rdf:type rdf:resource="&locont;Employee"/>
         <foaf:birthday rdf:datatype="&xsd;date">1987-02-26</foaf:birthday>
-        <foaf:familyName rdf:datatype="&xsd;string">Brambilla
-</foaf:familyName>
+        <foaf:familyName rdf:datatype="&xsd;string">Brambilla</foaf:familyName>
         <foaf:firstName rdf:datatype="&xsd;string">Giulia</foaf:firstName>
-        <foaf:nick rdf:datatype="&xsd;string">Giuly
-</foaf:nick>
+        <foaf:nick rdf:datatype="&xsd;string">Giuly</foaf:nick>
         <locont:lookingAt rdf:resource="&scenario1;giulia"/>
         <locont:hasArtifact rdf:resource="&scenario1;nexus10"/>
         <locont:hasArtifact rdf:resource="&scenario1;nexus5"/>
