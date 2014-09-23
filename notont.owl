@@ -377,6 +377,26 @@
     
 
 
+    <!-- http://elite.polito.it/ontologies/notont.owl#allowAccessibilityLevel -->
+
+    <owl:ObjectProperty rdf:about="&notont;allowAccessibilityLevel">
+        <rdfs:comment>This object property define which means of interaction an activity let available to the user</rdfs:comment>
+        <rdfs:range rdf:resource="&notont;Accessibility"/>
+        <rdfs:domain rdf:resource="&locont;Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont.owl#hasAccessibilityLevel -->
+
+    <owl:ObjectProperty rdf:about="&notont;hasAccessibilityLevel">
+        <rdfs:comment>This object property describe how a user prefers to be contacted by the system</rdfs:comment>
+        <rdfs:range rdf:resource="&notont;Accessibility"/>
+        <rdfs:domain rdf:resource="&locont;Person"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://elite.polito.it/ontologies/notont.owl#hasLine -->
 
     <owl:ObjectProperty rdf:about="&notont;hasLine">
@@ -788,6 +808,14 @@
     
 
 
+    <!-- http://elite.polito.it/ontologies/notont.owl#Accessibility -->
+
+    <owl:Class rdf:about="&notont;Accessibility">
+        <rdfs:comment rdf:datatype="&xsd;string">This class defines the ways the system can interact with a person. A person can define which means of interaction use and an action can define which means of interaction remains available for it</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://webmind.dico.unimi.it/CARE/locont.owl#BathroomFixture -->
 
     <rdf:Description rdf:about="&locont;BathroomFixture"/>
@@ -1122,6 +1150,49 @@
     <!-- http://xmlns.com/foaf/0.1/Person -->
 
     <rdf:Description rdf:about="&foaf;Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont.owl#accessibility_free -->
+
+    <owl:NamedIndividual rdf:about="&notont;accessibility_free">
+        <rdf:type rdf:resource="&notont;Accessibility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont.owl#accessibility_freeableHands -->
+
+    <owl:NamedIndividual rdf:about="&notont;accessibility_freeableHands">
+        <rdf:type rdf:resource="&notont;Accessibility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont.owl#accessibility_freeableWrist -->
+
+    <owl:NamedIndividual rdf:about="&notont;accessibility_freeableWrist">
+        <rdf:type rdf:resource="&notont;Accessibility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont.owl#accessibility_notFree -->
+
+    <owl:NamedIndividual rdf:about="&notont;accessibility_notFree">
+        <rdf:type rdf:resource="&notont;Accessibility"/>
+    </owl:NamedIndividual>
     
 
 
