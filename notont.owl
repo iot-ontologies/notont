@@ -377,22 +377,13 @@
     
 
 
-    <!-- http://elite.polito.it/ontologies/notont.owl#allowAccessibilityLevel -->
-
-    <owl:ObjectProperty rdf:about="&notont;allowAccessibilityLevel">
-        <rdfs:comment>This object property define which means of interaction an activity let available to the user</rdfs:comment>
-        <rdfs:range rdf:resource="&notont;Accessibility"/>
-        <rdfs:domain rdf:resource="&locont;Activity"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://elite.polito.it/ontologies/notont.owl#hasAccessibilityLevel -->
 
     <owl:ObjectProperty rdf:about="&notont;hasAccessibilityLevel">
         <rdfs:comment>This object property describe how a user prefers to be contacted by the system</rdfs:comment>
         <rdfs:range rdf:resource="&notont;Accessibility"/>
-        <rdfs:domain rdf:resource="&locont;Person"/>
+        <rdfs:subPropertyOf rdf:resource="&notont;hasAccessibilityLevel"/>
+        <rdfs:domain rdf:resource="&locont;Activity"/>
     </owl:ObjectProperty>
     
 
@@ -402,6 +393,15 @@
     <owl:ObjectProperty rdf:about="&notont;hasLine">
         <rdfs:domain rdf:resource="&dogont;Wall"/>
         <rdfs:range rdf:resource="&geometry;LineString"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont.owl#hasObtrusivenessLevel -->
+
+    <owl:ObjectProperty rdf:about="&notont;hasObtrusivenessLevel">
+        <rdfs:range rdf:resource="&notont;Obtrusiveness"/>
+        <rdfs:domain rdf:resource="&locont;Person"/>
     </owl:ObjectProperty>
     
 
@@ -816,6 +816,25 @@
     
 
 
+    <!-- http://elite.polito.it/ontologies/notont.owl#Obtrusiveness -->
+
+    <owl:Class rdf:about="&notont;Obtrusiveness"/>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Bathing -->
+
+    <rdf:Description rdf:about="&locont;Bathing">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_notFree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- http://webmind.dico.unimi.it/CARE/locont.owl#BathroomFixture -->
 
     <rdf:Description rdf:about="&locont;BathroomFixture"/>
@@ -834,15 +853,80 @@
     
 
 
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#BrushingTeeth -->
+
+    <rdf:Description rdf:about="&locont;BrushingTeeth">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_freeableHands"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Building -->
 
     <rdf:Description rdf:about="&locont;Building"/>
     
 
 
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#CarnivalParty -->
+
+    <rdf:Description rdf:about="&locont;CarnivalParty">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_freeableHands"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Chair -->
 
     <rdf:Description rdf:about="&locont;Chair"/>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#ClimbingDown -->
+
+    <rdf:Description rdf:about="&locont;ClimbingDown">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_notFree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#ClimbingUp -->
+
+    <rdf:Description rdf:about="&locont;ClimbingUp">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_notFree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#CombingHair -->
+
+    <rdf:Description rdf:about="&locont;CombingHair">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_freeableHands"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
     
 
 
@@ -872,6 +956,32 @@
     
 
 
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#DoingPresentation -->
+
+    <rdf:Description rdf:about="&locont;DoingPresentation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_freeableHands"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Eating -->
+
+    <rdf:Description rdf:about="&locont;Eating">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_freeableHands"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Furniture -->
 
     <rdf:Description rdf:about="&locont;Furniture"/>
@@ -884,9 +994,74 @@
     
 
 
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#GivingClass -->
+
+    <rdf:Description rdf:about="&locont;GivingClass">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_freeableHands"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- http://webmind.dico.unimi.it/CARE/locont.owl#HumiditySensor -->
 
     <rdf:Description rdf:about="&locont;HumiditySensor"/>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#IndividualJobInterview -->
+
+    <rdf:Description rdf:about="&locont;IndividualJobInterview">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_freeableHands"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#InformalParty -->
+
+    <rdf:Description rdf:about="&locont;InformalParty">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_freeableHands"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#InstantMessaging -->
+
+    <rdf:Description rdf:about="&locont;InstantMessaging">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_freeableHands"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Jogging -->
+
+    <rdf:Description rdf:about="&locont;Jogging">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_freeableHands"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </rdf:Description>
     
 
 
@@ -914,10 +1089,101 @@
     
 
 
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#MovingByCar -->
+
+    <rdf:Description rdf:about="&locont;MovingByCar">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_freeableWrist"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#MovingByMotorbike -->
+
+    <rdf:Description rdf:about="&locont;MovingByMotorbike">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_freeableWrist"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#MovingByTrain -->
+
+    <rdf:Description rdf:about="&locont;MovingByTrain">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_free"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#NoonBreak -->
+
+    <rdf:Description rdf:about="&locont;NoonBreak">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_freeableHands"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Person -->
 
     <rdf:Description rdf:about="&locont;Person">
         <owl:equivalentClass rdf:resource="&foaf;Person"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#PhoneConference -->
+
+    <rdf:Description rdf:about="&locont;PhoneConference">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_freeableHands"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Play -->
+
+    <rdf:Description rdf:about="&locont;Play">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_notFree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#RidingBicycle -->
+
+    <rdf:Description rdf:about="&locont;RidingBicycle">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_freeableWrist"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </rdf:Description>
     
 
@@ -942,6 +1208,32 @@
     
 
 
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Showering -->
+
+    <rdf:Description rdf:about="&locont;Showering">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_notFree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Sleeping -->
+
+    <rdf:Description rdf:about="&locont;Sleeping">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_notFree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Smartphone -->
 
     <rdf:Description rdf:about="&locont;Smartphone">
@@ -956,15 +1248,171 @@
     
 
 
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#StandingStill -->
+
+    <rdf:Description rdf:about="&locont;StandingStill">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_free"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#StockholdersMeeting -->
+
+    <rdf:Description rdf:about="&locont;StockholdersMeeting">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_freeableHands"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Strolling -->
+
+    <rdf:Description rdf:about="&locont;Strolling">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_free"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Table -->
 
     <rdf:Description rdf:about="&locont;Table"/>
     
 
 
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#TeaParty -->
+
+    <rdf:Description rdf:about="&locont;TeaParty">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_freeableHands"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- http://webmind.dico.unimi.it/CARE/locont.owl#TemperatureSensor -->
 
     <rdf:Description rdf:about="&locont;TemperatureSensor"/>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#UsingPersonalComputer -->
+
+    <rdf:Description rdf:about="&locont;UsingPersonalComputer">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_free"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#UsingProjector -->
+
+    <rdf:Description rdf:about="&locont;UsingProjector">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_freeableHands"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#VideoConference -->
+
+    <rdf:Description rdf:about="&locont;VideoConference">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_freeableHands"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#Walking -->
+
+    <rdf:Description rdf:about="&locont;Walking">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_free"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#WalkingDownstairs -->
+
+    <rdf:Description rdf:about="&locont;WalkingDownstairs">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_freeableHands"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#WalkingUpstairs -->
+
+    <rdf:Description rdf:about="&locont;WalkingUpstairs">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_freeableHands"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#WorkingAtPc -->
+
+    <rdf:Description rdf:about="&locont;WorkingAtPc">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_freeableHands"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#WritingOnBlackboard -->
+
+    <rdf:Description rdf:about="&locont;WritingOnBlackboard">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_freeableWrist"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
     
 
 
@@ -1192,6 +1640,62 @@
 
     <owl:NamedIndividual rdf:about="&notont;accessibility_notFree">
         <rdf:type rdf:resource="&notont;Accessibility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont.owl#obtrusiveness_audioOnly -->
+
+    <owl:NamedIndividual rdf:about="&notont;obtrusiveness_audioOnly">
+        <rdf:type rdf:resource="&notont;Obtrusiveness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont.owl#obtrusiveness_available -->
+
+    <owl:NamedIndividual rdf:about="&notont;obtrusiveness_available">
+        <rdf:type rdf:resource="&notont;Obtrusiveness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont.owl#obtrusiveness_houseOnly -->
+
+    <owl:NamedIndividual rdf:about="&notont;obtrusiveness_houseOnly">
+        <rdf:type rdf:resource="&notont;Obtrusiveness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont.owl#obtrusiveness_mobileOnly -->
+
+    <owl:NamedIndividual rdf:about="&notont;obtrusiveness_mobileOnly">
+        <rdf:type rdf:resource="&notont;Obtrusiveness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont.owl#obtrusiveness_noAudio -->
+
+    <owl:NamedIndividual rdf:about="&notont;obtrusiveness_noAudio">
+        <rdf:type rdf:resource="&notont;Obtrusiveness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont.owl#obtrusiveness_noVideo -->
+
+    <owl:NamedIndividual rdf:about="&notont;obtrusiveness_noVideo">
+        <rdf:type rdf:resource="&notont;Obtrusiveness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont.owl#obtrusiveness_videoOnly -->
+
+    <owl:NamedIndividual rdf:about="&notont;obtrusiveness_videoOnly">
+        <rdf:type rdf:resource="&notont;Obtrusiveness"/>
     </owl:NamedIndividual>
     
 
