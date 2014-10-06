@@ -8935,6 +8935,7 @@
         <foaf:familyName rdf:datatype="&xsd;string">Brambilla</foaf:familyName>
         <foaf:firstName rdf:datatype="&xsd;string">Giulia</foaf:firstName>
         <foaf:nick rdf:datatype="&xsd;string">Giuly</foaf:nick>
+        <notont:hasObtrusivenessLevel rdf:resource="&notont;obtrusiveness_available"/>
         <locont:lookingAt rdf:resource="&scenario1;giulia"/>
         <locont:hasArtifact rdf:resource="&scenario1;nexus10"/>
         <locont:hasArtifact rdf:resource="&scenario1;nexus5"/>
