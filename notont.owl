@@ -878,7 +878,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
-                <owl:hasValue rdf:resource="&notont;accessibility_freeableHands"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_notFree"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -1019,7 +1019,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
-                <owl:hasValue rdf:resource="&notont;accessibility_freeableHands"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_notFree"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -1032,7 +1032,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
-                <owl:hasValue rdf:resource="&notont;accessibility_freeableHands"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_notFree"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -1045,7 +1045,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
-                <owl:hasValue rdf:resource="&notont;accessibility_freeableHands"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_free"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -1155,7 +1155,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
-                <owl:hasValue rdf:resource="&notont;accessibility_freeableHands"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_free"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -1267,7 +1267,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
-                <owl:hasValue rdf:resource="&notont;accessibility_freeableHands"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_free"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -1299,7 +1299,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
-                <owl:hasValue rdf:resource="&notont;accessibility_freeableHands"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_notFree"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -1344,7 +1344,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
-                <owl:hasValue rdf:resource="&notont;accessibility_freeableHands"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_notFree"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
