@@ -6,6 +6,7 @@
     <!ENTITY dcam "http://purl.org/dc/dcam/" >
     <!ENTITY rev "http://purl.org/stuff/rev#" >
     <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY scovopurl "http://purl.org/NET/scovo#" >
     <!ENTITY scovo "http://vocab.deri.ie/scovo#" >
     <!ENTITY vann "http://purl.org/vocab/vann/" >
     <!ENTITY dcmitype "http://purl.org/dc/dcmitype/" >
@@ -15,6 +16,7 @@
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY core "http://purl.org/ontology/wi/core#" >
+    <!ENTITY ssn "http://purl.oclc.org/NET/ssnx/ssn#" >
     <!ENTITY event "http://purl.org/NET/c4dm/event.owl#" >
     <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
@@ -38,6 +40,7 @@
      xmlns:rev="http://purl.org/stuff/rev#"
      xmlns:partof="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#"
      xmlns:componency="http://www.ontologydesignpatterns.org/cp/owl/componency.owl#"
+     xmlns:ssn="http://purl.oclc.org/NET/ssnx/ssn#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:dcam="http://purl.org/dc/dcam/"
      xmlns:contact="http://www.w3.org/2000/10/swap/pim/contact#"
@@ -53,6 +56,7 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dcmitype="http://purl.org/dc/dcmitype/"
      xmlns:geometry="http://geovocab.org/geometry#"
+     xmlns:scovopurl="http://purl.org/NET/scovo#"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
      xmlns:notont="http://elite.polito.it/ontologies/notont.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
