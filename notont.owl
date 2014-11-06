@@ -1004,7 +1004,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&notont;hasAccessibilityLevel"/>
-                <owl:hasValue rdf:resource="&notont;accessibility_freeableHands"/>
+                <owl:hasValue rdf:resource="&notont;accessibility_freeableWrist"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -1691,6 +1691,14 @@
     <!-- http://elite.polito.it/ontologies/notont.owl#obtrusiveness_noVideo -->
 
     <owl:NamedIndividual rdf:about="&notont;obtrusiveness_noVideo">
+        <rdf:type rdf:resource="&notont;Obtrusiveness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://elite.polito.it/ontologies/notont.owl#obtrusiveness_notAvailable -->
+
+    <owl:NamedIndividual rdf:about="&notont;obtrusiveness_notAvailable">
         <rdf:type rdf:resource="&notont;Obtrusiveness"/>
     </owl:NamedIndividual>
     
