@@ -419,9 +419,25 @@
     
 
 
+    <!-- http://elite.polito.it/ontologies/notont.owl#isOwnedBy -->
+
+    <owl:ObjectProperty rdf:about="&notont;isOwnedBy">
+        <rdfs:domain rdf:resource="&locont;Artifact"/>
+        <rdfs:range rdf:resource="&locont;Person"/>
+        <owl:inverseOf rdf:resource="&locont;usingArtifact"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://webmind.dico.unimi.it/CARE/locont.owl#hasArtifact -->
 
     <rdf:Description rdf:about="&locont;hasArtifact"/>
+    
+
+
+    <!-- http://webmind.dico.unimi.it/CARE/locont.owl#usingArtifact -->
+
+    <rdf:Description rdf:about="&locont;usingArtifact"/>
     
 
 
